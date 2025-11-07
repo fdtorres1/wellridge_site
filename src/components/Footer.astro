@@ -1,0 +1,78 @@
+---
+const footerNav = [
+  { label: 'About', href: '/about' },
+  { label: 'Services', href: '/services' },
+  { label: 'Process', href: '/process' },
+  { label: 'Pricing', href: '/pricing' },
+  { label: 'Insights', href: '/insights' },
+  { label: 'Contact', href: '/contact' },
+];
+---
+
+<footer class="bg-slate-deep text-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div>
+        <h3 class="text-xl font-serif font-bold mb-4">Wellridge Advisory</h3>
+        <p class="text-gray-300 text-sm">
+          Strategic grant and RFP support for nonprofits, municipalities, and educational institutions.
+        </p>
+      </div>
+      <div>
+        <h4 class="font-semibold mb-4">Navigation</h4>
+        <ul class="space-y-2">
+          {footerNav.map((item) => (
+            <li>
+              <a
+                href={item.href}
+                class="text-gray-300 hover:text-white text-sm transition-colors"
+              >
+                {item.label}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-semibold mb-4">Connect</h4>
+        <ul class="space-y-2">
+          <li>
+            <a
+              href="https://linkedin.com/company/wellridge-advisory"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-gray-300 hover:text-white text-sm transition-colors"
+            >
+              LinkedIn
+            </a>
+          </li>
+          <li>
+            <form class="mt-4">
+              <label for="newsletter-email" class="block text-sm font-medium mb-2">
+                Newsletter
+              </label>
+              <div class="flex gap-2">
+                <input
+                  type="email"
+                  id="newsletter-email"
+                  placeholder="Your email"
+                  class="flex-1 px-3 py-2 bg-gray-800 text-white rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-ridge-blue"
+                />
+                <button
+                  type="submit"
+                  class="px-4 py-2 bg-ridge-blue text-white rounded-md text-sm font-medium hover:bg-opacity-90 transition-colors"
+                >
+                  Subscribe
+                </button>
+              </div>
+            </form>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="mt-8 pt-8 border-t border-gray-700 text-center text-sm text-gray-400">
+      <p>&copy; {new Date().getFullYear()} Wellridge Advisory. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+

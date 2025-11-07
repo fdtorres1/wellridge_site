@@ -1,0 +1,56 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+const allResources = await getCollection('resources');
+const categories = ['Strategy & Fit', 'Narrative & Score', 'Budgets & Evidence', 'Reporting & Renewal', 'Process & Tools'];
+
+const resourcesByCategory = categories.reduce((acc, category) => {
+  acc[category] = allResources.filter((r) => r.data.category === category);
+  return acc;
+}, {} as Record<string, typeof allResources>);
+---
+
+<BaseLayout title="Resources" description="Tools, templates, and checklists to help you work faster and win more grants.">
+  <section class="py-20 bg-gradient-to-b from-white to-fog">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h1 class="text-5xl font-serif font-bold text-slate-deep mb-6">Resources</h1>
+      <p class="text-xl text-gray-600">
+        Tools to work faster and win more calmly.
+      </p>
+    </div>
+  </section>
+
+  <section class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      {categories.map((category) => {
+        const resources = resourcesByCategory[category];
+        if (resources.length === 0) return null;
+        
+        return (
+          <div class="mb-12">
+            <h2 class="text-3xl font-serif font-bold mb-6">{category}</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {resources.map((resource) => (
+                <a
+                  href={`/resources/${resource.slug}`}
+                  class="block border border-gray-200 rounded-lg p-6 hover:shadow-md transition-shadow"
+                >
+                  <h3 class="text-xl font-serif font-bold mb-2">{resource.data.title}</h3>
+                  <p class="text-gray-600 text-sm">{resource.data.description}</p>
+                </a>
+              ))}
+            </div>
+          </div>
+        );
+      })}
+      
+      {allResources.length === 0 && (
+        <div class="text-center py-12">
+          <p class="text-gray-600">Resources coming soon. Check back for templates, checklists, and tools.</p>
+        </div>
+      )}
+    </div>
+  </section>
+</BaseLayout>
+
