@@ -43,7 +43,9 @@ Preview the production build locally.
 ```
 /
 ├── public/
-│   └── favicon.svg
+│   ├── favicon.svg
+│   ├── wellridge-logo.png (available for future use)
+│   └── felix-torres.jpg
 ├── src/
 │   ├── components/
 │   │   ├── Header.astro
@@ -82,8 +84,13 @@ Preview the production build locally.
 ### Typography
 
 - **Sans**: Inter (UI, navigation, body text)
-- **Serif**: Source Serif Pro (headings)
+- **Serif**: Source Serif Pro (headings, logo text)
 - **Mono**: IBM Plex Mono (code, figures)
+
+### Assets
+
+- Logo file (`wellridge-logo.png`) is available in `public/` for future use
+- Felix Torres photo (`felix-torres.jpg`) is used in the About section
 
 ## 📝 Content Management
 
