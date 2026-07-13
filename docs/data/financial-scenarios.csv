@@ -1,0 +1,13 @@
+scenario,status,period,calendar_year,revenue_low,revenue_plan,revenue_high,cash_collected_plan,project_contractors_direct_cost,fixed_nonfounder_delivery_staff,capture_contracts_admin,overhead,founder_salary_or_imputed_replacement,owner_compensation_plus_profit_pool,true_operating_profit,pipeline_sprints,proposal_projects,program_operations_tasks,founder_hours_per_week,notes
+conservative_baseline,HYPOTHESIS TO TEST,Jul-Dec 2026,2026,18000,18000,18000,15000,3000,0,0,6000,9000,9000,0,3,1,1,15-20,"Cash available to Felix modeled at 6000-7000 before personal taxes after timing and reserves"
+conservative_baseline,HYPOTHESIS TO TEST,Year 1,2027,75000,75000,75000,,14000,0,0,12000,60000,49000,-11000,12,4,1,20-25,"Economically closer to self-employment; imputed founder replacement pay exceeds residual pool"
+conservative_baseline,HYPOTHESIS TO TEST,Year 2,2028,115000,115000,115000,,22000,25000,0,15000,60000,53000,-7000,14,6,2,18-22,"Dedicated part-time compliance coordinator modeled in fixed non-founder staff"
+conservative_baseline,HYPOTHESIS TO TEST,Year 3,2029,165000,165000,165000,,30000,52000,0,18000,60000,65000,5000,16,7,2,16-20,"Program and Proposal Manager at roughly 25-30 hours per week"
+conservative_baseline,HYPOTHESIS TO TEST,Year 4,2030,230000,230000,230000,,45000,70000,0,23000,65000,92000,27000,18,8,3,14-18,"Full-time Program and Compliance Manager plus part-time proposal research support"
+conservative_baseline,HYPOTHESIS TO TEST,Year 5,2031,310000,310000,310000,,65000,100000,0,30000,70000,115000,45000,20,10,4,12-16,"Roughly two non-founder FTE equivalents; owner pool includes founder labor"
+aggressive_target,HYPOTHESIS TO TEST,Jul-Dec 2026,2026,25000,27500,30000,,,,,,,,,,,25-30,"Revenue target range only; no full P&L modeled"
+aggressive_target,HYPOTHESIS TO TEST,Year 1,2027,125000,125000,125000,,,,,,,,,,,25,"Felix plus half-time compliance coordinator and specialists"
+aggressive_target,HYPOTHESIS TO TEST,Year 2,2028,250000,250000,250000,,,,,,,,,,,20-25,"Full-time manager plus part-time research and fractional finance contracts"
+aggressive_target,HYPOTHESIS TO TEST,Year 3,2029,450000,450000,450000,,,,,,,,,,,18-22,"Three delivery staff plus fractional capture and administration"
+aggressive_target,HYPOTHESIS TO TEST,Year 4,2030,700000,700000,700000,,,,,,,,,,,15-20,"Five to six staff including dedicated capture"
+aggressive_target,HYPOTHESIS TO TEST,Year 5,2031,1000000,1000000,1000000,,500000,,140000,75000,120000,285000,165000,,,4,15-20,"Six to eight non-founder FTE equivalents; 500000 direct delivery includes delivery payroll contractors and direct program cost; owner economic benefit equals founder salary plus true profit"

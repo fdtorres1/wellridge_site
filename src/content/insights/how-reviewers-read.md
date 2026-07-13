@@ -1,48 +1,47 @@
 ---
-title: How Reviewers Actually Read
-description: Understanding the reviewer's perspective can transform how you structure your proposal narrative.
+title: Designing Proposals for Reviewer Navigation
+description: A practical document-design heuristic for making proposal evidence easier to locate, compare, and score.
 pubDate: 2025-10-15
 category: Narrative & Score
 pinned: false
 ---
 
-Most grant writers assume reviewers read proposals from start to finish, carefully considering every word. The reality is different—and understanding how reviewers actually read can dramatically improve your win rate.
+Review methods vary by funder, procurement, scoring rubric, reviewer, and review stage. Some readers move in order; others cross-check requirements, budgets, workplans, and attachments. Treat the sequence below as a **document-design heuristic**, not a universal reviewer behavior or timing benchmark.
 
-## The Review Process
+## A Useful Navigation Model
 
-Reviewers typically follow this pattern:
+Design the proposal so a reviewer can easily:
 
-1. **Executive Summary** (30-60 seconds)
-2. **Budget** (1-2 minutes)
-3. **Program Description** (3-5 minutes)
-4. **Organization Background** (1-2 minutes)
-5. **Supporting Materials** (skim)
-
-Total time: 10-15 minutes for a typical foundation grant.
+1. Confirm eligibility and mandatory compliance items.
+2. Orient to the need, proposed response, request, and intended outcomes.
+3. Cross-check the budget against the narrative and workplan.
+4. Locate the timeline, owners, measures, and assumptions.
+5. Assess relevant organizational capacity and evidence.
+6. Verify that required attachments support the written response.
 
 ## What This Means for Your Proposal
 
 ### Lead with Impact
-Your executive summary must stand alone. If a reviewer only reads that section, they should understand:
+Within the funder's format, make the executive summary useful as a compact orientation. It should identify:
 - What you're proposing
 - Why it matters
 - How much you need
 - What success looks like
 
 ### Budget Tells a Story
-Reviewers check budgets early to assess feasibility and alignment. A well-structured budget that matches your narrative builds trust. A budget with red flags (unrealistic costs, missing line items) creates doubt.
+Make it easy to trace significant costs to activities, timing, assumptions, and the approved calculation basis. Follow the funder's instructions and the organization's accounting policy; a clean-looking budget does not override either.
 
 ### Program Description Needs Structure
-Reviewers scan for key information:
+Use the solicitation's language and headings so required information is easy to locate:
 - Clear problem statement
 - Evidence-based solution
 - Measurable outcomes
 - Realistic timeline
 
-Use headings, bullet points, and white space to make scanning easy.
+Use headings, concise paragraphs, tables where allowed, and cross-references to make evidence easy to find.
 
-### Organization Background Builds Credibility
-This section answers: "Can this organization actually deliver?" Include:
+### Organization Background Provides Evidence
+Use this section to answer, with substantiated and relevant evidence, "Can this organization deliver this scope?" Include only what the application permits and what you can support:
 - Relevant experience
 - Key staff qualifications
 - Past successes
@@ -50,13 +49,12 @@ This section answers: "Can this organization actually deliver?" Include:
 
 ## Practical Tips
 
-1. **Write the executive summary last**—it should summarize your strongest points.
-2. **Use the budget as a narrative tool**—ensure every line item supports your story.
-3. **Structure for scanning**—headings, bullets, and short paragraphs.
-4. **Front-load key information**—don't bury important details in paragraphs.
-5. **Make it easy to find answers**—reviewers are looking for specific information.
+1. **Build a compliance map first** so every requirement has an owner and location.
+2. **Write the executive summary after the scope and budget stabilize** so it reflects the actual proposal.
+3. **Cross-check the budget and narrative** for the same activities, quantities, timing, and assumptions.
+4. **Use traceable evidence** and distinguish sourced facts from projections.
+5. **Run a final human review** against the controlling instructions and scoring criteria.
 
 ## The Bottom Line
 
-Reviewers are human. They're busy, they're scanning, and they're looking for reasons to say yes or no. Structure your proposal to make it easy for them to say yes.
-
+You cannot control a reviewer's path or decision. You can control whether required information is complete, consistent, supported, and easy to locate.

@@ -8,7 +8,8 @@ interface Props {
   description?: string;
 }
 
-const { title, description = 'Wellridge Advisory partners with nonprofits, municipalities, and educational institutions to win grants and RFPs through strategic narrative, rigorous structure, and thoughtful stewardship.' } = Astro.props;
+const { title, description = 'Wellridge Partners provides bounded funding-pipeline, proposal, and program-operations support for nonprofits and public-sector organizations.' } = Astro.props;
+const canonicalURL = new URL(Astro.url.pathname, 'https://wellridgepartners.com');
 ---
 
 <!doctype html>
@@ -17,9 +18,10 @@ const { title, description = 'Wellridge Advisory partners with nonprofits, munic
     <meta charset="UTF-8" />
     <meta name="description" content={description} />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="canonical" href={canonicalURL} />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
-    <title>{title} | Wellridge Advisory</title>
+    <title>{title} | Wellridge Partners</title>
   </head>
   <body>
     <Header />
@@ -29,4 +31,3 @@ const { title, description = 'Wellridge Advisory partners with nonprofits, munic
     <Footer />
   </body>
 </html>
-

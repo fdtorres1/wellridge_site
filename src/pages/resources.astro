@@ -11,18 +11,24 @@ const resourcesByCategory = categories.reduce((acc, category) => {
 }, {} as Record<string, typeof allResources>);
 ---
 
-<BaseLayout title="Resources" description="Tools, templates, and checklists to help you work faster and win more grants.">
+<BaseLayout title="Resources" description="Working tools and examples for funding qualification, compliant proposals, and program operations.">
   <section class="py-20 bg-gradient-to-b from-white to-fog">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
       <h1 class="text-5xl font-serif font-bold text-slate-deep mb-6">Resources</h1>
       <p class="text-xl text-gray-600">
-        Tools to work faster and win more calmly.
+        Working tools for clearer funding and program decisions.
       </p>
     </div>
   </section>
 
   <section class="py-16 bg-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="bg-fog p-6 rounded-lg mb-12">
+        <h2 class="text-xl font-serif font-bold mb-2">Use with Judgment</h2>
+        <p class="text-gray-700">
+          These resources are practical starting points, not universal requirements or outcome guarantees. Adapt them to the controlling solicitation, contract, organizational policy, and accountable human review.
+        </p>
+      </div>
       {categories.map((category) => {
         const resources = resourcesByCategory[category];
         if (resources.length === 0) return null;
@@ -53,4 +59,3 @@ const resourcesByCategory = categories.reduce((acc, category) => {
     </div>
   </section>
 </BaseLayout>
-

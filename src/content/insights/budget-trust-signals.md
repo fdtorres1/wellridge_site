@@ -1,60 +1,67 @@
 ---
 title: Budget Trust Signals
-description: Small details in your budget that signal credibility and attention to detail to funders.
+description: Practical ways to make proposal budgets easier to trace, verify, and compare with the narrative.
 pubDate: 2025-10-01
 category: Budgets & Evidence
 pinned: false
 ---
 
-Your budget is more than numbers—it's a credibility test. Funders use budgets to assess whether you understand costs, can manage funds responsibly, and have the capacity to deliver. Small details can make or break that trust.
+Reviewers may use a budget to test whether activities, quantities, timing, and costs align. The practices below are **general guidance, not universal rules**. Always follow the controlling solicitation, funder instructions, approved organizational policy, and applicable accounting guidance.
 
 ## Trust Signals That Matter
 
 ### 1. Realistic Salary Calculations
-**Good:** "Program Director (0.5 FTE): $35,000 (50% of $70,000 annual salary)"  
-**Bad:** "Program Director: $35,000" (no explanation)
+**Clearer:** "Program Director (0.5 FTE): $35,000 (50% of $70,000 annual salary)"
 
-Show your math. If you're requesting partial FTE, explain the calculation. This signals you understand actual costs.
+**Needs context:** "Program Director: $35,000" (basis not shown)
+
+Where the format allows, show the calculation basis and confirm that the salary, effort, and benefits treatment follow policy and funder rules.
 
 ### 2. Appropriate Indirect Costs
-**Good:** "Indirect costs at 15% of direct costs (consistent with organizational policy)"  
-**Bad:** "Indirect costs: $50,000" (no basis shown)
+**Clearer:** "Indirect costs: $[amount], calculated at [approved rate] on [permitted base]"
 
-Explain your indirect rate and how it was calculated. If you're not requesting indirect, explain why.
+**Needs context:** "Indirect costs: $50,000" (rate and base not shown)
+
+Use only the rate and calculation base allowed by the opportunity and the organization's approved policy. Explain exclusions when the format requires them.
 
 ### 3. Line Items That Match Your Narrative
-**Good:** Budget includes specific items mentioned in the program description.  
-**Bad:** Budget includes line items not mentioned anywhere in the narrative.
+**Clearer:** Budget includes specific items described in the program narrative and workplan.
 
-Every significant budget line should be referenced in your narrative. This shows alignment and planning.
+**Needs context:** Budget includes material line items not explained elsewhere.
+
+Each material cost should be traceable to an activity, quantity, timing assumption, or approved cost category.
 
 ### 4. Reasonable Cost Per Participant/Unit
-**Good:** "Training costs: $500 per participant (includes materials, venue, and facilitator fees)"  
-**Bad:** "Training costs: $50,000" (no unit cost shown)
+**Clearer:** "Training costs: $500 per participant (includes materials, venue, and facilitator fees)"
 
-Break down costs to show reasonableness. If you're serving 100 people at $500 each, that's $50,000—but showing the unit cost builds trust.
+**Needs context:** "Training costs: $50,000" (unit assumptions not shown)
+
+Where appropriate, show quantity × unit cost and cite the estimate basis. A transparent calculation makes the assumption reviewable; it does not by itself prove the cost is reasonable.
 
 ### 5. Match Documentation
-**Good:** "In-kind match: $25,000 (staff time at $50/hour × 500 hours)"  
-**Bad:** "In-kind match: $25,000" (no documentation)
+**Clearer:** "In-kind match: $25,000 (staff time at $50/hour × 500 hours)"
+
+**Needs context:** "In-kind match: $25,000" (valuation basis not shown)
 
 Show how you calculated in-kind match. Provide basis for valuations.
 
-### 6. Contingency (When Appropriate)
-**Good:** "5% contingency for unexpected costs ($2,500)"  
-**Bad:** "Contingency: $10,000" (20% of budget, no explanation)
+### 6. Contingency (Only When Allowed)
+**Clearer:** A permitted contingency identifies its calculation, intended use, approval control, and treatment of unused funds.
 
-Small contingencies (3-5%) show planning. Large contingencies without explanation signal uncertainty.
+**Needs context:** A general contingency with no rule citation or use restriction.
+
+Some opportunities prohibit contingency lines. Include one only when the controlling instructions and policy allow it.
 
 ### 7. Timeline Alignment
-**Good:** Budget shows costs distributed across project timeline.  
-**Bad:** All costs in Year 1, but project spans 3 years.
+**Clearer:** Budget shows costs distributed across the project timeline.
+
+**Needs context:** Costs are front-loaded or back-loaded without a corresponding activity or cash-flow explanation.
 
 Show how costs align with activities. This demonstrates project management understanding.
 
 ## Red Flags to Avoid
 
-- Round numbers everywhere (suggests guessing)
+- Repeated round numbers with no estimate basis
 - Missing line items (travel, supplies, etc.)
 - Unrealistic cost per unit
 - No explanation for significant line items
@@ -62,5 +69,4 @@ Show how costs align with activities. This demonstrates project management under
 
 ## The Bottom Line
 
-Budgets are credibility tests. Small details—showing your math, explaining calculations, aligning with narrative—signal that you understand costs, can manage funds, and have the capacity to deliver. Get these right, and funders trust you with their money.
-
+A clear, traceable budget makes assumptions easier to evaluate and inconsistencies easier to catch. It still requires factual source support, accurate calculations, accountable approval, and a final check against the governing requirements.

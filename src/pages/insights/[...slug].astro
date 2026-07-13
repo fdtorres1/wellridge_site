@@ -22,7 +22,7 @@ const { Content } = await insight.render();
         <h1 class="text-5xl font-serif font-bold text-slate-deep mt-2 mb-4">{insight.data.title}</h1>
         <p class="text-xl text-gray-600 mb-4">{insight.data.description}</p>
         <time class="text-sm text-gray-500">
-          {insight.data.pubDate.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
+          {insight.data.pubDate.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' })}
         </time>
       </div>
     </div>
@@ -36,17 +36,16 @@ const { Content } = await insight.render();
 
   <section class="py-20 bg-slate-deep text-white">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-      <h2 class="text-4xl font-serif font-bold mb-6">Ready to Work Together?</h2>
+      <h2 class="text-4xl font-serif font-bold mb-6">Need a Bounded Scope?</h2>
       <p class="text-xl text-gray-300 mb-8">
-        Let's discuss how we can help you win more grants and RFPs.
+        See how Wellridge approaches funding qualification, compliant proposals, and program operations—then check current inquiry availability.
       </p>
       <a
         href="/contact"
         class="inline-block px-8 py-3 bg-ridge-blue text-white rounded-md text-lg font-medium hover:bg-opacity-90 transition-colors"
       >
-        Schedule a Conversation
+        View Contact Status
       </a>
     </div>
   </section>
 </BaseLayout>
-

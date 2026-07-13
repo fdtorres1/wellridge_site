@@ -1,23 +1,21 @@
 ---
 title: Budget Trust Signals Checklist
-description: A checklist to ensure your budget signals credibility and attention to detail.
+description: A working checklist for making proposal budgets easier to trace, verify, and compare with the narrative.
 category: Budgets & Evidence
 ---
 
-# Budget Trust Signals Checklist
-
-Use this checklist before submitting your budget to ensure it signals credibility and attention to detail.
+Use this working checklist to make a proposal budget easier to trace and review. It is **general guidance, not a universal standard**. The controlling solicitation, funder instructions, approved organizational policy, and applicable accounting guidance take precedence.
 
 ## Salary & Personnel
 
 - [ ] All salaries show FTE calculations (e.g., "0.5 FTE = 50% of $70,000 = $35,000")
 - [ ] Salary levels are appropriate for role and geographic area
-- [ ] Benefits are calculated as percentage of salaries (typically 20-30%)
+- [ ] Benefits use the organization's approved rates and documented calculation basis
 - [ ] Staff time aligns with project activities and timeline
 
 ## Indirect Costs
 
-- [ ] Indirect rate is explained (e.g., "15% of direct costs per organizational policy")
+- [ ] Indirect rate and calculation base are explained and permitted by the opportunity
 - [ ] Basis for indirect calculation is documented
 - [ ] If not requesting indirect, explanation is provided
 
@@ -31,7 +29,7 @@ Use this checklist before submitting your budget to ensure it signals credibilit
 ## Cost Reasonableness
 
 - [ ] Unit costs are shown where applicable (e.g., "$500 per participant")
-- [ ] Cost per participant/unit is reasonable for the service
+- [ ] Cost per participant/unit has a documented estimate or comparison basis
 - [ ] Comparison to similar programs is provided (if available)
 - [ ] Large line items include breakdown or explanation
 
@@ -51,13 +49,13 @@ Use this checklist before submitting your budget to ensure it signals credibilit
 
 ## Contingency
 
-- [ ] Contingency is reasonable (3-5% for most projects)
-- [ ] Contingency is explained if above 5%
-- [ ] Contingency aligns with project risk level
+- [ ] The opportunity and organizational policy permit a contingency line
+- [ ] The calculation, intended use, approval control, and treatment of unused funds are explained
+- [ ] If contingency is prohibited, no contingency line is included
 
 ## Detail & Accuracy
 
-- [ ] No excessive round numbers (suggests guessing)
+- [ ] Repeated round numbers have a documented estimate basis
 - [ ] All required line items are included (travel, supplies, etc.)
 - [ ] Budget math is correct (check totals)
 - [ ] Budget format matches funder requirements
@@ -76,9 +74,8 @@ Use this checklist before submitting your budget to ensure it signals credibilit
 - [ ] Budget tells a coherent story
 - [ ] Every line item supports the narrative
 - [ ] Calculations are transparent and verifiable
-- [ ] Budget signals capacity and planning
+- [ ] Budget aligns with the documented delivery plan and organizational capacity
 
 ---
 
-*This checklist is part of Wellridge Advisory's resource library. For more tools and templates, visit [wellridgeadvisory.com/resources](/resources).*
-
+*This working checklist is part of the Wellridge Partners resource library at [wellridgepartners.com/resources](/resources). Adapt it to your governing requirements and accountable human review.*

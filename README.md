@@ -1,6 +1,12 @@
-# Wellridge Advisory Website
+# Wellridge Partners Website
 
-A modern, static website for Wellridge Advisory, built with Astro, TypeScript, and Tailwind CSS.
+A modern, static website for Wellridge Partners, built with Astro, TypeScript, and Tailwind CSS. The canonical site URL is configured as `https://wellridgepartners.com`.
+
+## Internal strategy source of truth
+
+The local Astro site now implements the working **Wellridge Partners** positioning documented in [`docs/README.md`](docs/README.md). Current handoff and remaining launch boundaries live in [`docs/ACTIVE_CONTEXT.md`](docs/ACTIVE_CONTEXT.md); the July 11 prototype audit and migration record live in [`docs/site-copy-migration-inventory.md`](docs/site-copy-migration-inventory.md).
+
+The migration is local only. It does not authorize deployment, DNS changes, formation, or activation of contact, email, calendar, social, analytics, or newsletter systems. The contact page intentionally reports that intake is not active.
 
 ## 🚀 Quick Start
 
@@ -44,8 +50,10 @@ Preview the production build locally.
 /
 ├── public/
 │   ├── favicon.svg
-│   ├── wellridge-logo.png (available for future use)
 │   └── felix-torres.jpg
+├── docs/
+│   └── legacy-assets/
+│       └── wellridge-advisory-logo.png (quarantined; not publicly served)
 ├── src/
 │   ├── components/
 │   │   ├── Header.astro
@@ -89,7 +97,7 @@ Preview the production build locally.
 
 ### Assets
 
-- Logo file (`wellridge-logo.png`) is available in `public/` for future use
+- `docs/legacy-assets/wellridge-advisory-logo.png` preserves the old Advisory wordmark outside Astro's public directory
 - Felix Torres photo (`felix-torres.jpg`) is used in the About section
 
 ## 📝 Content Management
@@ -126,22 +134,16 @@ Resource content...
 
 ## 🔧 Configuration
 
-### Contact Form
+### Contact Intake
 
-The contact form currently uses Formspree. Update the form action in `src/pages/contact.astro`:
+No form handler, mailbox, scheduling link, social profile, or newsletter workflow is active. `src/pages/contact.astro` presents an honest inactive state and a scope-preparation checklist.
 
-1. Sign up at [formspree.io](https://formspree.io)
-2. Get your form ID
-3. Replace `YOUR_FORM_ID` in the form action
+Before enabling intake:
 
-Alternatively, you can use:
-- Netlify Forms (if deploying to Netlify)
-- Custom API endpoint
-- Email service (SendGrid, Mailgun, etc.)
-
-### Calendly Integration
-
-Update the Calendly link in `src/pages/contact.astro` with your actual Calendly URL.
+1. Confirm ownership and operating responsibility for the selected endpoint.
+2. Add appropriate privacy, consent, retention, and security handling.
+3. Test delivery, response ownership, error states, and sensitive-data warnings.
+4. Update the contact page and deployment checklist only after the endpoint is verified.
 
 ## 🚢 Deployment
 
@@ -150,7 +152,7 @@ Update the Calendly link in `src/pages/contact.astro` with your actual Calendly 
 1. Push your code to GitHub
 2. Import the repository in Vercel
 3. Vercel will auto-detect Astro and configure build settings
-4. Deploy!
+4. Deploy only after the pre-deployment checklist in `DEPLOYMENT.md` is complete and explicit release authorization is recorded.
 
 The `vercel.json` file is included for custom configuration if needed.
 
@@ -189,4 +191,4 @@ Update the `navItems` array in `src/components/Header.astro`.
 
 ## 📄 License
 
-All rights reserved. Wellridge Advisory © 2025
+All rights reserved. Wellridge Partners © 2026
