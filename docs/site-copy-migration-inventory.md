@@ -2,8 +2,9 @@
 
 Baseline audited: July 11, 2026
 Local migration implemented: July 12, 2026
+Second local identity pass: July 16, 2026
 
-**Status: DECIDED / WORKING DECISION — The public-site source was migrated locally after a separate July 12 instruction. No deployment, DNS change, form activation, external account change, or public launch occurred.**
+**Status: DECIDED / WORKING DECISION — The public-site source was migrated locally after a separate July 12 instruction and updated to the selected Wellridge Group identity after a bounded July 16 instruction. No deployment, domain purchase, DNS change, form activation, external account change, or public launch occurred.**
 
 The table below preserves the July 11 prototype baseline. It explains why each legacy surface was preserved, superseded, quarantined, or verified during the contextual migration rather than through a mass replacement.
 
@@ -48,7 +49,7 @@ The table below preserves the July 11 prototype baseline. It explains why each l
 
 No `Wellbridge` occurrence was found. No `Wellridge Partners`, `program operations`, `program administration`, or `program delivery` occurrence existed in the audited public source.
 
-## DECIDED / WORKING DECISION — Local migration result
+## DECIDED / WORKING DECISION — July 12 local migration result — historical
 
 - `src/` now uses **Wellridge Partners** and the **Funding & Program Operations** descriptor.
 - `https://wellridgepartners.com` is configured as the Astro site and canonical metadata domain.
@@ -59,6 +60,15 @@ No `Wellbridge` occurrence was found. No `Wellridge Partners`, `program operatio
 - Resource and insight content now identifies working heuristics, hypothetical examples, and accountable human-review requirements.
 - The existing Tailwind tokens, typography, colors, content model, cards, icons, and section rhythm were preserved. The old Advisory wordmark was moved to `docs/legacy-assets/wellridge-advisory-logo.png`, outside Astro's public directory.
 - Deployment remains a separate, explicitly authorized release task.
+
+## DECIDED / WORKING DECISION — July 16 current identity result
+
+- The dominant visual brand is **WELLRIDGE**.
+- The selected public company name is **Wellridge Group**; the legal entity name and suffix remain unresolved.
+- `https://wellridgegroup.com` is the single local canonical URL. Purchase, ownership, DNS, mailbox, and account control remain unverified.
+- Current public-site identity, metadata, resource attribution, contact-status copy, technical documentation, and the favicon were updated contextually.
+- Dated Wellridge Partners and Wellridge Advisory records remain historical evidence and were not mass-replaced.
+- Deployment, domain purchase, registration, endpoint activation, commit, and push remain outside this local update.
 
 ## OPEN QUESTION — Release-candidate claim review
 

@@ -1,6 +1,6 @@
 # Deployment Guide
 
-This guide covers deploying the Wellridge Partners website to Vercel and other platforms. It documents technical capability; repository changes do not by themselves authorize a deployment.
+This guide covers deploying the Wellridge Group website to Vercel and other platforms. It documents technical capability; repository changes do not by themselves authorize a deployment.
 
 ## 🚀 Vercel Deployment (Recommended)
 
@@ -27,7 +27,7 @@ This guide covers deploying the Wellridge Partners website to Vercel and other p
 
 4. **Custom Domain**
    - Go to Project Settings → Domains
-   - After ownership and launch approval are confirmed, add `wellridgepartners.com`
+   - After ownership and launch approval are confirmed, add `wellridgegroup.com`
    - Follow DNS configuration instructions
 
 ### Environment Variables
@@ -112,7 +112,7 @@ If a Vercel project is later connected and Git deployment settings are enabled, 
 ## 📝 Pre-Deployment Checklist
 
 - [ ] Confirm name, entity, domain, and launch readiness with the accountable owner
-- [ ] Confirm control of `wellridgepartners.com` and the intended DNS records
+- [ ] Confirm control of `wellridgegroup.com` and the intended DNS records
 - [ ] Keep contact intake inactive unless a verified handler, mailbox, privacy workflow, and response owner are ready
 - [ ] Add calendar, social, analytics, or newsletter integrations only when their accounts and data-handling workflows are verified
 - [ ] Review every public claim, example, price, and scope boundary before release

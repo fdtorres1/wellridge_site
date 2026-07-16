@@ -1,20 +1,22 @@
 # Company positioning and identity
 
-Last updated: July 12, 2026
+Last updated: July 16, 2026
 
 ## DECIDED / WORKING DECISION — Working identity
 
 | Element | Current direction | Important limitation |
 |---|---|---|
-| Working legal/company name | **Wellridge Partners, LLC** | The entity has not been formed or cleared. |
-| Public brand | **Wellridge Partners** | `WELLRIDGE` may receive the strongest visual emphasis; visual identity is not final. |
+| Visual brand | **WELLRIDGE** | Dominant wordmark and short-form brand; this is not a legal-entity claim. |
+| Public company name | **Wellridge Group** | Selected for forward-facing use; name and mark clearance remain incomplete. |
+| Legal entity name | **Unresolved** | Do not infer `Wellridge Group, LLC`; no entity has been formed or cleared. |
 | Descriptor | **Funding & Program Operations** | A descriptor, not a licensed or certified status. |
-| General positioning | “Wellridge Partners helps nonprofits and public-sector organizations secure funding, develop compliant proposals, and launch and operate funded programs.” | Exact wording remains editable and must not overstate formation, proof, capacity, or authority. |
+| Local canonical URL | `https://wellridgegroup.com` | Local configuration only; purchase, ownership, DNS, mailbox, and account control are unverified. |
+| General positioning | “Wellridge Group helps nonprofits and public-sector organizations secure funding, develop compliant proposals, and launch and operate funded programs.” | Exact wording remains editable and must not overstate formation, proof, capacity, or authority. |
 | Specialization language | “Specializing in nonclinical behavioral-health access and workforce programs.” | **HYPOTHESIS TO TEST**; do not place in the legal name or present as settled until earned. |
 
 ## OPEN QUESTION — Local release-candidate status
 
-The current `src/` tree applies this working identity and configures `https://wellridgepartners.com` as the candidate canonical URL. That local configuration is not evidence of entity formation, name or mark clearance, domain ownership, DNS control, operating history, intake readiness, or public-launch approval. Exact founder, capability, relationship, process, result, and domain claims must clear the [claim-provenance and relationship-readiness register](../operations/claim-provenance-and-relationship-readiness.md) before deployment.
+The current `src/` tree applies the selected public identity and configures `https://wellridgegroup.com` as the candidate canonical URL. That local configuration is not evidence of entity formation, name or mark clearance, domain ownership, DNS control, operating history, intake readiness, or public-launch approval. Exact founder, capability, relationship, process, result, and domain claims must clear the [claim-provenance and relationship-readiness register](../operations/claim-provenance-and-relationship-readiness.md) before deployment.
 
 ## HYPOTHESIS TO TEST — Taglines
 
@@ -52,7 +54,7 @@ This avoids presenting the company as either a generic grant writer or a prime-a
 
 Exact copy remains editable. These are internal message frames, not approved public claims.
 
-## DECIDED / WORKING DECISION — Name research snapshot
+## DECIDED / WORKING DECISION — Historical name research snapshot
 
 Read-only Verisign RDAP checks on July 11, 2026 returned:
 
@@ -63,6 +65,10 @@ Read-only Verisign RDAP checks on July 11, 2026 returned:
 | `wellridgepartners.com` | No domain record returned | Appeared unregistered at the moment checked; status can change at any time. |
 
 The handoff also records that preliminary ordinary web searches did not show an obvious exact-market collision for “Wellridge Partners.” That is not a comprehensive common-law search and is not legal clearance.
+
+## DECIDED / WORKING DECISION — July 16 selected direction
+
+Felix selected **WELLRIDGE** as the visual brand, **Wellridge Group** as the public company name, and `wellridgegroup.com` as the single local canonical domain. This supersedes Wellridge Partners for forward-facing local-site use while preserving dated records of the prior working name. It does not establish legal formation, clearance, purchase, ownership, DNS, mailbox, launch, or deployment.
 
 ## OPEN QUESTION — Clearance workflow
 
@@ -87,6 +93,7 @@ Official starting points:
 | Wellridge Behavioral Health | Can imply a licensed clinical provider. |
 | Wellridge Government Solutions | Sacrifices the nonprofit lane and overstates breadth. |
 | Wellridge Advisory as the current company identity | Experimental prototype identity, not a filed company or material sunk-cost brand asset. Superseded in the local site migration; the unused legacy wordmark remains quarantined. |
+| Wellridge Partners as the current public company name | Superseded by Felix's July 16 selection of Wellridge Group; preserve it in dated historical records rather than rewriting prior representations. |
 | “Prime anything” or “we handle any program” | Contradicts the owned-capability and real-value boundary. |
 | Guaranteed wins, funding, awards, or outcomes | Unsupported and commercially/ethically unsafe. |
 

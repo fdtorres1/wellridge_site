@@ -6,7 +6,7 @@ category: Narrative & Score
 
 Use this working structure to make an executive summary concise, complete, and easy to navigate within the funder's required format.
 
-> **Example boundary:** All example language below is hypothetical and uses placeholders. It is not a Wellridge Partners project, client result, or recommended clinical model. Any behavioral-health program must keep diagnosis, treatment, triage, and clinical supervision with appropriately qualified licensed providers.
+> **Example boundary:** All example language below is hypothetical and uses placeholders. It is not a Wellridge Group project, client result, or recommended clinical model. Any behavioral-health program must keep diagnosis, treatment, triage, and clinical supervision with appropriately qualified licensed providers.
 
 ## Structure
 
@@ -74,4 +74,4 @@ Use this working structure to make an executive summary concise, complete, and e
 
 ---
 
-*This working scaffold is part of the Wellridge Partners resource library at [wellridgepartners.com/resources](/resources). Every claim, example, calculation, and specialized boundary requires accountable human review.*
+*This working scaffold is part of the Wellridge Group resource library at [wellridgegroup.com/resources](/resources). Every claim, example, calculation, and specialized boundary requires accountable human review.*

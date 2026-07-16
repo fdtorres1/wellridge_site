@@ -78,4 +78,4 @@ Use this working checklist to make a proposal budget easier to trace and review.
 
 ---
 
-*This working checklist is part of the Wellridge Partners resource library at [wellridgepartners.com/resources](/resources). Adapt it to your governing requirements and accountable human review.*
+*This working checklist is part of the Wellridge Group resource library at [wellridgegroup.com/resources](/resources). Adapt it to your governing requirements and accountable human review.*

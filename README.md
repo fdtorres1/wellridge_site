@@ -1,10 +1,10 @@
-# Wellridge Partners Website
+# Wellridge Group Website
 
-A modern, static website for Wellridge Partners, built with Astro, TypeScript, and Tailwind CSS. The canonical site URL is configured as `https://wellridgepartners.com`.
+A modern, static website for Wellridge Group, built with Astro, TypeScript, and Tailwind CSS. The canonical site URL is configured as `https://wellridgegroup.com`.
 
 ## Internal strategy source of truth
 
-The local Astro site now implements the working **Wellridge Partners** positioning documented in [`docs/README.md`](docs/README.md). Current handoff and remaining launch boundaries live in [`docs/ACTIVE_CONTEXT.md`](docs/ACTIVE_CONTEXT.md); the July 11 prototype audit and migration record live in [`docs/site-copy-migration-inventory.md`](docs/site-copy-migration-inventory.md).
+The local Astro site now implements the selected **Wellridge Group** public identity, with **WELLRIDGE** as the dominant visual brand, as documented in [`docs/README.md`](docs/README.md). Current handoff and remaining launch boundaries live in [`docs/ACTIVE_CONTEXT.md`](docs/ACTIVE_CONTEXT.md); the July 11 prototype audit and subsequent identity migrations live in [`docs/site-copy-migration-inventory.md`](docs/site-copy-migration-inventory.md).
 
 The migration is local only. It does not authorize deployment, DNS changes, formation, or activation of contact, email, calendar, social, analytics, or newsletter systems. The contact page intentionally reports that intake is not active.
 
@@ -191,4 +191,4 @@ Update the `navItems` array in `src/components/Header.astro`.
 
 ## 📄 License
 
-All rights reserved. Wellridge Partners © 2026
+All rights reserved. Wellridge Group © 2026
