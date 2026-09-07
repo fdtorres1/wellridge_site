@@ -376,3 +376,13 @@ Append-only record of material repository work. Decisions belong in `DECISION_LO
 - Main merge: `30f5eb92eae467b939d439a65d8eacc7617db902`. Production deployment: `6312071418`, successful at 15:49:19 UTC.
 - Verified HTTP 200 and expected content on the public grant-writing offer, grant-review example, and application checklist. Vercel serves them after the existing apex-to-www redirect.
 - Used a clean checkout of merged main to record release evidence. Older dirty research/strategy work remained untouched and outside the release. No outbound or social message was sent; inquiry delivery, indexing, and acquisition outcomes remain unmeasured in this release check.
+
+## 2026-09-07 — SEO canonical and sharing foundation
+
+- Aligned Astro's site origin, generated canonical/OG URLs, structured-data URLs, and robots/sitemap URLs to `https://www.wellridgegroup.com`, matching the live apex redirect target.
+- Added an original branded PNG sharing card (1738×905, 1,372,600 bytes), visually reviewed for text and brand consistency. OG/Twitter metadata includes the actual dimensions, PNG type, descriptive alt text, and `summary_large_image`.
+- Verified Search Console domain owner access. Baseline: no submitted sitemap, homepage Google canonical at the old Vercel hostname from its September 1 crawl, and three newly released URLs unknown to Google.
+- Preserved unrelated historical planning documents and dirty original checkouts. Build, production deployment, sitemap receipt, and inquiry delivery readbacks belong to the final release record.
+- Root validation passed: production build and all 17 route canonicals, OG/image metadata, sitemap origins, and packaged PNG bytes. Existing dependency-age and unused-import warnings only.
+- External synthetic inquiry reached the intended `hello@wellridgegroup.com` Google inbox with exact body match and passing SPF/DKIM/DMARC; private message identifiers remain outside the public repository.
+- Search Console API submission is blocked by the existing read-only OAuth scope (HTTP 403 insufficient authentication scopes). Owner-UI submission or a separately consented write-scope upgrade remains necessary; no sitemap-submission or indexing success is claimed.
