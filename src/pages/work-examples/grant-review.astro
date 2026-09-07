@@ -1,14 +1,16 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 
+const siteOrigin = Astro.site ?? new URL('https://www.wellridgegroup.com');
+const siteURL = siteOrigin.toString().replace(/\/$/, '');
 const sampleSchema = {
   '@context': 'https://schema.org',
   '@type': 'Article',
   headline: 'Fictional grant review example: Northside Arts Workshop',
   description: 'A fictional before-and-after grant narrative review showing specificity, outcome targets, budget consistency, and unresolved inputs.',
   author: { '@type': 'Organization', name: 'Wellridge Group' },
-  publisher: { '@type': 'Organization', name: 'Wellridge Group', url: 'https://wellridgegroup.com' },
-  mainEntityOfPage: 'https://wellridgegroup.com/work-examples/grant-review',
+  publisher: { '@type': 'Organization', name: 'Wellridge Group', url: siteURL },
+  mainEntityOfPage: `${siteURL}/work-examples/grant-review`,
 };
 ---
 

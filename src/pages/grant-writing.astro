@@ -1,16 +1,18 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 
+const siteOrigin = Astro.site ?? new URL('https://www.wellridgegroup.com');
+const siteURL = siteOrigin.toString().replace(/\/$/, '');
 const offerSchema = {
   '@context': 'https://schema.org',
   '@type': 'Service',
   name: 'Bounded grant-writing support',
-  provider: { '@type': 'Organization', name: 'Wellridge Group', url: 'https://wellridgegroup.com' },
+  provider: { '@type': 'Organization', name: 'Wellridge Group', url: siteURL },
   serviceType: 'Grant application review, letters of inquiry, and short foundation applications',
   offers: [
-    { '@type': 'Offer', name: 'Existing application review', price: '295', priceCurrency: 'USD', url: 'https://wellridgegroup.com/grant-writing' },
-    { '@type': 'Offer', name: 'Letter of inquiry', price: '350', priceCurrency: 'USD', url: 'https://wellridgegroup.com/grant-writing' },
-    { '@type': 'Offer', name: 'Short foundation application', price: '750', priceCurrency: 'USD', url: 'https://wellridgegroup.com/grant-writing' },
+    { '@type': 'Offer', name: 'Existing application review', price: '295', priceCurrency: 'USD', url: `${siteURL}/grant-writing` },
+    { '@type': 'Offer', name: 'Letter of inquiry', price: '350', priceCurrency: 'USD', url: `${siteURL}/grant-writing` },
+    { '@type': 'Offer', name: 'Short foundation application', price: '750', priceCurrency: 'USD', url: `${siteURL}/grant-writing` },
   ],
 };
 ---

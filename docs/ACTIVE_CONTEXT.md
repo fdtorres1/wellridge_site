@@ -6,6 +6,14 @@ The user authorized merging the grant-offers branch into `main`, including its p
 
 This record supersedes prior local-only deployment boundaries below. Older uncommitted research/strategy files were preserved and excluded from the release. Actual inquiry delivery, indexing, and acquisition results were not tested by this release check.
 
+## September 7, 2026 SEO foundation source pass
+
+The branch `fix/seo-foundation-2026-09-07` aligns Astro's canonical and structured-data origin, Open Graph URL, and source `robots.txt`/sitemap URLs to `https://www.wellridgegroup.com`, matching the live apex redirect. Shared Open Graph/Twitter metadata uses the new branded `/images/wellridge-social.png` asset at its actual 1738×905 dimensions, with descriptive alt text and `summary_large_image`.
+
+Search Console owner access is verified for the domain property. Before this release, no sitemap was submitted; the homepage's September 1 crawl selected the old Vercel hostname as Google's canonical, and all three new offer/sample/checklist URLs were unknown to Google. The existing OAuth grant has `webmasters.readonly`; API sitemap submission requires write scope and returned HTTP 403. Submission remains pending through the owner UI or a separately consented scope upgrade. Source correction does not by itself confirm Google has recrawled or changed its canonical.
+
+The final build passed with 17 routes; all built canonicals, OG URLs, image metadata, and sitemap entries passed source checks. A clearly labeled synthetic inquiry sent from the owner's external iCloud account arrived in the Google inbox addressed and delivered to `hello@wellridgegroup.com`; body integrity and SPF/DKIM/DMARC passed. No prospect outreach occurred. Production readback will be recorded after the release.
+
 ## September 7, 2026 website offer and source publication
 
 The `grant-offers` implementation adds a bounded `/grant-writing` service page, the fictional `/work-examples/grant-review` demonstration, and `/resources/grant-application-checklist`. Navigation, contact inquiry drafting, page metadata, structured data, and source sitemap/robots were extended without deployment, submission, outbound contact, or new integrations. The fictional Northside Arts Workshop is clearly labeled and contains no client result or endorsement. Production build (17 pages) and root desktop/mobile browser QA passed.

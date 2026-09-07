@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://wellridgegroup.com/sitemap.xml
+Sitemap: https://www.wellridgegroup.com/sitemap.xml

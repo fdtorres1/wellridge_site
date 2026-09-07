@@ -12,7 +12,9 @@ interface Props {
 }
 
 const { title, description = 'Wellridge Group provides bounded funding-pipeline, proposal, and program-operations support for nonprofits and public-sector organizations.', ogTitle = title, ogDescription = description, structuredData } = Astro.props;
-const canonicalURL = new URL(Astro.url.pathname, 'https://wellridgegroup.com');
+const siteOrigin = Astro.site ?? new URL('https://www.wellridgegroup.com');
+const canonicalURL = new URL(Astro.url.pathname, siteOrigin);
+const socialImageURL = new URL('/images/wellridge-social.png', siteOrigin);
 ---
 
 <!doctype html>
@@ -25,9 +27,16 @@ const canonicalURL = new URL(Astro.url.pathname, 'https://wellridgegroup.com');
     <meta property="og:title" content={ogTitle} />
     <meta property="og:description" content={ogDescription} />
     <meta property="og:url" content={canonicalURL} />
-    <meta name="twitter:card" content="summary" />
+    <meta property="og:image" content={socialImageURL} />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1738" />
+    <meta property="og:image:height" content="905" />
+    <meta property="og:image:alt" content="Wellridge Group — Funding &amp; Program Operations" />
+    <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={ogTitle} />
     <meta name="twitter:description" content={ogDescription} />
+    <meta name="twitter:image" content={socialImageURL} />
+    <meta name="twitter:image:alt" content="Wellridge Group — Funding &amp; Program Operations" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="canonical" href={canonicalURL} />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
