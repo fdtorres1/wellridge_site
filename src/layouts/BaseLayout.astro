@@ -13,7 +13,8 @@ interface Props {
 
 const { title, description = 'Wellridge Group provides bounded funding-pipeline, proposal, and program-operations support for nonprofits and public-sector organizations.', ogTitle = title, ogDescription = description, structuredData } = Astro.props;
 const siteOrigin = Astro.site ?? new URL('https://www.wellridgegroup.com');
-const canonicalURL = new URL(Astro.url.pathname, siteOrigin);
+const canonicalPath = Astro.url.pathname.replace(/\/+$/, '') || '/';
+const canonicalURL = new URL(canonicalPath, siteOrigin);
 const socialImageURL = new URL('/images/wellridge-social.png', siteOrigin);
 ---
 
