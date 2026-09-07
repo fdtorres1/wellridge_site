@@ -361,3 +361,11 @@ Append-only record of material repository work. Decisions belong in `DECISION_LO
 - Reconciled current context, roadmap, and canonical decision log with the completed 17-page build and browser checks. Kept `DECISIONS.md` as its existing pointer to `DECISION_LOG.md`.
 - User authorized implementation/documentation push to `origin/feature/grant-offers-2026-09-07`, followed by a second documentation commit recording the confirmed first push. Only the current task's source and documentation changes are staged; prior copied research and strategy work stays unstaged.
 - Verified GitHub account `fdtorres1`, repository `fdtorres1/wellridge_site`, and existing base `1ea88039e216c4d3c948e7780fe8cd039e2acd01` on `origin/wellridge-strategy-docs`. No main merge or production deployment is included.
+
+## 2026-09-07 — First push verified; documentation follow-up
+
+- Committed implementation and task-only documentation as `c7d17219cbd0acc2755a448989bfc70ef27e3e7f` (`feat: add bounded grant offers and fictional work example`).
+- Pushed successfully to `origin/feature/grant-offers-2026-09-07` in `fdtorres1/wellridge_site`; upstream tracking was established.
+- Remote readback at 15:18 UTC returned the identical full SHA via `git ls-remote`. Production build passed at 17 pages, with existing dependency-age and unused-import warnings.
+- Verified the staged content against a 17-file task-only manifest. Only the new website changes and dated documentation additions were committed; older copied research and strategy work remains unstaged.
+- This second, documentation-only commit records first-push evidence and updates current context/roadmap. No main merge, production deployment, outbound message, or social post was performed.

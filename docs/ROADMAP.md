@@ -99,5 +99,5 @@ Exit condition: the firm has repeat revenue, acceptable payment timing and margi
 ## September 7, 2026 grant-offer delivery
 
 - Completed: bounded grant-writing service page, fictional grant-review example, application checklist, inquiry composer, SEO/AEO metadata/links, production build, and desktop/mobile browser checks.
-- Authorized next: push this source branch, record verified push details in documentation, and push that documentation follow-up. Preserve older dirty research/strategy work outside staging.
+- Implementation pushed and verified: `c7d17219cbd0acc2755a448989bfc70ef27e3e7f` on `origin/feature/grant-offers-2026-09-07`. The documentation follow-up records first-push evidence. Older dirty research/strategy work remains outside the commits.
 - Production deployment, email delivery, indexing, and actual acquisition results require separate verification.
