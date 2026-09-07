@@ -1,6 +1,6 @@
 # Deployment Guide
 
-This guide covers deploying the Wellridge Advisory website to Vercel and other platforms.
+This guide covers deploying the Wellridge Group website to Vercel and other platforms. It documents technical capability; repository changes do not by themselves authorize a deployment.
 
 ## 🚀 Vercel Deployment (Recommended)
 
@@ -25,9 +25,9 @@ This guide covers deploying the Wellridge Advisory website to Vercel and other p
    - Vercel will build and deploy your site
    - You'll get a URL like `wellridge-site.vercel.app`
 
-4. **Custom Domain** (Optional)
+4. **Custom Domain**
    - Go to Project Settings → Domains
-   - Add your custom domain
+   - After ownership and launch approval are confirmed, add `wellridgegroup.com`
    - Follow DNS configuration instructions
 
 ### Environment Variables
@@ -37,9 +37,7 @@ If you need environment variables (e.g., for form handling), add them in:
 
 ### Continuous Deployment
 
-Vercel automatically deploys:
-- Every push to `main` branch → Production
-- Pull requests → Preview deployments
+If a Vercel project is later connected and Git deployment settings are enabled, pushes and pull requests may create production or preview deployments. The presence of `vercel.json` alone does not verify a live project connection or active branch triggers; confirm the actual project settings before pushing release work.
 
 ## 🌐 Other Deployment Options
 
@@ -59,7 +57,7 @@ Vercel automatically deploys:
    - Click "Deploy site"
    - Netlify will build and deploy
 
-**Note:** If using Netlify Forms, update the contact form in `src/pages/contact.astro` to use Netlify's form attributes.
+**Note:** If Netlify Forms is selected later, implement and review a form in `src/pages/contact.astro`; no form currently exists.
 
 ### Cloudflare Pages
 
@@ -113,14 +111,15 @@ Vercel automatically deploys:
 
 ## 📝 Pre-Deployment Checklist
 
-- [ ] Update contact form with actual Formspree ID or form handler
-- [ ] Update Calendly link in contact page
-- [ ] Update email addresses in footer/contact
-- [ ] Update LinkedIn URL in footer
+- [ ] Confirm name, entity, domain, and launch readiness with the accountable owner
+- [ ] Confirm control of `wellridgegroup.com` and the intended DNS records
+- [ ] Keep contact intake inactive unless a verified handler, mailbox, privacy workflow, and response owner are ready
+- [ ] Add calendar, social, analytics, or newsletter integrations only when their accounts and data-handling workflows are verified
+- [ ] Review every public claim, example, price, and scope boundary before release
 - [ ] Test all pages locally (`npm run build && npm run preview`)
 - [ ] Check all links work
 - [ ] Verify images/assets load correctly
-- [ ] Test contact form submission
+- [ ] If intake is activated, test contact submission, validation, failure, privacy, and response routing
 - [ ] Review mobile responsiveness
 - [ ] Check SEO meta tags
 
@@ -143,7 +142,7 @@ Consider adding:
 
 - Set up error tracking (Sentry, etc.)
 - Monitor uptime
-- Track form submissions
+- If intake is activated, monitor submission delivery, failures, spam, and response ownership
 
 ## 🐛 Troubleshooting
 
@@ -159,15 +158,16 @@ Consider adding:
 2. Check `public/` directory structure
 3. Ensure assets are in `public/` not `src/`
 
-### Form Not Working
+### Contact Intake Not Working
 
-1. Verify form action URL is correct
-2. Check form service (Formspree, Netlify Forms, etc.) configuration
-3. Test form submission manually
+The current site intentionally has no active form or mailbox. If intake is later implemented:
+
+1. Verify the handler or mailbox is owned and configured.
+2. Confirm privacy, consent, retention, spam, and sensitive-data controls.
+3. Test success, validation, failure, and response-routing behavior before deployment.
 
 ## 📚 Resources
 
 - [Astro Deployment Guide](https://docs.astro.build/en/guides/deploy/)
 - [Vercel Documentation](https://vercel.com/docs)
 - [Netlify Documentation](https://docs.netlify.com/)
-

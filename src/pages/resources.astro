@@ -9,20 +9,41 @@ const resourcesByCategory = categories.reduce((acc, category) => {
   acc[category] = allResources.filter((r) => r.data.category === category);
   return acc;
 }, {} as Record<string, typeof allResources>);
+
+const featuredResources = [
+  { title: 'Grant application checklist', description: 'A practical preflight for an identified opportunity before drafting or review begins.', href: '/resources/grant-application-checklist', label: 'Checklist' },
+  { title: 'Fictional grant review example', description: 'See how a vague Northside Arts Workshop draft becomes a specific, budget-consistent narrative with unresolved inputs called out.', href: '/work-examples/grant-review', label: 'Work example' },
+];
 ---
 
-<BaseLayout title="Resources" description="Tools, templates, and checklists to help you work faster and win more grants.">
+<BaseLayout title="Resources" description="Working tools and examples for funding qualification, compliant proposals, and program operations.">
   <section class="py-20 bg-gradient-to-b from-white to-fog">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
       <h1 class="text-5xl font-serif font-bold text-slate-deep mb-6">Resources</h1>
       <p class="text-xl text-gray-600">
-        Tools to work faster and win more calmly.
+        Working tools for clearer funding and program decisions.
       </p>
     </div>
   </section>
 
   <section class="py-16 bg-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="bg-fog p-6 rounded-lg mb-12">
+        <h2 class="text-xl font-serif font-bold mb-2">Use with Judgment</h2>
+        <p class="text-gray-700">
+          These resources are practical starting points, not universal requirements or outcome guarantees. Adapt them to the controlling solicitation, contract, organizational policy, and accountable human review.
+        </p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12" aria-label="Featured resources">
+        {featuredResources.map((resource) => (
+          <a href={resource.href} class="block border-2 border-ridge-blue rounded-lg p-6 hover:shadow-md transition-shadow">
+            <p class="text-sm font-semibold uppercase tracking-wide text-ridge-blue">{resource.label}</p>
+            <h2 class="text-2xl font-serif font-bold text-slate-deep mt-2 mb-2">{resource.title}</h2>
+            <p class="text-gray-700">{resource.description}</p>
+            <span class="inline-block mt-4 text-ridge-blue font-medium">Open resource →</span>
+          </a>
+        ))}
+      </div>
       {categories.map((category) => {
         const resources = resourcesByCategory[category];
         if (resources.length === 0) return null;
@@ -45,12 +66,6 @@ const resourcesByCategory = categories.reduce((acc, category) => {
         );
       })}
       
-      {allResources.length === 0 && (
-        <div class="text-center py-12">
-          <p class="text-gray-600">Resources coming soon. Check back for templates, checklists, and tools.</p>
-        </div>
-      )}
     </div>
   </section>
 </BaseLayout>
-

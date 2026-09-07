@@ -9,15 +9,16 @@ const sortedInsights = allInsights.sort((a, b) => {
   return b.data.pubDate.getTime() - a.data.pubDate.getTime();
 });
 
-const categories = ['Strategy & Fit', 'Narrative & Score', 'Budgets & Evidence', 'Reporting & Renewal', 'Process & Tools'];
+const categoryOrder = ['Strategy & Fit', 'Narrative & Score', 'Budgets & Evidence', 'Reporting & Renewal', 'Process & Tools'];
+const categories = categoryOrder.filter((category) => allInsights.some((insight) => insight.data.category === category));
 ---
 
-<BaseLayout title="Insights" description="Thought leadership and practical guidance on grant writing, RFP response, and funding strategy.">
+<BaseLayout title="Insights" description="Practical notes on funding qualification, compliant proposals, and program operations from Wellridge Group.">
   <section class="py-20 bg-gradient-to-b from-white to-fog">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
       <h1 class="text-5xl font-serif font-bold text-slate-deep mb-6">Insights</h1>
       <p class="text-xl text-gray-600">
-        Practical guidance on grant writing, RFP response, and funding strategy.
+        Practical notes on funding qualification, compliant proposals, and program operations.
       </p>
     </div>
   </section>
@@ -28,6 +29,7 @@ const categories = ['Strategy & Fit', 'Narrative & Score', 'Budgets & Evidence',
       <div class="flex flex-wrap gap-2 mb-12">
         <button
           data-filter="all"
+          aria-pressed="true"
           class="px-4 py-2 bg-ridge-blue text-white rounded-md text-sm font-medium filter-btn active"
         >
           All
@@ -35,6 +37,7 @@ const categories = ['Strategy & Fit', 'Narrative & Score', 'Budgets & Evidence',
         {categories.map((category) => (
           <button
             data-filter={category}
+            aria-pressed="false"
             class="px-4 py-2 bg-gray-200 text-slate-deep rounded-md text-sm font-medium hover:bg-gray-300 filter-btn"
           >
             {category}
@@ -42,25 +45,12 @@ const categories = ['Strategy & Fit', 'Narrative & Score', 'Budgets & Evidence',
         ))}
       </div>
 
-      <!-- Newsletter Signup -->
+      <!-- Publication Status -->
       <div class="bg-fog p-8 rounded-lg mb-12">
-        <h2 class="text-2xl font-serif font-bold mb-4">Get Monthly Notes from the Ridge</h2>
-        <p class="text-gray-700 mb-4">
-          Subscribe to our newsletter for grant writing tips, funding insights, and updates from Wellridge Advisory.
+        <h2 class="text-2xl font-serif font-bold mb-4">Notes from the Ridge</h2>
+        <p class="text-gray-700">
+          New guidance will appear in this library. Email subscription is not active, and this site is not currently collecting addresses.
         </p>
-        <form class="flex gap-2">
-          <input
-            type="email"
-            placeholder="Your email"
-            class="flex-1 px-4 py-2 border border-gray-300 rounded-md bg-white text-slate-deep focus:outline-none focus:ring-2 focus:ring-ridge-blue"
-          />
-          <button
-            type="submit"
-            class="px-6 py-2 bg-ridge-blue text-white rounded-md font-medium hover:bg-opacity-90 transition-colors"
-          >
-            Subscribe
-          </button>
-        </form>
       </div>
 
       <!-- Insights Grid -->
@@ -86,7 +76,7 @@ const categories = ['Strategy & Fit', 'Narrative & Score', 'Budgets & Evidence',
         </div>
       ) : (
         <div class="text-center py-12">
-          <p class="text-gray-600">Insights coming soon. Check back for practical guidance on grant writing and RFP response.</p>
+          <p class="text-gray-600">Insights coming soon. Check back for practical guidance on funding and program operations.</p>
         </div>
       )}
     </div>
@@ -103,11 +93,13 @@ const categories = ['Strategy & Fit', 'Narrative & Score', 'Budgets & Evidence',
       
       // Update active button
       filterButtons.forEach((btn) => {
+        btn.setAttribute('aria-pressed', 'false');
         btn.classList.remove('active', 'bg-ridge-blue', 'text-white');
         btn.classList.add('bg-gray-200', 'text-slate-deep');
       });
       button.classList.add('active', 'bg-ridge-blue', 'text-white');
       button.classList.remove('bg-gray-200', 'text-slate-deep');
+      button.setAttribute('aria-pressed', 'true');
 
       // Filter cards
       insightCards.forEach((card) => {
@@ -121,4 +113,3 @@ const categories = ['Strategy & Fit', 'Narrative & Score', 'Budgets & Evidence',
     });
   });
 </script>
-

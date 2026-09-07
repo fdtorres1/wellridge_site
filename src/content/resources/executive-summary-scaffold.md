@@ -1,12 +1,12 @@
 ---
 title: Executive Summary Scaffold
-description: A template structure for writing compelling executive summaries that stand alone.
+description: A working structure for writing concise executive summaries that orient readers to a proposal.
 category: Narrative & Score
 ---
 
-# Executive Summary Scaffold
+Use this working structure to make an executive summary concise, complete, and easy to navigate within the funder's required format.
 
-Use this structure to write executive summaries that reviewers can understand in 30-60 seconds.
+> **Example boundary:** All example language below is hypothetical and uses placeholders. It is not a Wellridge Group project, client result, or recommended clinical model. Any behavioral-health program must keep diagnosis, treatment, triage, and clinical supervision with appropriately qualified licensed providers.
 
 ## Structure
 
@@ -14,7 +14,7 @@ Use this structure to write executive summaries that reviewers can understand in
 **What:** State the problem or need clearly and concisely.
 
 **Example:**
-> "Rural communities in [region] lack access to affordable mental health services, resulting in higher rates of untreated conditions and emergency room visits."
+> "According to [source], [population] in [region] faces [documented barrier] when trying to locate and navigate licensed behavioral-health services."
 
 ---
 
@@ -22,7 +22,7 @@ Use this structure to write executive summaries that reviewers can understand in
 **What:** Describe your proposed program or project.
 
 **Example:**
-> "We propose to establish a mobile mental health clinic that will serve [number] residents across [geographic area] over [timeline]. The program will provide [key services] delivered by [staff/partners]."
+> "We propose a nonclinical access and navigation program that will provide [outreach/navigation activities] to [population] across [geographic area] over [timeline]. Independent licensed providers will retain responsibility for all clinical evaluation, treatment, triage, and supervision."
 
 ---
 
@@ -30,7 +30,7 @@ Use this structure to write executive summaries that reviewers can understand in
 **What:** Establish credibility and competitive advantage.
 
 **Example:**
-> "[Organization] has [X years] of experience serving [target population] and has successfully implemented similar programs in [locations]. Our team includes [key qualifications], and we have strong partnerships with [partners]."
+> "[Organization] has [substantiated relevant experience] serving [target population]. [Named staff or qualified providers] will own [specific responsibilities], supported by [documented capability or formal partner role]."
 
 ---
 
@@ -38,7 +38,7 @@ Use this structure to write executive summaries that reviewers can understand in
 **What:** Describe measurable results and long-term impact.
 
 **Example:**
-> "Over [timeline], we will serve [number] individuals, achieve [specific outcomes], and demonstrate [measurable impact]. This project will [long-term benefit] and serve as a model for [broader application]."
+> "Over [timeline], the program will deliver [output target] and measure [defined operational outcome] using [data source and method]. Targets and methods will be approved by [accountable owner] before launch."
 
 ---
 
@@ -50,29 +50,28 @@ Use this structure to write executive summaries that reviewers can understand in
 
 ---
 
-## Full Example
+## Full Hypothetical Example
 
-> Rural communities in [region] lack access to affordable mental health services, resulting in higher rates of untreated conditions and emergency room visits.
+> According to [source], [population] in [region] faces [documented barrier] when trying to locate and navigate licensed behavioral-health services.
 >
-> We propose to establish a mobile mental health clinic that will serve 500 residents across three counties over 24 months. The program will provide individual counseling, group therapy, and crisis intervention delivered by licensed clinicians and peer support specialists.
+> [Organization] proposes a nonclinical access and navigation program that will provide [number] outreach and navigation contacts across [geographic area] over [timeline]. Program staff will support information, appointment navigation, referrals, and nonclinical follow-up. Independent licensed providers will retain responsibility for all clinical evaluation, treatment, triage, and supervision.
 >
-> [Organization] has 15 years of experience serving rural populations and has successfully implemented similar programs in [locations]. Our team includes licensed clinical social workers and certified peer specialists, and we have strong partnerships with local health departments and community centers.
+> [Organization] has [substantiated relevant experience] serving [population]. [Named lead] will own program administration and reporting, while [named licensed provider or contracted entity] will own clinical services under [documented agreement or authority].
 >
-> Over 24 months, we will serve 500 individuals, achieve a 70% completion rate for treatment plans, and demonstrate a 40% reduction in emergency room visits for mental health crises. This project will establish a sustainable model for rural mental health delivery and serve as a replicable approach for other underserved communities.
+> Over [timeline], the program will deliver [output target] and measure [navigation or referral-follow-through outcome] using [data source and method]. The organization will review results on [cadence], document limitations, and obtain required approvals before any change affecting clinical care.
 >
-> We request $250,000 over 24 months to support staff salaries, mobile unit operations, and program materials, with $50,000 in-kind match from partner organizations.
+> We request $[amount] over [timeline] to support [nonclinical activities and permitted costs], with $[match amount] from [documented sources], subject to the funder's cost and match rules.
 
 ---
 
 ## Tips
 
 1. **Write this last**—it should summarize your strongest points.
-2. **Keep it under 300 words**—reviewers scan quickly.
+2. **Follow the required limit**—if none is provided, keep only the information needed to orient the reader.
 3. **Use active voice**—"We will serve" not "Services will be provided."
 4. **Be specific**—numbers, timelines, and concrete details.
 5. **Stand alone**—if a reviewer only reads this, they should understand your proposal.
 
 ---
 
-*This scaffold is part of Wellridge Advisory's resource library. For more tools and templates, visit [wellridgeadvisory.com/resources](/resources).*
-
+*This working scaffold is part of the Wellridge Group resource library at [wellridgegroup.com/resources](/resources). Every claim, example, calculation, and specialized boundary requires accountable human review.*

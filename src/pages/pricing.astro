@@ -2,12 +2,12 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 
-<BaseLayout title="Pricing & Packages" description="Transparent pricing ranges for grant and RFP support services.">
+<BaseLayout title="Engagements & Pricing" description="How Wellridge Group scopes and prices bounded funding, proposal, and program operations engagements.">
   <section class="py-20 bg-gradient-to-b from-white to-fog">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h1 class="text-5xl font-serif font-bold text-slate-deep mb-6">Pricing & Packages</h1>
+      <h1 class="text-5xl font-serif font-bold text-slate-deep mb-6">Engagements & Pricing</h1>
       <p class="text-xl text-gray-600">
-        Transparent ranges for clarity.
+        Clear scope, clear ownership, and a written fee before work begins.
       </p>
     </div>
   </section>
@@ -15,144 +15,153 @@ import BaseLayout from '../layouts/BaseLayout.astro';
   <section class="py-16 bg-white">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
       <p class="text-lg text-gray-700 mb-8">
-        Every project is unique. We start with a discovery call to understand your needs, then provide a custom scope and budget alignment. The ranges below reflect typical project complexity, timeline, and material requirements. Final quotes are provided after our initial conversation.
+        Requirements, timelines, inputs, and risk differ from one engagement to the next. After a fit and scope review, Wellridge provides a written fixed-fee proposal or milestone schedule tied to defined deliverables, responsibilities, and acceptance criteria.
       </p>
     </div>
   </section>
 
-  <!-- Audience Toggle -->
+  <!-- Offer Toggle -->
   <section class="py-8 bg-fog">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex justify-center gap-4" role="tablist" aria-label="Select audience type">
+      <div class="flex flex-col sm:flex-row justify-center gap-4" role="tablist" aria-label="Select an engagement type">
         <button
           id="tab-nonprofit"
-          class="px-6 py-3 bg-ridge-blue text-white rounded-md font-medium transition-colors"
+          class="w-full sm:w-auto px-6 py-3 bg-ridge-blue text-white rounded-md font-medium transition-colors"
           role="tab"
+          tabindex="0"
           aria-selected="true"
           aria-controls="panel-nonprofit"
         >
-          Nonprofits
+          Funding Pipeline Sprint
         </button>
         <button
-          id="tab-municipal"
-          class="px-6 py-3 bg-gray-300 text-slate-deep rounded-md font-medium hover:bg-gray-400 transition-colors"
+          id="tab-operations"
+          class="w-full sm:w-auto px-6 py-3 bg-gray-300 text-slate-deep rounded-md font-medium hover:bg-gray-400 transition-colors"
           role="tab"
+          tabindex="-1"
           aria-selected="false"
-          aria-controls="panel-municipal"
+          aria-controls="panel-operations"
         >
-          Municipal / Education
+          Proposal & Program Operations
         </button>
       </div>
     </div>
   </section>
 
-  <!-- Nonprofit Packages (default visible) -->
+  <!-- Funding Pipeline Sprint (default visible) -->
   <section id="panel-nonprofit" class="py-16 bg-white" role="tabpanel" aria-labelledby="tab-nonprofit">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
       <div class="border border-gray-200 rounded-lg p-8">
-        <h2 class="text-2xl font-serif font-bold mb-4">Foundation & Corporate Grant Package</h2>
-        <p class="text-3xl font-bold text-ridge-blue mb-6">$2,500–$5,000 per proposal</p>
+        <span class="text-sm font-semibold text-ridge-blue">Offer 1</span>
+        <h2 class="text-2xl font-serif font-bold mb-4">Nonprofit Funding Pipeline Sprint</h2>
+        <p class="text-3xl font-bold text-ridge-blue mb-6">Custom fixed fee</p>
         <ul class="list-disc list-inside text-gray-700 space-y-2 ml-4">
-          <li>Strategy session + narrative planning</li>
-          <li>Proposal writing and supporting documents</li>
-          <li>Budget review + funder alignment</li>
-          <li>1 revision cycle included</li>
+          <li>Qualified funder research with fit and exclusion analysis</li>
+          <li>Priority ranking, evidence gaps, and recommended next actions</li>
+          <li>A practical pursuit calendar for the agreed planning horizon</li>
+          <li>One defined review and revision cycle</li>
         </ul>
       </div>
 
       <div class="border border-gray-200 rounded-lg p-8">
-        <h2 class="text-2xl font-serif font-bold mb-4">Annual Grant Calendar & Retainer</h2>
-        <p class="text-3xl font-bold text-ridge-blue mb-6">$3,000–$7,000 / month</p>
+        <h2 class="text-2xl font-serif font-bold mb-4">Scope Set Before Kickoff</h2>
+        <p class="text-3xl font-bold text-ridge-blue mb-6">Bounded research engagement</p>
         <ul class="list-disc list-inside text-gray-700 space-y-2 ml-4">
-          <li>Prospect research and prioritization</li>
-          <li>Proposal drafting, renewals, and reporting</li>
-          <li>Regular funder pipeline meetings</li>
-          <li>Progress dashboard & outcomes tracking</li>
+          <li>Defined geography, program family, funder types, and exclusions</li>
+          <li>Defined list size, source depth, and calendar horizon</li>
+          <li>Verified organizational facts and named internal decision-makers</li>
+          <li>A dated opportunity screen—not a guarantee of funding</li>
         </ul>
       </div>
 
       <div class="border border-gray-200 rounded-lg p-8">
-        <h2 class="text-2xl font-serif font-bold mb-4">Capacity-Building Support</h2>
-        <p class="text-3xl font-bold text-ridge-blue mb-6">$1,500–$3,500 (one-time or add-on)</p>
+        <h2 class="text-2xl font-serif font-bold mb-4">Expansion by Separate Scope</h2>
+        <p class="text-3xl font-bold text-ridge-blue mb-6">Only when useful</p>
         <ul class="list-disc list-inside text-gray-700 space-y-2 ml-4">
-          <li>Funding readiness assessment</li>
-          <li>Case-for-support refinement</li>
-          <li>Internal docs + template setup</li>
+          <li>Selected proposal development or compliance support</li>
+          <li>Award setup and reporting calendars</li>
+          <li>Bounded quarterly funding-operations tasks</li>
+          <li>No unlimited proposals, revisions, or ongoing calendar management</li>
         </ul>
       </div>
     </div>
   </section>
 
-  <!-- Municipal & Educational Packages (hidden by default) -->
-  <section id="panel-municipal" class="py-16 bg-white hidden" role="tabpanel" aria-labelledby="tab-municipal">
+  <!-- Proposal & Program Operations (hidden by default) -->
+  <section id="panel-operations" class="py-16 bg-white hidden" role="tabpanel" aria-labelledby="tab-operations">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
       <div class="border border-gray-200 rounded-lg p-8">
-        <h2 class="text-2xl font-serif font-bold mb-4">State or Regional RFP Support</h2>
-        <p class="text-3xl font-bold text-ridge-blue mb-6">$5,000–$12,000 per response</p>
+        <span class="text-sm font-semibold text-ridge-blue">Offer 2</span>
+        <h2 class="text-2xl font-serif font-bold mb-4">Proposal Operations Module</h2>
+        <p class="text-3xl font-bold text-ridge-blue mb-6">Fixed fee or milestone schedule</p>
         <ul class="list-disc list-inside text-gray-700 space-y-2 ml-4">
-          <li>RFP breakdown + compliance matrix</li>
-          <li>Narrative development + budget structure</li>
-          <li>Submission management + internal reviews</li>
-          <li>Optional post-submission debrief</li>
+          <li>Solicitation analysis and documented go/no-go support</li>
+          <li>Compliance matrix, proposal calendar, and input coordination</li>
+          <li>Narrative or workplan development and budget-to-scope alignment</li>
+          <li>Production review, final QA, and submission support as scoped</li>
         </ul>
       </div>
 
       <div class="border border-gray-200 rounded-lg p-8">
-        <h2 class="text-2xl font-serif font-bold mb-4">Federal or Multi-Agency Proposals</h2>
-        <p class="text-3xl font-bold text-ridge-blue mb-6">$12,000–$25,000+</p>
+        <h2 class="text-2xl font-serif font-bold mb-4">Program Launch & Compliance Module</h2>
+        <p class="text-3xl font-bold text-ridge-blue mb-6">Milestone-based scope</p>
         <ul class="list-disc list-inside text-gray-700 space-y-2 ml-4">
-          <li>Capture + proposal management</li>
-          <li>Technical + management volume writing</li>
-          <li>Cross-department coordination</li>
-          <li>Color-team reviews (Red/Gold/White)</li>
+          <li>Implementation, governance, roles, and escalation planning</li>
+          <li>Compliance, deliverable, spend, and reporting calendars</li>
+          <li>Stakeholder, partner, vendor, and records coordination systems</li>
+          <li>Closeout structure and accountability handoff</li>
         </ul>
       </div>
 
       <div class="border border-gray-200 rounded-lg p-8">
-        <h2 class="text-2xl font-serif font-bold mb-4">Ongoing Partnership Retainer</h2>
-        <p class="text-3xl font-bold text-ridge-blue mb-6">$4,000–$9,000 / month</p>
+        <h2 class="text-2xl font-serif font-bold mb-4">Responsibilities Stay Explicit</h2>
+        <p class="text-3xl font-bold text-ridge-blue mb-6">No hidden ownership</p>
         <ul class="list-disc list-inside text-gray-700 space-y-2 ml-4">
-          <li>Grant + RFP pipeline maintenance</li>
-          <li>Team alignment meetings + training</li>
-          <li>Proposal templates + narrative library</li>
-          <li>Quarterly strategy review</li>
+          <li>Writing, production, implementation, and ongoing operations are scoped separately</li>
+          <li>Client and partner inputs, approvals, meetings, travel, and data access are documented</li>
+          <li>Clinical and technical judgments remain with qualified professionals</li>
+          <li>Final client approval is required for external submissions and AI-assisted work</li>
         </ul>
       </div>
     </div>
   </section>
 
-  <!-- Add-Ons & Specialized Services -->
+  <!-- Pricing Principles -->
   <section class="py-16 bg-fog">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h2 class="text-3xl font-serif font-bold mb-8">Add-Ons & Specialized Services</h2>
+      <h2 class="text-3xl font-serif font-bold mb-8">Pricing Principles</h2>
       <div class="bg-white rounded-lg overflow-hidden">
         <table class="w-full">
           <thead class="bg-gray-100">
             <tr>
-              <th class="px-6 py-3 text-left text-sm font-semibold text-slate-deep">Service</th>
-              <th class="px-6 py-3 text-left text-sm font-semibold text-slate-deep">Typical Range</th>
+              <th class="px-6 py-3 text-left text-sm font-semibold text-slate-deep">Principle</th>
+              <th class="px-6 py-3 text-left text-sm font-semibold text-slate-deep">How It Works</th>
             </tr>
           </thead>
           <tbody class="divide-y divide-gray-200">
             <tr>
-              <td class="px-6 py-4 text-gray-700">Prospect research refresh</td>
-              <td class="px-6 py-4 text-gray-700">$1,000–$2,000</td>
+              <td class="px-6 py-4 text-gray-700">Fixed-fee scope</td>
+              <td class="px-6 py-4 text-gray-700">Defined deliverables, assumptions, inputs, revisions, and acceptance</td>
             </tr>
             <tr>
-              <td class="px-6 py-4 text-gray-700">Budget architecture</td>
-              <td class="px-6 py-4 text-gray-700">$750–$1,500</td>
+              <td class="px-6 py-4 text-gray-700">Milestone billing</td>
+              <td class="px-6 py-4 text-gray-700">Payments tied to agreed delivery or acceptance points</td>
             </tr>
             <tr>
-              <td class="px-6 py-4 text-gray-700">Impact reporting setup</td>
-              <td class="px-6 py-4 text-gray-700">$1,000–$2,000</td>
+              <td class="px-6 py-4 text-gray-700">Bounded recurring work</td>
+              <td class="px-6 py-4 text-gray-700">Specific quarterly or 90-day tasks—not an unlimited outsourced department</td>
             </tr>
             <tr>
-              <td class="px-6 py-4 text-gray-700">Orals coaching / presentations</td>
-              <td class="px-6 py-4 text-gray-700">$1,500–$3,000</td>
+              <td class="px-6 py-4 text-gray-700">Change control</td>
+              <td class="px-6 py-4 text-gray-700">New requirements are approved through an amended or separate scope</td>
             </tr>
             <tr>
-              <td class="px-6 py-4 text-gray-700">Post-award compliance support</td>
-              <td class="px-6 py-4 text-gray-700">$1,000–$2,500</td>
+              <td class="px-6 py-4 text-gray-700">Vendor and pass-through costs</td>
+              <td class="px-6 py-4 text-gray-700">Committed only with clear terms and appropriate payment protection</td>
+            </tr>
+            <tr>
+              <td class="px-6 py-4 text-gray-700">Ethical compensation</td>
+              <td class="px-6 py-4 text-gray-700">No percentage-of-award grant fees or prohibited contingent fees</td>
             </tr>
           </tbody>
         </table>
@@ -163,16 +172,16 @@ import BaseLayout from '../layouts/BaseLayout.astro';
   <!-- How We Work -->
   <section class="py-16 bg-white">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h2 class="text-3xl font-serif font-bold mb-6">How We Work</h2>
+      <h2 class="text-3xl font-serif font-bold mb-6">How a Quote Is Built</h2>
       <div class="bg-fog p-8 rounded-lg">
-        <h3 class="text-xl font-serif font-bold mb-4">Discovery & Roadmap Session — starting at <span class="text-ridge-blue">$1,500</span></h3>
+        <h3 class="text-xl font-serif font-bold mb-4">Fit Review & Written Scope</h3>
         <p class="text-lg text-gray-700 mb-4">
-          You'll receive a custom scope, budget alignment, and project calendar. No surprises—just clear partnership from day one.
+          We first confirm the work is a responsible fit. The written proposal then reflects the labor, coordination, quality review, outside delivery costs, timeline, risk, and working-capital needs required by the scope.
         </p>
         <ul class="list-disc list-inside text-gray-700 space-y-2 ml-4">
-          <li>Transparent ranges (complexity/timeline/materials affect quote)</li>
-          <li>No commission/percentage models</li>
-          <li>Ethics-first: funder compliance and industry best practices</li>
+          <li>Responsibilities and specialist boundaries stated in writing</li>
+          <li>Client inputs, decisions, and approval points documented</li>
+          <li>Rush work, travel, or material vendor costs addressed before commitment</li>
         </ul>
       </div>
     </div>
@@ -184,33 +193,33 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       <h2 class="text-3xl font-serif font-bold mb-8">Frequently Asked Questions</h2>
       <div class="space-y-6">
         <div class="bg-white p-6 rounded-lg">
-          <h3 class="text-lg font-semibold mb-2">Why ranges instead of fixed prices?</h3>
+          <h3 class="text-lg font-semibold mb-2">Why isn't there a public rate card?</h3>
           <p class="text-gray-700">
-            Every project is unique. Complexity, timeline, and material requirements vary. Ranges give you a clear expectation, and we provide a fixed quote after our discovery call.
+            The fee depends on the actual responsibility, complexity, timeline, inputs, review burden, and outside costs involved. A written quote after scope review is more reliable than applying a generic package price to unlike work.
           </p>
         </div>
         <div class="bg-white p-6 rounded-lg">
           <h3 class="text-lg font-semibold mb-2">Do you work on tight deadlines?</h3>
           <p class="text-gray-700">
-            Yes, but we prioritize quality. Rush projects may require adjusted timelines or additional resources. We'll discuss options during discovery.
+            Only when capacity, inputs, review time, and delivery risk support responsible work. Any rush conditions and their effect on scope, staffing, or milestones are agreed before kickoff.
           </p>
         </div>
         <div class="bg-white p-6 rounded-lg">
-          <h3 class="text-lg font-semibold mb-2">What about hourly work?</h3>
+          <h3 class="text-lg font-semibold mb-2">Do you offer monthly retainers?</h3>
           <p class="text-gray-700">
-            We prefer project-based pricing for clarity and alignment. For ongoing advisory or specialized tasks, we can discuss hourly arrangements.
+            Recurring support may use a 90-day or master agreement with clearly bounded task orders. We do not offer unlimited proposals, unlimited revisions, or an employee-like outsourced department under an open-ended retainer.
           </p>
         </div>
         <div class="bg-white p-6 rounded-lg">
-          <h3 class="text-lg font-semibold mb-2">Will you write without internal inputs?</h3>
+          <h3 class="text-lg font-semibold mb-2">Will you work without internal inputs?</h3>
           <p class="text-gray-700">
-            No. Strong proposals require your expertise, data, and insights. We structure and write, but we need your collaboration on program details, outcomes, and organizational context.
+            No. Reliable research, proposals, and operating plans require verified organizational facts, subject-matter input, timely decisions, and final client approval.
           </p>
         </div>
         <div class="bg-white p-6 rounded-lg">
-          <h3 class="text-lg font-semibold mb-2">Can you support post-award tasks?</h3>
+          <h3 class="text-lg font-semibold mb-2">Can you support post-award work?</h3>
           <p class="text-gray-700">
-            Yes. We offer reporting support, renewal planning, and ongoing stewardship services. These can be included in retainers or as separate projects.
+            Yes, when the administrative and program-operations responsibilities are a fit and can be clearly scoped. Clinical, legal, engineering, cybersecurity, accounting, and other specialist work remains with appropriately qualified professionals.
           </p>
         </div>
       </div>
@@ -220,15 +229,15 @@ import BaseLayout from '../layouts/BaseLayout.astro';
   <!-- CTA -->
   <section class="py-20 bg-slate-deep text-white">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-      <h2 class="text-4xl font-serif font-bold mb-6">Ready to Explore?</h2>
+      <h2 class="text-4xl font-serif font-bold mb-6">Prepare the Scope</h2>
       <p class="text-xl text-gray-300 mb-8">
-        Book a 30-minute discovery call to discuss your needs and receive a custom quote.
+        Gather the opportunity, deadline, current inputs, and responsibility you may need Wellridge to own before inquiry intake opens.
       </p>
       <a
         href="/contact"
         class="inline-block px-8 py-3 bg-ridge-blue text-white rounded-md text-lg font-medium hover:bg-opacity-90 transition-colors"
       >
-        Book a Discovery Call
+        Prepare a Scope
       </a>
     </div>
   </section>
@@ -236,33 +245,54 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
 <script>
   const nonprofitTab = document.getElementById('tab-nonprofit');
-  const municipalTab = document.getElementById('tab-municipal');
+  const operationsTab = document.getElementById('tab-operations');
   const nonprofitPanel = document.getElementById('panel-nonprofit');
-  const municipalPanel = document.getElementById('panel-municipal');
+  const operationsPanel = document.getElementById('panel-operations');
 
-  function switchTab(activeTab: string) {
+  function switchTab(activeTab: 'nonprofit' | 'operations', moveFocus = false) {
     if (activeTab === 'nonprofit') {
       nonprofitTab?.setAttribute('aria-selected', 'true');
+      nonprofitTab?.setAttribute('tabindex', '0');
       nonprofitTab?.classList.remove('bg-gray-300', 'text-slate-deep');
       nonprofitTab?.classList.add('bg-ridge-blue', 'text-white');
-      municipalTab?.setAttribute('aria-selected', 'false');
-      municipalTab?.classList.remove('bg-ridge-blue', 'text-white');
-      municipalTab?.classList.add('bg-gray-300', 'text-slate-deep');
+      operationsTab?.setAttribute('aria-selected', 'false');
+      operationsTab?.setAttribute('tabindex', '-1');
+      operationsTab?.classList.remove('bg-ridge-blue', 'text-white');
+      operationsTab?.classList.add('bg-gray-300', 'text-slate-deep');
       nonprofitPanel?.classList.remove('hidden');
-      municipalPanel?.classList.add('hidden');
+      operationsPanel?.classList.add('hidden');
+      if (moveFocus) nonprofitTab?.focus();
     } else {
-      municipalTab?.setAttribute('aria-selected', 'true');
-      municipalTab?.classList.remove('bg-gray-300', 'text-slate-deep');
-      municipalTab?.classList.add('bg-ridge-blue', 'text-white');
+      operationsTab?.setAttribute('aria-selected', 'true');
+      operationsTab?.setAttribute('tabindex', '0');
+      operationsTab?.classList.remove('bg-gray-300', 'text-slate-deep');
+      operationsTab?.classList.add('bg-ridge-blue', 'text-white');
       nonprofitTab?.setAttribute('aria-selected', 'false');
+      nonprofitTab?.setAttribute('tabindex', '-1');
       nonprofitTab?.classList.remove('bg-ridge-blue', 'text-white');
       nonprofitTab?.classList.add('bg-gray-300', 'text-slate-deep');
-      municipalPanel?.classList.remove('hidden');
+      operationsPanel?.classList.remove('hidden');
       nonprofitPanel?.classList.add('hidden');
+      if (moveFocus) operationsTab?.focus();
     }
   }
 
   nonprofitTab?.addEventListener('click', () => switchTab('nonprofit'));
-  municipalTab?.addEventListener('click', () => switchTab('municipal'));
-</script>
+  operationsTab?.addEventListener('click', () => switchTab('operations'));
 
+  [nonprofitTab, operationsTab].forEach((tab, index) => {
+    tab?.addEventListener('keydown', (event) => {
+      if (!(event instanceof KeyboardEvent)) return;
+
+      let nextIndex = index;
+      if (event.key === 'ArrowRight' || event.key === 'ArrowDown') nextIndex = (index + 1) % 2;
+      else if (event.key === 'ArrowLeft' || event.key === 'ArrowUp') nextIndex = (index + 1) % 2;
+      else if (event.key === 'Home') nextIndex = 0;
+      else if (event.key === 'End') nextIndex = 1;
+      else return;
+
+      event.preventDefault();
+      switchTab(nextIndex === 0 ? 'nonprofit' : 'operations', true);
+    });
+  });
+</script>
