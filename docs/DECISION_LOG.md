@@ -100,3 +100,12 @@ This is the canonical status register. Strategy documents provide rationale and 
 - Treating owner labor as profit or confusing award value, billings, revenue, cash, gross profit, and true profit
 - Premature deployment, formation, filing, purchasing, registration, certification, banking, insurance purchase, outreach, or public launch during this documentation pass
 - Solo-prime pursuit of broad full-service marketing, transportation-safety, engineering, technology-integration, or other contracts where Wellridge lacks the central competence and proof
+
+## September 7, 2026 — Grant website offer and source publication
+
+**Status: implemented and locally verified; feature-branch pushes authorized.**
+
+- Add `/grant-writing`, `/work-examples/grant-review`, and `/resources/grant-application-checklist` in the existing site style. Present $295 review, $350 LOI, and $750 short foundation application scopes with explicit inputs, payment terms, client approval, and submission ownership.
+- Use the existing `hello@wellridgegroup.com` recipient in a client-side inquiry composer with a reviewable text preview, copy fallback, and separate email-draft action. The page does not send or accept uploads.
+- Label Northside Arts Workshop as fictional; describe proposed targets and uncommitted support accurately, without client outcomes or endorsements.
+- User authorized pushing the implementation and documentation to `origin/feature/grant-offers-2026-09-07`, then recording verified first-push details in a second documentation commit and push. Prior dirty research/strategy work is excluded from staging. Main, production deployment, outbound messages, and payments remain outside this source push.

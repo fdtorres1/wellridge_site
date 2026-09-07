@@ -344,3 +344,20 @@ Append-only record of material repository work. Decisions belong in `DECISION_LO
 - Added source-register entries OS12–OS26 and a compact operating readout linked through the documentation index, roadmap, and active handoff.
 
 **EXPLICITLY OUT OF SCOPE / REJECTED — No organization or person was contacted; no supplier, partner, vendor, bidder, event, or grant registration was created; no proposal, application, question, RSVP, or submission was sent; and no deployment, commit, push, purchase, filing, or external-system change occurred.**
+
+## 2026-09-07 — local grant-offer website overlay
+
+- Implemented bounded grant-writing service, fictional Northside Arts Workshop review example, grant application checklist, scoped navigation/footer links, metadata/structured data, source sitemap/robots, and a non-submitting inquiry mailto composer.
+- Preserved existing service strategy and copied dirty baseline docs/scripts. No deployment, push, outbound send, payment, or external integration occurred.
+
+- Follow-up pass replaced stale “When intake opens” copy, added typed query-aware inquiry fields, a read-only prepared-details preview and copy fallback, separate email-draft control, accurate operations prompts, and the 5–7-business-day application first-draft wording. `npm run build` and `git diff --check` pass; browser QA remains root-owned.
+
+- Final editorial/navigation pass added Resources index cards for the checklist and fictional sample, removed the resource-index “coming soon” state, tightened the sample to a 203-word fact-bound narrative with visible Wellridge byline/date, and kept unresolved inputs outside the narrative. `npm run build` and `git diff --check` pass.
+
+- Root browser QA passed on the production build at desktop and 390px mobile widths: grant offer, sample, checklist, mobile menu/resource discovery, inquiry navigation, correct recipient/body, and successful copy feedback. No browser console errors or horizontal overflow on the three new routes. Actual mail delivery, publication, indexing, and production performance remain untested external steps.
+
+## 2026-09-07 — Prepare authorized source pushes
+
+- Reconciled current context, roadmap, and canonical decision log with the completed 17-page build and browser checks. Kept `DECISIONS.md` as its existing pointer to `DECISION_LOG.md`.
+- User authorized implementation/documentation push to `origin/feature/grant-offers-2026-09-07`, followed by a second documentation commit recording the confirmed first push. Only the current task's source and documentation changes are staged; prior copied research and strategy work stays unstaged.
+- Verified GitHub account `fdtorres1`, repository `fdtorres1/wellridge_site`, and existing base `1ea88039e216c4d3c948e7780fe8cd039e2acd01` on `origin/wellridge-strategy-docs`. No main merge or production deployment is included.

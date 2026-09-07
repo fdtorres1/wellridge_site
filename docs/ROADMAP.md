@@ -95,3 +95,9 @@ Exit condition: the firm has repeat revenue, acceptable payment timing and margi
 - Hiring against forecast revenue without backlog and collection evidence
 - Pursuing a direct federal prime award as a required 2026 milestone
 - Expanding into unrelated ventures or technical/clinical scopes the company cannot responsibly own
+
+## September 7, 2026 grant-offer delivery
+
+- Completed: bounded grant-writing service page, fictional grant-review example, application checklist, inquiry composer, SEO/AEO metadata/links, production build, and desktop/mobile browser checks.
+- Authorized next: push this source branch, record verified push details in documentation, and push that documentation follow-up. Preserve older dirty research/strategy work outside staging.
+- Production deployment, email delivery, indexing, and actual acquisition results require separate verification.

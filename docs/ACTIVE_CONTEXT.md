@@ -1,5 +1,15 @@
 # Active context
 
+## September 7, 2026 website offer and source publication
+
+The `grant-offers` implementation adds a bounded `/grant-writing` service page, the fictional `/work-examples/grant-review` demonstration, and `/resources/grant-application-checklist`. Navigation, contact inquiry drafting, page metadata, structured data, and source sitemap/robots were extended without deployment, submission, outbound contact, or new integrations. The fictional Northside Arts Workshop is clearly labeled and contains no client result or endorsement. Production build (17 pages) and root desktop/mobile browser QA passed.
+
+Follow-up implementation keeps email preparation explicit: the contact page honors `service=grant-writing` or `service=operations`, shows a read-only details preview with copy fallback, and separates “Open email draft” from the plain recipient link. Operations prompts now request scope, deliverables, and deadline; grant application timing states first draft within 5–7 business days after complete materials and access.
+
+Final editorial pass adds prominent Resources index cards for the checklist and fictional sample, removes the resource-index “coming soon” state, and narrows the sample revision to a 203-word grant narrative using only the implementation-brief facts. Byline/date and unresolved-input separation are visible. Build and root desktop/mobile browser QA passed, including navigation, inquiry preparation, and copy feedback. Ready for user review; no deployment or actual email delivery has been tested.
+
+The user authorized two pushes to `origin/feature/grant-offers-2026-09-07` in `fdtorres1/wellridge_site`: implementation/documentation first, then a documentation follow-up recording the confirmed first push. Prior dirty research and strategy documents remain outside these commits. The first push will be recorded after remote readback; no main merge or production deployment is implied.
+
 Last updated: July 12, 2026
 
 ## DECIDED / WORKING DECISION — Current objective

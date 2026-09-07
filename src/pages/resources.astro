@@ -9,6 +9,11 @@ const resourcesByCategory = categories.reduce((acc, category) => {
   acc[category] = allResources.filter((r) => r.data.category === category);
   return acc;
 }, {} as Record<string, typeof allResources>);
+
+const featuredResources = [
+  { title: 'Grant application checklist', description: 'A practical preflight for an identified opportunity before drafting or review begins.', href: '/resources/grant-application-checklist', label: 'Checklist' },
+  { title: 'Fictional grant review example', description: 'See how a vague Northside Arts Workshop draft becomes a specific, budget-consistent narrative with unresolved inputs called out.', href: '/work-examples/grant-review', label: 'Work example' },
+];
 ---
 
 <BaseLayout title="Resources" description="Working tools and examples for funding qualification, compliant proposals, and program operations.">
@@ -28,6 +33,16 @@ const resourcesByCategory = categories.reduce((acc, category) => {
         <p class="text-gray-700">
           These resources are practical starting points, not universal requirements or outcome guarantees. Adapt them to the controlling solicitation, contract, organizational policy, and accountable human review.
         </p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12" aria-label="Featured resources">
+        {featuredResources.map((resource) => (
+          <a href={resource.href} class="block border-2 border-ridge-blue rounded-lg p-6 hover:shadow-md transition-shadow">
+            <p class="text-sm font-semibold uppercase tracking-wide text-ridge-blue">{resource.label}</p>
+            <h2 class="text-2xl font-serif font-bold text-slate-deep mt-2 mb-2">{resource.title}</h2>
+            <p class="text-gray-700">{resource.description}</p>
+            <span class="inline-block mt-4 text-ridge-blue font-medium">Open resource →</span>
+          </a>
+        ))}
       </div>
       {categories.map((category) => {
         const resources = resourcesByCategory[category];
@@ -51,11 +66,6 @@ const resourcesByCategory = categories.reduce((acc, category) => {
         );
       })}
       
-      {allResources.length === 0 && (
-        <div class="text-center py-12">
-          <p class="text-gray-600">Resources coming soon. Check back for templates, checklists, and tools.</p>
-        </div>
-      )}
     </div>
   </section>
 </BaseLayout>

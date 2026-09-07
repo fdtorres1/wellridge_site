@@ -6,7 +6,7 @@ A modern, static website for Wellridge Group, built with Astro, TypeScript, and 
 
 The local Astro site now implements the selected **Wellridge Group** public identity, with **WELLRIDGE** as the dominant visual brand, as documented in [`docs/README.md`](docs/README.md). Current handoff and remaining launch boundaries live in [`docs/ACTIVE_CONTEXT.md`](docs/ACTIVE_CONTEXT.md); the July 11 prototype audit and subsequent identity migrations live in [`docs/site-copy-migration-inventory.md`](docs/site-copy-migration-inventory.md).
 
-The migration is local only. It does not authorize deployment, DNS changes, formation, or activation of contact, email, calendar, social, analytics, or newsletter systems. The contact page intentionally reports that intake is not active.
+The migration is local only. It does not authorize deployment, DNS changes, formation, calendar, social, analytics, or newsletter systems. The contact page can prepare a visitor-reviewed mailto draft using the existing public inquiry route; it does not send, store, or accept uploads.
 
 ## 🚀 Quick Start
 
@@ -68,11 +68,13 @@ Preview the production build locally.
 │   │   ├── index.astro
 │   │   ├── about.astro
 │   │   ├── services.astro
+│   │   ├── grant-writing.astro
 │   │   ├── process.astro
 │   │   ├── pricing.astro
 │   │   ├── contact.astro
 │   │   ├── insights/
-│   │   └── resources/
+│   │   ├── resources/
+│   │   └── work-examples/
 │   └── styles/
 │       └── global.css
 ├── astro.config.mjs
@@ -136,7 +138,7 @@ Resource content...
 
 ### Contact Intake
 
-No form handler, mailbox, scheduling link, social profile, or newsletter workflow is active. `src/pages/contact.astro` presents an honest inactive state and a scope-preparation checklist.
+No form handler, scheduling link, social profile, or newsletter workflow is active. `src/pages/contact.astro` presents a client-side email composer that requires the visitor to review and send from their own mail app; fields remain local until that explicit action.
 
 Before enabling intake:
 

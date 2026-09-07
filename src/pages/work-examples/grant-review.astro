@@ -1,0 +1,66 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const sampleSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: 'Fictional grant review example: Northside Arts Workshop',
+  description: 'A fictional before-and-after grant narrative review showing specificity, outcome targets, budget consistency, and unresolved inputs.',
+  author: { '@type': 'Organization', name: 'Wellridge Group' },
+  publisher: { '@type': 'Organization', name: 'Wellridge Group', url: 'https://wellridgegroup.com' },
+  mainEntityOfPage: 'https://wellridgegroup.com/work-examples/grant-review',
+};
+---
+
+<BaseLayout title="Grant Review Example" description="A fictional grant review example showing how Wellridge improves specificity, measurable targets, and budget consistency." structuredData={sampleSchema}>
+  <article class="py-20 bg-gradient-to-b from-white to-fog">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <p class="text-sm font-semibold uppercase tracking-wide text-ridge-blue">Work example · fictional demonstration</p>
+      <h1 class="text-5xl font-serif font-bold text-slate-deep mt-3 mb-6">From a vague draft to a reviewable grant narrative</h1>
+      <p class="text-sm text-gray-600 mb-6">Wellridge Group · September 7, 2026</p>
+      <div class="bg-slate-deep text-white rounded-lg p-6 text-lg"><strong>Important:</strong> Northside Arts Workshop is fictional. This page is a demonstration, not a real client, organization, grant, award, endorsement, or achieved result.</div>
+    </div>
+  </article>
+
+  <section class="py-16 bg-white">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <div class="border border-gray-200 rounded-lg p-6">
+          <p class="text-sm font-semibold text-gray-500 uppercase tracking-wide">Before · invented draft</p>
+          <p class="mt-4 text-gray-700">Northside Arts Workshop will provide art classes to local children and help them build confidence. The program will serve students who need support and will have a positive impact on the community. We need funding for staff, supplies, transportation, and other expenses. We expect the program to be successful and will evaluate it through attendance and feedback.</p>
+          <p class="mt-4 text-sm text-gray-600">The draft has a promising idea, but it leaves the population, schedule, amount, cost basis, and measurement method unclear.</p>
+        </div>
+        <div class="border border-well-green rounded-lg p-6 bg-green-50">
+          <p class="text-sm font-semibold text-well-green uppercase tracking-wide">After · revised narrative</p>
+          <p class="mt-4 text-gray-700">Northside Arts Workshop proposes a free six-week visual-arts workshop in Arlington, Texas, for 24 students ages 10–14. Six Saturday sessions are planned for October 17, 24, and 31 and November 7, 14, and 21, 2026, from 10:00–11:30 a.m. Each student will receive materials, and no prior art experience is required. The six sessions are planned as a single workshop sequence rather than a set of unrelated classes. Venue and accessibility details will be confirmed before actual promotion. The hypothetical request is $3,600 toward a $4,800 project budget: teaching artist $1,800, materials $960, space $900, transportation assistance $600, and evaluation/administration $540. Planned other support is $1,200 and is not committed or secured. The planning target is for at least 18 of 24 enrolled students to attend five of six sessions. A separate target is for at least 18 students to report at least a one-point increase on a five-point creative-confidence question from the first to final session. Sign-ins and the first-to-final confidence question will be reviewed after the workshop, and missing follow-up will be reported explicitly. The narrative limits its claims to participation and the stated confidence target; these are planning targets, not results.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 bg-fog">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-serif font-bold text-slate-deep mb-8">What changed in review</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="bg-white rounded-lg p-6"><h3 class="font-serif font-bold text-xl mb-2">Specificity</h3><p class="text-gray-700">The revision names the population, place, dates, session length, and next verification gate.</p></div>
+        <div class="bg-white rounded-lg p-6"><h3 class="font-serif font-bold text-xl mb-2">Targets</h3><p class="text-gray-700">Attendance and confidence measures are explicit targets with a stated method and a limitation rule.</p></div>
+        <div class="bg-white rounded-lg p-6"><h3 class="font-serif font-bold text-xl mb-2">Budget consistency</h3><p class="text-gray-700">The request, total budget, line items, and uncommitted other support reconcile without implying an award.</p></div>
+      </div>
+      <div class="mt-10 bg-white rounded-lg p-6">
+        <h2 class="text-2xl font-serif font-bold text-slate-deep mb-4">Compact hypothetical budget</h2>
+        <table class="w-full text-left border-collapse"><thead><tr><th class="border border-gray-300 bg-fog p-3">Cost</th><th class="border border-gray-300 bg-fog p-3">Amount</th></tr></thead><tbody>
+          <tr><td class="border border-gray-300 p-3">Teaching artist</td><td class="border border-gray-300 p-3">$1,800</td></tr><tr><td class="border border-gray-300 p-3">Materials</td><td class="border border-gray-300 p-3">$960</td></tr><tr><td class="border border-gray-300 p-3">Space</td><td class="border border-gray-300 p-3">$900</td></tr><tr><td class="border border-gray-300 p-3">Transportation assistance</td><td class="border border-gray-300 p-3">$600</td></tr><tr><td class="border border-gray-300 p-3">Evaluation / administration</td><td class="border border-gray-300 p-3">$540</td></tr><tr class="font-semibold"><td class="border border-gray-300 p-3">Total</td><td class="border border-gray-300 p-3">$4,800</td></tr>
+        </tbody></table>
+        <p class="text-sm text-gray-600 mt-4">Hypothetical request: $3,600. Planned other support: $1,200, not committed or secured.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 bg-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-serif font-bold text-slate-deep mb-6">Unresolved inputs before a real submission</h2>
+      <ul class="list-disc pl-6 space-y-3 text-gray-700"><li>Confirm the controlling funder instructions, eligibility, and deadline.</li><li>Confirm venue, accessibility, safeguarding, and transportation details.</li><li>Confirm the organization’s approved program, budget, and source of other support.</li><li>Assign an accountable reviewer for facts, attachments, and final submission.</li></ul>
+      <p class="mt-8 text-gray-700">This example pairs with the <a class="text-ridge-blue underline" href="/grant-writing">grant-writing service</a> and <a class="text-ridge-blue underline" href="/resources/grant-application-checklist">application checklist</a>.</p>
+    </div>
+  </section>
+</BaseLayout>
