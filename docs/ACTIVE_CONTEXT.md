@@ -1,12 +1,18 @@
 # Active context
 
+## Production release verified September 7, 2026
+
+The user authorized merging the grant-offers branch into `main`, including its previously committed Wellridge Group identity and site-strategy base. GitHub merge commit `30f5eb92eae467b939d439a65d8eacc7617db902` triggered Vercel Production deployment `6312071418`, which succeeded at 15:49:19 UTC. The new `/grant-writing`, `/work-examples/grant-review`, and `/resources/grant-application-checklist` routes returned HTTP 200 with expected content from Vercel. The apex domain currently redirects to `https://www.wellridgegroup.com`.
+
+This record supersedes prior local-only deployment boundaries below. Older uncommitted research/strategy files were preserved and excluded from the release. Actual inquiry delivery, indexing, and acquisition results were not tested by this release check.
+
 ## September 7, 2026 website offer and source publication
 
 The `grant-offers` implementation adds a bounded `/grant-writing` service page, the fictional `/work-examples/grant-review` demonstration, and `/resources/grant-application-checklist`. Navigation, contact inquiry drafting, page metadata, structured data, and source sitemap/robots were extended without deployment, submission, outbound contact, or new integrations. The fictional Northside Arts Workshop is clearly labeled and contains no client result or endorsement. Production build (17 pages) and root desktop/mobile browser QA passed.
 
 Follow-up implementation keeps email preparation explicit: the contact page honors `service=grant-writing` or `service=operations`, shows a read-only details preview with copy fallback, and separates “Open email draft” from the plain recipient link. Operations prompts now request scope, deliverables, and deadline; grant application timing states first draft within 5–7 business days after complete materials and access.
 
-Final editorial pass adds prominent Resources index cards for the checklist and fictional sample, removes the resource-index “coming soon” state, and narrows the sample revision to a 203-word grant narrative using only the implementation-brief facts. Byline/date and unresolved-input separation are visible. Build and root desktop/mobile browser QA passed, including navigation, inquiry preparation, and copy feedback. Ready for user review; no deployment or actual email delivery has been tested.
+Final editorial pass adds prominent Resources index cards for the checklist and fictional sample, removes the resource-index “coming soon” state, and narrows the sample revision to a 203-word grant narrative using only the implementation-brief facts. Byline/date and unresolved-input separation are visible. Build and root desktop/mobile browser QA passed, including navigation, inquiry preparation, and copy feedback. Production deployment is now verified above; actual inquiry email delivery was not tested in this release.
 
 First push verified September 7, 2026 at 15:18 UTC: commit `c7d17219cbd0acc2755a448989bfc70ef27e3e7f` is on `origin/feature/grant-offers-2026-09-07` in `fdtorres1/wellridge_site`. `git ls-remote` returned the same full SHA as local HEAD after the successful push. This documentation follow-up records that evidence, as requested. Prior dirty research and strategy documents remain outside these commits. No main merge or production deployment is implied; read the remote branch for the latest documentation commit.
 

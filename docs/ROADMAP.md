@@ -100,4 +100,4 @@ Exit condition: the firm has repeat revenue, acceptable payment timing and margi
 
 - Completed: bounded grant-writing service page, fictional grant-review example, application checklist, inquiry composer, SEO/AEO metadata/links, production build, and desktop/mobile browser checks.
 - Implementation pushed and verified: `c7d17219cbd0acc2755a448989bfc70ef27e3e7f` on `origin/feature/grant-offers-2026-09-07`. The documentation follow-up records first-push evidence. Older dirty research/strategy work remains outside the commits.
-- Production deployment, email delivery, indexing, and actual acquisition results require separate verification.
+- Production verified: merge `30f5eb92eae467b939d439a65d8eacc7617db902`, successful Vercel Production deployment `6312071418`, and HTTP 200 with expected content on all three new routes. Email delivery, indexing, and actual acquisition results remain separate checks.

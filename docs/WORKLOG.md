@@ -369,3 +369,10 @@ Append-only record of material repository work. Decisions belong in `DECISION_LO
 - Remote readback at 15:18 UTC returned the identical full SHA via `git ls-remote`. Production build passed at 17 pages, with existing dependency-age and unused-import warnings.
 - Verified the staged content against a 17-file task-only manifest. Only the new website changes and dated documentation additions were committed; older copied research and strategy work remains unstaged.
 - This second, documentation-only commit records first-push evidence and updates current context/roadmap. No main merge, production deployment, outbound message, or social post was performed.
+
+## 2026-09-07 — Authorized main merge and production verification
+
+- User explicitly authorized the merge. Verified the exact feature head, full main comparison including the two previously committed identity/strategy changes, repository permissions, and successful Vercel preview status.
+- Main merge: `30f5eb92eae467b939d439a65d8eacc7617db902`. Production deployment: `6312071418`, successful at 15:49:19 UTC.
+- Verified HTTP 200 and expected content on the public grant-writing offer, grant-review example, and application checklist. Vercel serves them after the existing apex-to-www redirect.
+- Used a clean checkout of merged main to record release evidence. Older dirty research/strategy work remained untouched and outside the release. No outbound or social message was sent; inquiry delivery, indexing, and acquisition outcomes remain unmeasured in this release check.
