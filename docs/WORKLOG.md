@@ -386,3 +386,9 @@ Append-only record of material repository work. Decisions belong in `DECISION_LO
 - Root validation passed: production build and all 17 route canonicals, OG/image metadata, sitemap origins, and packaged PNG bytes. Existing dependency-age and unused-import warnings only.
 - External synthetic inquiry reached the intended `hello@wellridgegroup.com` Google inbox with exact body match and passing SPF/DKIM/DMARC; private message identifiers remain outside the public repository.
 - Search Console API submission is blocked by the existing read-only OAuth scope (HTTP 403 insufficient authentication scopes). Owner-UI submission or a separately consented write-scope upgrade remains necessary; no sitemap-submission or indexing success is claimed.
+
+## 2026-09-07 — SEO first push and production follow-up
+
+- First source push verified: `cceec49e56fd9b66c791cf51a709630b4456ca20` on `origin/fix/seo-foundation-2026-09-07`. Merged as `65a00c5500a82bfe4325efb9559b706e8189cda4`; Vercel Production deployment `6312439855` succeeded at 16:13:32 UTC.
+- Live readback caught a trailing-slash mismatch between generated canonical paths and static sitemap paths. Normalized canonical and OG paths to the sitemap's slashless page URLs, preserving `/` for the homepage. This follow-up requires a fresh build and production verification before being treated as complete.
+- Follow-up production build passed at 17 pages before interruption. On resumption, verified the saved source and exact equality of all 17 built canonical/OG URLs with the sitemap. Confirmed the first Wellridge deployment and Elaren documentation deployment both succeeded; both synthetic inquiry receipts remain recorded. The Mac currently has 41 GiB free; the cause of the earlier interruption is unconfirmed.

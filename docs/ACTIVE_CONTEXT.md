@@ -12,7 +12,9 @@ The branch `fix/seo-foundation-2026-09-07` aligns Astro's canonical and structur
 
 Search Console owner access is verified for the domain property. Before this release, no sitemap was submitted; the homepage's September 1 crawl selected the old Vercel hostname as Google's canonical, and all three new offer/sample/checklist URLs were unknown to Google. The existing OAuth grant has `webmasters.readonly`; API sitemap submission requires write scope and returned HTTP 403. Submission remains pending through the owner UI or a separately consented scope upgrade. Source correction does not by itself confirm Google has recrawled or changed its canonical.
 
-The final build passed with 17 routes; all built canonicals, OG URLs, image metadata, and sitemap entries passed source checks. A clearly labeled synthetic inquiry sent from the owner's external iCloud account arrived in the Google inbox addressed and delivered to `hello@wellridgegroup.com`; body integrity and SPF/DKIM/DMARC passed. No prospect outreach occurred. Production readback will be recorded after the release.
+The final build passed with 17 routes; all built canonicals, OG URLs, image metadata, and sitemap entries passed source checks. A clearly labeled synthetic inquiry sent from the owner's external iCloud account arrived in the Google inbox addressed and delivered to `hello@wellridgegroup.com`; body integrity and SPF/DKIM/DMARC passed. No prospect outreach occurred.
+
+The initial SEO release is live at merge `65a00c5500a82bfe4325efb9559b706e8189cda4` (successful Production deployment `6312439855`). Live verification caught a trailing-slash discrepancy between generated page canonicals and sitemap entries. The follow-up normalizes canonical and OG paths to match all 17 sitemap URLs exactly; its build and exact-match checks passed before the interruption and were rechecked on resumption. The source fix and worklog were recovered intact. Read the production branch and deployment record for the final release head.
 
 ## September 7, 2026 website offer and source publication
 
