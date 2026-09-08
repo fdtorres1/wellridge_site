@@ -2,6 +2,13 @@
 
 Append-only record of material repository work. Decisions belong in `DECISION_LOG.md`; current handoff belongs in `ACTIVE_CONTEXT.md`.
 
+## 2026-09-08 — Search Console authorization and Wellridge sitemap submission
+
+- Completed the additive Google OAuth upgrade in the verified owner account; all 19 original scopes remained and `https://www.googleapis.com/auth/webmasters` was added, for 20 total scopes with zero removals. Refresh and identity were verified. No credentials, backup paths, or private audit identifiers were recorded in the repository.
+- Submitted `https://www.wellridgegroup.com/sitemap.xml` at 16:49:07 UTC. The PUT returned HTTP 204; the GET readback at 16:49:08 UTC succeeded with 17 processed URLs, zero errors, and zero warnings.
+- Current API inspection found the homepage `Duplicate without user-selected canonical` with Google's selected canonical still at `https://wellridge-site.vercel.app/` from the September 1 crawl; the three new pages are `Discovered - currently not indexed` and listed in the sitemap. The UI still reported the new pages unknown. Four individual indexing requests were accepted into the priority crawl queue: homepage, grant-writing offer, grant-review sample, and grant-application checklist. No later indexing or canonical adoption is claimed.
+- Verification: production build passed with 17 pages; documentation diff checks passed. No public-site source changed during this handoff update.
+
 ## 2026-07-11 — Strategy and operating documentation pass
 
 **Status: DECIDED / WORKING DECISION — Documentation-only implementation.**

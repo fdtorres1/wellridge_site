@@ -1,14 +1,21 @@
 # Roadmap
 
+## September 8, 2026 technical foundation status
+
+- Completed: additive Google OAuth upgrade retained all 19 original scopes and added `https://www.googleapis.com/auth/webmasters` (20 total, zero removals); refresh and identity were verified.
+- Completed: `https://www.wellridgegroup.com/sitemap.xml` submission. PUT returned HTTP 204 at 16:49:07 UTC; GET readback at 16:49:08 UTC reported 17 processed URLs with zero errors and zero warnings.
+- Current API inspection: the homepage remains `Duplicate without user-selected canonical` with Google's selected canonical at `https://wellridge-site.vercel.app/` from the September 1 crawl; the three new pages are `Discovered - currently not indexed` and listed in the sitemap. The UI still reported the new pages unknown. All four individual indexing requests (homepage, grant offer, sample, checklist) were accepted into Google's priority crawl queue.
+- Remaining: verify page indexing and canonical adoption after Google recrawls.
+
 ## September 7, 2026 technical foundation priority
 
 - Implemented for release: consistent `www.wellridgegroup.com` canonical/structured/sitemap URLs and a branded social sharing card.
 - Verified: Search Console domain owner access; baseline shows no submitted sitemap and Google selecting the prior Vercel hostname for the homepage.
 - External inquiry receipt passed. Release checks: deploy the corrected source and verify live metadata/image/sitemap.
-- Sitemap submission remains pending: the existing API token has read-only Search Console scope. Use the verified owner UI or consent to write scope, then read back submission status.
+- Sitemap submission is complete as recorded above; retain the historical baseline below for context.
 - Following release: check Google's next crawl and selected canonical before treating indexing as resolved. Continue buyer-focused content and distribution; technical completion is not acquisition evidence.
 
-Last updated: July 12, 2026
+Last updated: September 8, 2026
 
 Sequence is evidence-gated. Calendar dates are planning aids, not launch promises.
 
