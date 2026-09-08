@@ -6,15 +6,27 @@ The user authorized merging the grant-offers branch into `main`, including its p
 
 This record supersedes prior local-only deployment boundaries below. Older uncommitted research/strategy files were preserved and excluded from the release. Actual inquiry delivery, indexing, and acquisition results were not tested by this release check.
 
+## September 8, 2026 current release and Search Console status
+
+The final canonical-normalization release is verified on `main` at `8d013fec7142a1ffd616fdc99bf169506b1768fe`; Vercel Production deployment `6315747543` succeeded. The release and deployment supersede the earlier release references above for current state.
+
+The additive Google OAuth upgrade succeeded in the verified owner account: all 19 original scopes were retained and `https://www.googleapis.com/auth/webmasters` was added, for 20 total scopes with zero removals. Refresh and identity were verified. No credentials, backup paths, or private audit identifiers are recorded here.
+
+The September 8 URL Inspection API shows the homepage as `Duplicate without user-selected canonical`, with Google's selected canonical still `https://wellridge-site.vercel.app/` from the September 1 crawl, which predates the canonical fix. The three new pages are `Discovered - currently not indexed` and each is listed in the sitemap; the UI still reported them unknown. Search Console accepted four individual indexing requests into its priority crawl queue: `/`, `/grant-writing`, `/work-examples/grant-review`, and `/resources/grant-application-checklist`. Requests are complete; later indexing and canonical adoption remain unverified.
+
+## September 8, 2026 Search Console authorization and sitemap submission
+
+The Wellridge sitemap `https://www.wellridgegroup.com/sitemap.xml` was submitted at 16:49:07 UTC. The Search Console GET readback succeeded at 16:49:08 UTC and reported 17 processed URLs with zero errors and zero warnings. Page indexing and canonical adoption remain under active verification as described above.
+
 ## September 7, 2026 SEO foundation source pass
 
 The branch `fix/seo-foundation-2026-09-07` aligns Astro's canonical and structured-data origin, Open Graph URL, and source `robots.txt`/sitemap URLs to `https://www.wellridgegroup.com`, matching the live apex redirect. Shared Open Graph/Twitter metadata uses the new branded `/images/wellridge-social.png` asset at its actual 1738×905 dimensions, with descriptive alt text and `summary_large_image`.
 
-Search Console owner access is verified for the domain property. Before this release, no sitemap was submitted; the homepage's September 1 crawl selected the old Vercel hostname as Google's canonical, and all three new offer/sample/checklist URLs were unknown to Google. The existing OAuth grant has `webmasters.readonly`; API sitemap submission requires write scope and returned HTTP 403. Submission remains pending through the owner UI or a separately consented scope upgrade. Source correction does not by itself confirm Google has recrawled or changed its canonical.
+Search Console owner access is verified for the domain property. Before this release, no sitemap was submitted; the homepage's September 1 crawl selected the old Vercel hostname as Google's canonical, and all three new offer/sample/checklist URLs were unknown to Google. Source correction does not by itself confirm Google has recrawled or changed its canonical.
 
 The final build passed with 17 routes; all built canonicals, OG URLs, image metadata, and sitemap entries passed source checks. A clearly labeled synthetic inquiry sent from the owner's external iCloud account arrived in the Google inbox addressed and delivered to `hello@wellridgegroup.com`; body integrity and SPF/DKIM/DMARC passed. No prospect outreach occurred.
 
-The initial SEO release is live at merge `65a00c5500a82bfe4325efb9559b706e8189cda4` (successful Production deployment `6312439855`). Live verification caught a trailing-slash discrepancy between generated page canonicals and sitemap entries. The follow-up normalizes canonical and OG paths to match all 17 sitemap URLs exactly; its build and exact-match checks passed before the interruption and were rechecked on resumption. The source fix and worklog were recovered intact. Read the production branch and deployment record for the final release head.
+The initial SEO release was followed by the verified canonical-normalization release recorded above. Live verification caught the earlier trailing-slash discrepancy between generated page canonicals and sitemap entries; the final release normalizes canonical and OG paths to match all 17 sitemap URLs exactly.
 
 ## September 7, 2026 website offer and source publication
 
