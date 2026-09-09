@@ -49,3 +49,10 @@ The subsequent focused-service-page release notified seven URLs: the two new
 service pages, `/pricing`, `/grant-writing`, the buyer decision guide, and the
 two fictional work examples. The checked live request returned HTTP 200.
 This confirms receipt and does not establish indexing or rankings.
+
+The national-service release notified eight changed URLs: `/`, `/services`,
+`/grant-writing`, `/grant-application-review`, `/letter-of-inquiry-writing`,
+`/foundation-grant-writing`, `/pricing`, and
+`/resources/grant-review-loi-or-application`. After Vercel production and exact
+live HTML verification, the request returned HTTP 200 on September 9.
+This is receipt only; no new Google or Bing indexing/ranking result was measured.
