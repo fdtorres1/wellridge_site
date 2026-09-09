@@ -432,3 +432,7 @@ Append-only record of material repository work. Decisions belong in `DECISION_LO
 - All 22 live sitemap routes returned HTTP 200 with exact canonical destinations. New service fees, selected-package links and JSON-LD, plus Pricing buyer answers, were read back. Both live service-to-contact navigations selected the correct $295 review / $350 LOI package.
 - One IndexNow request for the two new services, pricing, grant overview, buyer guide, review sample and LOI sample returned HTTP 200. Receipt is verified; new-page indexing, rankings, and client inquiries are not established. Existing Google/Bing sitemap registrations continue to point to the updated canonical sitemap; no OAuth permissions or analytics settings changed.
 - This documentation follow-up records the completed source push and deployment before its own separate push/merge. The existing deployment runbook was reviewed and needed no procedural changes; historical strategy records were preserved.
+
+## 2026-09-09 — About inquiry invitation
+
+- Owner requested correction of the stale About-page contact-status wording. Replaced the closing heading with “Tell Us What You Need,” added a direct invitation to share the opportunity, deadline and work, and changed the existing `/contact` button to “Send an inquiry.” Existing layout and contact destination are preserved. Build and production readback are release checks.
