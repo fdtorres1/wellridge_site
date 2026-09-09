@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { grantOffers } from '../lib/grants';
 ---
 
 <BaseLayout title="Engagements & Pricing" description="How Wellridge Group scopes and prices bounded funding, proposal, and program operations engagements.">
@@ -17,6 +18,29 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       <p class="text-lg text-gray-700 mb-8">
         Requirements, timelines, inputs, and risk differ from one engagement to the next. After a fit and scope review, Wellridge provides a written fixed-fee proposal or milestone schedule tied to defined deliverables, responsibilities, and acceptance criteria.
       </p>
+    </div>
+  </section>
+
+  <section class="py-16 bg-white border-t border-gray-100">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-8">
+        <div>
+          <p class="text-sm font-semibold uppercase tracking-wide text-ridge-blue">Published entry scopes</p>
+          <h2 class="text-3xl font-serif font-bold text-slate-deep mt-2">Grant writing</h2>
+        </div>
+        <a href="/grant-writing" class="text-ridge-blue underline font-medium">See full grant-writing scope →</a>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        {grantOffers.map((offer) => (
+          <article class="border border-gray-200 rounded-lg p-6">
+            <p class="text-2xl font-bold text-ridge-blue">{offer.price}</p>
+            <h3 class="text-xl font-serif font-bold text-slate-deep mt-2">{offer.name}</h3>
+            <p class="text-gray-700 mt-3">{offer.description}</p>
+            <p class="text-sm text-gray-600 mt-4">{offer.payment}; {offer.timing.toLowerCase()}</p>
+            <a class="inline-block mt-4 text-ridge-blue underline" href={`/contact?service=grant-writing&package=${offer.id}`}>Discuss this scope</a>
+          </article>
+        ))}
+      </div>
     </div>
   </section>
 
@@ -193,9 +217,9 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       <h2 class="text-3xl font-serif font-bold mb-8">Frequently Asked Questions</h2>
       <div class="space-y-6">
         <div class="bg-white p-6 rounded-lg">
-          <h3 class="text-lg font-semibold mb-2">Why isn't there a public rate card?</h3>
+          <h3 class="text-lg font-semibold mb-2">Why are other operations engagements custom quoted?</h3>
           <p class="text-gray-700">
-            The fee depends on the actual responsibility, complexity, timeline, inputs, review burden, and outside costs involved. A written quote after scope review is more reliable than applying a generic package price to unlike work.
+            The funding pipeline, proposal, and program-operations scopes vary in responsibility, complexity, timeline, inputs, review burden, and outside costs. Those engagements are custom quoted after scope review; the three grant-writing entry scopes above have published fixed fees for their defined work.
           </p>
         </div>
         <div class="bg-white p-6 rounded-lg">
@@ -231,13 +255,13 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
       <h2 class="text-4xl font-serif font-bold mb-6">Prepare the Scope</h2>
       <p class="text-xl text-gray-300 mb-8">
-        Gather the opportunity, deadline, current inputs, and responsibility you may need Wellridge to own before inquiry intake opens.
+        Share the opportunity, deadline, current inputs, and work you need. We’ll confirm fit and a written scope before payment.
       </p>
       <a
         href="/contact"
         class="inline-block px-8 py-3 bg-ridge-blue text-white rounded-md text-lg font-medium hover:bg-opacity-90 transition-colors"
       >
-        Prepare a Scope
+        Send an inquiry
       </a>
     </div>
   </section>

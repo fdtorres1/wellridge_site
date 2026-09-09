@@ -1,12 +1,12 @@
 # Wellridge Group Website
 
-A modern, static website for Wellridge Group, built with Astro, TypeScript, and Tailwind CSS. The canonical site URL is configured as `https://wellridgegroup.com`.
+A static website for Wellridge Group, built with Astro, TypeScript, and Tailwind CSS. The canonical site URL is `https://www.wellridgegroup.com`.
 
 ## Internal strategy source of truth
 
 The local Astro site now implements the selected **Wellridge Group** public identity, with **WELLRIDGE** as the dominant visual brand, as documented in [`docs/README.md`](docs/README.md). Current handoff and remaining launch boundaries live in [`docs/ACTIVE_CONTEXT.md`](docs/ACTIVE_CONTEXT.md); the July 11 prototype audit and subsequent identity migrations live in [`docs/site-copy-migration-inventory.md`](docs/site-copy-migration-inventory.md).
 
-The migration is local only. It does not authorize deployment, DNS changes, formation, calendar, social, analytics, or newsletter systems. The contact page can prepare a visitor-reviewed mailto draft using the existing public inquiry route; it does not send, store, or accept uploads.
+The site is deployed through `fdtorres1/wellridge_site` main to Vercel. The September 9 conversion batch is owner-authorized; release receipts and remaining checks are recorded in `docs/ACTIVE_CONTEXT.md`. Older July planning sections are historical snapshots. Formation, registrations, outreach, and unrelated integrations remain separate work.
 
 ## 🚀 Quick Start
 
@@ -138,14 +138,16 @@ Resource content...
 
 ### Contact Intake
 
-No form handler, scheduling link, social profile, or newsletter workflow is active. `src/pages/contact.astro` presents a client-side email composer that requires the visitor to review and send from their own mail app; fields remain local until that explicit action.
+`src/pages/contact.astro` uses `src/lib/contact.ts` and `src/lib/inquiry.ts` to send through FormSubmit to `hello@wellridgegroup.com`. Package links preselect a grant offer; operations inquiries use separate scope prompts. Required reply details, a honeypot, duplicate prevention, and a 20-second timeout bound submission. Unconfirmed failures retain details and expose an email/copy alternative. No uploads or browser storage are used. See `/privacy` and `docs/INQUIRIES.md` for handling and verification.
 
-Before enabling intake:
+Before releasing material intake changes:
 
 1. Confirm ownership and operating responsibility for the selected endpoint.
 2. Add appropriate privacy, consent, retention, and security handling.
 3. Test delivery, response ownership, error states, and sensitive-data warnings.
 4. Update the contact page and deployment checklist only after the endpoint is verified.
+
+Grant prices and terms are centralized in `src/lib/grants.ts`. Keep the buyer guide and examples consistent when revising them. Run `npm run build`, `node --test scripts/inquiry.test.ts` on Node with TypeScript stripping, and `python3 -m unittest scripts/indexnow_test.py`. The repository has no separate `validate` npm command. Update `public/sitemap.xml` when adding routes; `docs/INDEXNOW.md` documents selected-URL notifications after deployment. Analytics setup is deferred.
 
 ## 🚢 Deployment
 

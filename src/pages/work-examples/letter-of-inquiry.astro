@@ -1,0 +1,52 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const siteOrigin = Astro.site ?? new URL('https://www.wellridgegroup.com');
+const siteURL = siteOrigin.toString().replace(/\/$/, '');
+const sampleSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: 'Fictional letter of inquiry sample: Northside Arts Workshop',
+  description: 'A fictional, bounded letter of inquiry sample using the Northside Arts Workshop demonstration facts.',
+  author: { '@type': 'Organization', name: 'Wellridge Group' },
+  publisher: { '@type': 'Organization', name: 'Wellridge Group', url: siteURL },
+  mainEntityOfPage: `${siteURL}/work-examples/letter-of-inquiry`,
+};
+---
+
+<BaseLayout title="Letter of Inquiry Sample" description="A fictional letter of inquiry sample for a bounded foundation request." structuredData={sampleSchema}>
+  <article class="py-20 bg-gradient-to-b from-white to-fog">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <p class="text-sm font-semibold uppercase tracking-wide text-ridge-blue">Work example · fictional demonstration</p>
+      <h1 class="text-5xl font-serif font-bold text-slate-deep mt-3 mb-6">A concise letter of inquiry with a clear next step</h1>
+      <p class="text-sm text-gray-600 mb-6">Wellridge Group · September 9, 2026</p>
+      <div class="bg-slate-deep text-white rounded-lg p-6 text-lg"><strong>Important:</strong> Northside Arts Workshop and the Evergreen Community Arts Fund are fictional. This page is a writing demonstration, not a real client, funder, request, award, endorsement, or achieved result.</div>
+      <p class="mt-6 text-gray-700">Sample premise: imagine Northside Arts Workshop is asking a local arts funder whether it would invite a short application for one existing, approved workshop plan. The facts below carry forward the fictional grant-review example; the funder name, contact details, inquiry framing, and signatory name and role are invented for this sample.</p>
+    </div>
+  </article>
+
+  <section class="py-16 bg-white">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="border border-gray-200 rounded-lg p-8 shadow-sm">
+        <p class="text-sm text-gray-600 mb-8">September 9, 2026</p>
+        <p class="text-gray-700">Evergreen Community Arts Fund<br />Attn: Grants Team<br />Arlington, Texas</p>
+        <p class="mt-8 text-gray-700">Dear Evergreen Community Arts Fund Grants Team:</p>
+        <p class="mt-5 text-gray-700">Northside Arts Workshop respectfully inquires whether the Evergreen Community Arts Fund would invite a short application for a free six-week visual-arts workshop in Arlington, Texas. The workshop is planned for 24 students ages 10–14, with no prior art experience required. Six Saturday sessions are planned for October 17, 24, and 31 and November 7, 14, and 21, 2026, from 10:00–11:30 a.m. Each student would receive materials, and the sessions are designed as one workshop sequence.</p>
+        <p class="mt-5 text-gray-700">Northside is seeking $3,600 toward a $4,800 project budget: teaching artist $1,800, materials $960, space $900, transportation assistance $600, and evaluation/administration $540. Planned other support is $1,200 and is not committed or secured. The request would support delivery of the existing workshop plan, rather than a new program design.</p>
+        <p class="mt-5 text-gray-700">The planning targets are for at least 18 of 24 enrolled students to attend five of six sessions and for at least 18 students to report at least a one-point increase on a five-point creative-confidence question from the first to final session. Sign-ins and the first-to-final confidence question would be reviewed after the workshop. Any missing follow-up would be reported explicitly. These are planning targets, not results.</p>
+        <p class="mt-5 text-gray-700">Would the fund be willing to advise whether this project fits its current priorities and, if so, whether Northside should submit a short application? We can provide the approved program description, budget detail, and requested attachments through the fund’s stated process.</p>
+        <p class="mt-5 text-gray-700">Thank you for considering this inquiry. We would welcome the fund’s direction on fit and next steps.</p>
+        <p class="mt-8 text-gray-700">Sincerely,<br />Jordan Lee<br />Program Director<br />Northside Arts Workshop</p>
+      </div>
+      <a class="inline-block mt-8 px-5 py-3 bg-ridge-blue text-white rounded-md font-medium" href="/contact?service=grant-writing&package=loi">Prepare a $350 LOI inquiry</a>
+    </div>
+  </section>
+
+  <section class="py-16 bg-fog">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-serif font-bold text-slate-deep mb-6">What remains unresolved before a real submission</h2>
+      <ul class="list-disc pl-6 space-y-3 text-gray-700"><li>Confirm the real funder’s eligibility, priorities, instructions, deadline, and required contact or portal.</li><li>Confirm Northside’s approved program, venue, accessibility, safeguarding, transportation, and budget authority.</li><li>Confirm whether the $1,200 other support is committed, planned, or removed from the request story.</li><li>Assign the accountable reviewer and final submitter; confirm required attachments and current versions.</li></ul>
+      <p class="mt-8 text-gray-700">This sample pairs with the <a class="text-ridge-blue underline" href="/resources/grant-review-loi-or-application">grant review, LOI, or application guide</a>, the <a class="text-ridge-blue underline" href="/work-examples/grant-review">fictional grant review example</a>, and <a class="text-ridge-blue underline" href="/grant-writing">bounded grant-writing services</a>.</p>
+    </div>
+  </section>
+</BaseLayout>
