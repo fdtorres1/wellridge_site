@@ -8,6 +8,8 @@ The local Astro site now implements the selected **Wellridge Group** public iden
 
 The site is deployed through `fdtorres1/wellridge_site` main to Vercel. The September 9 conversion batch is owner-authorized; release receipts and remaining checks are recorded in `docs/ACTIVE_CONTEXT.md`. Older July planning sections are historical snapshots. Formation, registrations, outreach, and unrelated integrations remain separate work.
 
+Grant services use `src/lib/grants.ts` for shared offers. `/grant-writing` is the regional overview; `/grant-application-review` and `/letter-of-inquiry-writing` explain the entry scopes and link to their selected inquiry packages. `/pricing#grant-pricing-questions` answers payment, timing, and scope questions. The buyer guide and fictional work examples support these pages.
+
 ## 🚀 Quick Start
 
 ### Prerequisites

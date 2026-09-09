@@ -1,0 +1,92 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { grantOfferById } from '../lib/grants';
+
+const offer = grantOfferById.review;
+const siteOrigin = Astro.site ?? new URL('https://www.wellridgegroup.com');
+const siteURL = siteOrigin.toString().replace(/\/$/, '');
+const pageURL = `${siteURL}/grant-application-review`;
+const serviceSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  name: offer.name,
+  serviceType: 'Grant application review',
+  description: offer.description,
+  provider: { '@type': 'Organization', name: 'Wellridge Group', url: siteURL },
+  url: pageURL,
+};
+const offerSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Offer',
+  name: offer.name,
+  description: offer.description,
+  price: offer.price.replace('$', ''),
+  priceCurrency: 'USD',
+  url: pageURL,
+  itemOffered: { '@type': 'Service', name: offer.name, url: pageURL },
+};
+---
+
+<BaseLayout
+  title="Grant Application Review Services"
+  description={`${offer.price} for an existing grant narrative review up to 2,000 words. Get tracked edits and a missing-items checklist against one funder's instructions.`}
+  structuredData={[serviceSchema, offerSchema]}
+>
+  <section class="py-20 bg-gradient-to-b from-white to-fog">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <p class="text-sm font-semibold uppercase tracking-wide text-ridge-blue">Defined grant support</p>
+      <h1 class="text-4xl sm:text-5xl font-serif font-bold text-slate-deep mt-3 mb-6">Review an existing grant application before you submit</h1>
+      <p class="text-xl text-gray-600">When the words already exist, a focused review can show where the draft answers the funder, where facts or attachments are missing, and where the narrative and budget need to agree.</p>
+      <p class="mt-5 font-semibold text-ridge-blue">{offer.price} · {offer.payment} after scope agreement</p>
+      <a href="/contact?service=grant-writing&package=review" class="inline-block mt-8 px-8 py-3 bg-ridge-blue text-white rounded-md text-lg font-medium">Discuss an application review</a>
+    </div>
+  </section>
+
+  <section class="py-16 bg-white">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+        <div class="lg:col-span-2">
+          <h2 class="text-3xl font-serif font-bold text-slate-deep mb-4">What this scope covers</h2>
+          <p class="text-gray-700">This is a review of one existing narrative, up to 2,000 words, against one controlling funder rubric or instruction set. The review follows the funder's questions and checks the internal story: population, activities, timing, outcomes, measures, request amount, and budget consistency.</p>
+          <p class="text-gray-700 mt-4">You receive tracked edits in the draft and a missing-items checklist that separates facts to confirm, attachments to locate, and approvals still needed. The work identifies gaps and proposes clear edits; it does not turn an assumption into an organizational fact.</p>
+        </div>
+        <aside class="border border-gray-200 rounded-lg p-6 bg-fog">
+          <p class="text-sm font-semibold text-ridge-blue">At a glance</p>
+          <p class="text-2xl font-serif font-bold text-slate-deep mt-2">{offer.price} · {offer.payment}</p>
+          <ul class="list-disc pl-5 mt-4 text-sm text-gray-700 space-y-1">
+            {offer.deliverables.map((deliverable) => <li>{deliverable}</li>)}
+          </ul>
+          <p class="text-sm text-gray-600 mt-4">{offer.timing}</p>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 bg-fog">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="bg-white rounded-lg p-6">
+          <h2 class="text-2xl font-serif font-bold text-slate-deep mb-3">Send only public fit information first</h2>
+          <p class="text-gray-700">For the initial inquiry, send the funder and program name, public instructions or URL, stated deadline and time zone, current draft length, and a short description of the approved program and budget. Include the name of the person who approves organizational facts.</p>
+          <p class="text-gray-700 mt-4">Do not put confidential client information, passwords, protected records, or sensitive attachments in the first inquiry. Once scope and access are agreed, we can arrange a separate secure handoff for the draft and approved materials.</p>
+        </div>
+        <div class="bg-white rounded-lg p-6">
+          <h2 class="text-2xl font-serif font-bold text-slate-deep mb-3">A practical review process</h2>
+          <ol class="list-decimal pl-5 space-y-2 text-gray-700">
+            <li>Confirm the opportunity, rubric, scope, and secure materials handoff.</li>
+            <li>Review the complete draft and approved source materials against the controlling instructions.</li>
+            <li>Return tracked edits and the missing-items checklist within the stated timing after complete inputs and access.</li>
+          </ol>
+          <p class="text-gray-700 mt-4">The client reviews the edits, confirms every fact, approves the final version, and submits it. Late or incomplete inputs move the working deadline.</p>
+        </div>
+      </div>
+      <div class="mt-8 border border-gray-200 rounded-lg p-6 bg-white">
+        <h2 class="text-2xl font-serif font-bold text-slate-deep mb-3">Fit and boundaries</h2>
+        <p class="text-gray-700">This scope fits an identified opportunity with a draft in hand. It includes one review; additional review rounds require a separate agreement. New program design, federal applications, complex budget creation, additional funders, portal administration, and submission are outside the package. The funder makes the award decision; Wellridge does not guarantee funding.</p>
+      </div>
+      <div class="mt-8 text-gray-700">
+        <p>See the <a class="text-ridge-blue underline" href="/work-examples/grant-review">fictional grant review example</a> for a demonstration of the format. Compare this scope with <a class="text-ridge-blue underline" href="/letter-of-inquiry-writing">letter-of-inquiry writing</a>, all <a class="text-ridge-blue underline" href="/grant-writing">grant-writing services</a>, <a class="text-ridge-blue underline" href="/pricing#grant-pricing-questions">payment and scope answers</a>, or the <a class="text-ridge-blue underline" href="/resources/grant-review-loi-or-application">grant buyer guide</a>.</p>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

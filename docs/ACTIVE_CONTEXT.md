@@ -1,5 +1,14 @@
 # Active context
 
+## September 9, 2026 — Focused grant service pages
+
+- Implemented `/grant-application-review` and `/letter-of-inquiry-writing` using shared $295/$350 offer data, own Service/Offer markup, required inputs, process, limits, fictional examples, and package-selected inquiry links. `/grant-writing` remains the Texas/DFW overview; no duplicate city pages were added.
+- Pricing now answers fixed fees, payment milestones, first-draft timing, missing inputs, custom-quote triggers, revision limits, and client approval/submission. The existing $750 application payment remains $375 to begin and $375 at submission-ready delivery. Hub, pricing, buyer guide and work examples link to the focused pages; the sitemap contains 22 URLs.
+- Root review and 22-page production build passed, as did the three existing inquiry tests and static canonical/OG/sitemap, metadata, structured-data and link/fragment checks. Personal Chrome checks passed at 1680px desktop and 390×844 mobile: meaningful content, no framework overlay or app console errors, no page overflow, correct review/LOI CTA selections, mobile menu, pricing answers, and the buyer table's contained horizontal scrolling.
+- Previously outstanding clipboard/mobile checks are complete: the live contact page at 390×844 showed copy confirmation and the clipboard contained the exact synthetic marker and selected package. No inquiry was sent in this batch. Browser viewport was restored. Desktop and mobile screenshots are local QA artifacts outside the repository.
+- Release, remote SHA verification and provider readback follow this source/documentation commit. Analytics remains deferred. Deployment and notifications are not proof of new-page indexing or leads.
+- Previous documentation follow-up `e844930caa2bf031bfd523db5ed608d6e19cd7d4` was pushed and merged as `f3f84cb856fa09c27de4ab8290e246f94bcb2b2f`; Vercel deployment `6343845126` succeeded at 06:22:23 UTC. This batch starts from that verified main state and supersedes the earlier pending-follow-up wording below.
+
 ## September 9, 2026 — Grant conversion and buyer content
 
 - Current batch: align homepage, Pricing, Services and grant-writing around the existing $295 review / $350 LOI / $750 short foundation application. `src/lib/grants.ts` centralizes offer data; operations remain separately quoted. Stale unfinished-intake and no-public-rate-card wording is removed.

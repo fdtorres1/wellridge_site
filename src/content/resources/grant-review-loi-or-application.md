@@ -29,11 +29,15 @@ Review is the best fit when the organization has a current draft and wants an ou
 
 Send the current instructions, the draft, and the approved facts that may be edited. A review can identify a gap; it cannot supply an unverified result, eligibility decision, or client approval.
 
+See the [application review service](/grant-application-review) for the review inputs, process, and sample deliverables described above.
+
 ## Choose an LOI when the funder wants a concise first conversation
 
 An LOI is appropriate when one funder has a letter-of-inquiry process or accepts a short introductory letter before inviting an application. It should use an existing program and budget. The letter can explain the need, proposed activity, amount or range, fit, and next step without turning into a new program plan.
 
 Before starting, have the funder’s instructions or stated request, an approved program description, a current budget, the intended request amount, and a person who can approve organizational facts. One revision is included. The funder decides whether to invite a full application; the letter does not create an award expectation.
+
+See the [letter-of-inquiry writing service](/letter-of-inquiry-writing) for LOI inputs, timing, and an example.
 
 ## Choose the short application when the opportunity is defined and the package is short
 
