@@ -6,6 +6,7 @@
 - Updated the national keyword map. Keep existing hub, pricing and LOI example as priorities, with focused services for conversion. No new public page or immediate title churn is justified by this pass. No #1 opportunity, ranking improvement, lead or revenue result is established. Analytics remains deferred.
 - `NATIONAL_LINK_OPPORTUNITIES.md` contains source-checked candidates, listing copy and two unsent fee/eligibility inquiries. Nonprofit Learning Lab and TNPA are the first research routes; fees/eligibility remain unresolved. No contact, submission, membership or purchase occurred.
 - Previous national release documentation merge `96ef3cd790adedcb153471401540f7e9d3eec671` is the base for this documentation-only branch. Research publication receipts follow separately.
+- Research first push `2000ee8bbe2d284d7c8f2accb89cc48354764daa` matched the remote branch; main merge `695860b66140c3c46867eb9d47335cb939ba658f` matched remote main. Vercel Production deployment `6356396523` reported success at 18:15:54 UTC. Only documentation and sanitized research changed. This receipt is being published in a separate documentation follow-up; no new public content, search ranking or external listing is implied.
 
 ## September 9, 2026 — National grant service focus
 
