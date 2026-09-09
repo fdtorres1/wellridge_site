@@ -44,3 +44,8 @@ After production key and URL readback, one live request returned HTTP 202 for
 `/work-examples/grant-review`, and `/privacy`. Key validation and indexing are
 not established by this receipt. Bing ownership verification and its separate
 sitemap submission completed; sitemap processing remains pending.
+
+The subsequent focused-service-page release notified seven URLs: the two new
+service pages, `/pricing`, `/grant-writing`, the buyer decision guide, and the
+two fictional work examples. The checked live request returned HTTP 200.
+This confirms receipt and does not establish indexing or rankings.
