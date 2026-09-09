@@ -12,6 +12,8 @@ Grant services use `src/lib/grants.ts` for shared offers. `/grant-writing` is th
 
 ## 🚀 Quick Start
 
+National acquisition research: [`docs/NATIONAL_KEYWORD_VALIDATION.md`](docs/NATIONAL_KEYWORD_VALIDATION.md) records U.S. volume estimates and observed search intent; [`docs/NATIONAL_LINK_OPPORTUNITIES.md`](docs/NATIONAL_LINK_OPPORTUNITIES.md) contains directory candidates and unsent drafts. Research and publication do not establish rankings or client acquisition.
+
 ### Prerequisites
 
 - Node.js 18+ and npm

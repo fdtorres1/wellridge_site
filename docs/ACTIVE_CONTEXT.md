@@ -1,5 +1,12 @@
 # Active context
 
+## September 9, 2026 — National demand validation and directory drafts
+
+- Completed 30-query U.S./English DataForSEO Google Ads lookup and six U.S. desktop organic result samples for $0.102 total. Nine estimates were numerical; 21 unreported, not proven zero. National nonprofit service queries have the clearest commercial fit; broad review/editing phrases attract funder-side or scientific intent. See `NATIONAL_KEYWORD_VALIDATION.md` and the two sanitized CSVs under `docs/research/`.
+- Updated the national keyword map. Keep existing hub, pricing and LOI example as priorities, with focused services for conversion. No new public page or immediate title churn is justified by this pass. No #1 opportunity, ranking improvement, lead or revenue result is established. Analytics remains deferred.
+- `NATIONAL_LINK_OPPORTUNITIES.md` contains source-checked candidates, listing copy and two unsent fee/eligibility inquiries. Nonprofit Learning Lab and TNPA are the first research routes; fees/eligibility remain unresolved. No contact, submission, membership or purchase occurred.
+- Previous national release documentation merge `96ef3cd790adedcb153471401540f7e9d3eec671` is the base for this documentation-only branch. Research publication receipts follow separately.
+
 ## September 9, 2026 — National grant service focus
 
 - Current approved batch changes `/grant-writing` from a Texas/DFW-led overview to a national service hub for small nonprofits. Regional references remain supporting context. Review and LOI pages now lead with specific nonprofit buyer tasks, nationwide remote availability, and annotated fictional excerpts.
