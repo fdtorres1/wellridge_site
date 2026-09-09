@@ -7,11 +7,13 @@ export type GrantOffer = {
   description: string;
   deliverables: string[];
   timing: string;
+  servicePath?: string;
 };
 
 export const grantOffers: GrantOffer[] = [
   {
     id: 'review',
+    servicePath: '/grant-application-review',
     name: 'Existing application review',
     shortName: 'Application review',
     price: '$295',
@@ -22,6 +24,7 @@ export const grantOffers: GrantOffer[] = [
   },
   {
     id: 'loi',
+    servicePath: '/letter-of-inquiry-writing',
     name: 'Letter of inquiry',
     shortName: 'Letter of inquiry',
     price: '$350',

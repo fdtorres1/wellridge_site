@@ -1,12 +1,12 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import { grantOffers } from '../lib/grants';
+import { grantOffers, grantOfferById } from '../lib/grants';
 ---
 
-<BaseLayout title="Engagements & Pricing" description="How Wellridge Group scopes and prices bounded funding, proposal, and program operations engagements.">
+<BaseLayout title="Grant Writing Costs & Engagement Pricing" description={`Wellridge grant review costs ${grantOfferById.review.price}, an LOI ${grantOfferById.loi.price}, and a short application ${grantOfferById.application.price}. Compare scope, payment timing, and custom quotes.`}>
   <section class="py-20 bg-gradient-to-b from-white to-fog">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h1 class="text-5xl font-serif font-bold text-slate-deep mb-6">Engagements & Pricing</h1>
+      <h1 class="text-4xl sm:text-5xl font-serif font-bold text-slate-deep mb-6">Grant Writing Costs &amp; Engagement Pricing</h1>
       <p class="text-xl text-gray-600">
         Clear scope, clear ownership, and a written fee before work begins.
       </p>
@@ -37,10 +37,26 @@ import { grantOffers } from '../lib/grants';
             <h3 class="text-xl font-serif font-bold text-slate-deep mt-2">{offer.name}</h3>
             <p class="text-gray-700 mt-3">{offer.description}</p>
             <p class="text-sm text-gray-600 mt-4">{offer.payment}; {offer.timing.toLowerCase()}</p>
+            {offer.servicePath && <p class="mt-4"><a class="text-ridge-blue underline" href={offer.servicePath}>Explore {offer.shortName.toLowerCase()}</a></p>}
             <a class="inline-block mt-4 text-ridge-blue underline" href={`/contact?service=grant-writing&package=${offer.id}`}>Discuss this scope</a>
           </article>
         ))}
       </div>
+    </div>
+  </section>
+
+  <section id="grant-pricing-questions" class="py-16 bg-fog">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-serif font-bold text-slate-deep mb-8">Before you choose a grant package</h2>
+      <div class="space-y-6">
+        <div class="bg-white rounded-lg p-6"><h3 class="text-xl font-serif font-bold mb-3">How much does grant writing cost at Wellridge?</h3><p class="text-gray-700">An existing application review is {grantOfferById.review.price}, a letter of inquiry is {grantOfferById.loi.price}, and a short foundation application is {grantOfferById.application.price}. These are fixed fees for the defined work above. We confirm that your instructions and materials fit before accepting the engagement; broader work receives a separate written quote.</p></div>
+        <div class="bg-white rounded-lg p-6"><h3 class="text-xl font-serif font-bold mb-3">When do I pay?</h3><p class="text-gray-700">The {grantOfferById.review.price} review and {grantOfferById.loi.price} LOI are paid upfront after scope agreement. The {grantOfferById.application.price} application is {grantOfferById.application.payment}. Payment is for the agreed professional work and is not contingent on a grant award. An inquiry itself does not require payment or reserve capacity.</p></div>
+        <div class="bg-white rounded-lg p-6"><h3 class="text-xl font-serif font-bold mb-3">When does the turnaround begin?</h3><p class="text-gray-700">After scope agreement, initial payment, and complete materials and access. Review and LOI first drafts are due within three business days; the short application first draft is due within five to seven. Those are first-draft timelines, so allow additional time for your factual review, included revisions, approvals, and submission.</p></div>
+        <div class="bg-white rounded-lg p-6"><h3 class="text-xl font-serif font-bold mb-3">What if our materials are not ready?</h3><p class="text-gray-700">Tell us what is missing in the inquiry. We identify the inputs needed before starting; the delivery clock does not begin while required materials or access are missing. Late inputs move the working deadline. We do not fill gaps with invented facts. If work has already begun, earned work remains payable and the written engagement terms govern any unused prepaid scope.</p></div>
+        <div class="bg-white rounded-lg p-6"><h3 class="text-xl font-serif font-bold mb-3">What changes the scope or requires a custom quote?</h3><p class="text-gray-700">A second funder, a narrative over 2,000 words, an LOI over two pages, additional revisions, extensive portal work, or a changed program can exceed the entry scope. Federal applications, new program design, and complex budgets are outside these packages and need a separate fit decision. A larger assignment is not automatically accepted: we agree on any feasible added work and fee before proceeding.</p></div>
+        <div class="bg-white rounded-lg p-6"><h3 class="text-xl font-serif font-bold mb-3">Which revisions are included, and who submits?</h3><p class="text-gray-700">The LOI includes one revision; the short application includes one consolidated revision. The review includes one narrative review with tracked edits and a missing-items checklist. Further review rounds require agreement. Your organization verifies the facts, approves the final materials, and submits to the funder. No package guarantees an invitation or award.</p></div>
+      </div>
+      <p class="mt-8 text-gray-700">Still choosing? Read the <a href="/resources/grant-review-loi-or-application" class="text-ridge-blue underline">review, LOI, and application guide</a>, then <a href="/contact?service=grant-writing" class="text-ridge-blue underline">describe your opportunity</a>. Public instructions and a short summary are enough for the initial inquiry; agree separately on sharing working documents.</p>
     </div>
   </section>
 

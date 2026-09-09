@@ -10,7 +10,7 @@ const offerSchema = {
   name: 'Bounded grant-writing support',
   provider: { '@type': 'Organization', name: 'Wellridge Group', url: siteURL },
   serviceType: 'Grant application review, letters of inquiry, and short foundation applications',
-  offers: grantOffers.map((offer) => ({ '@type': 'Offer', name: offer.name, price: offer.price.replace('$', ''), priceCurrency: 'USD', url: `${siteURL}/grant-writing` })),
+  offers: grantOffers.map((offer) => ({ '@type': 'Offer', name: offer.name, price: offer.price.replace('$', ''), priceCurrency: 'USD', url: `${siteURL}${offer.servicePath ?? '/grant-writing'}` })),
 };
 ---
 
@@ -41,6 +41,7 @@ const offerSchema = {
               {offer.deliverables.map((deliverable) => <li>{deliverable}</li>)}
             </ul>
             <p class="text-sm text-gray-600 mt-4">{offer.timing}</p>
+            {offer.servicePath && <p class="mt-4"><a class="text-ridge-blue underline" href={offer.servicePath}>Explore {offer.shortName.toLowerCase()}</a></p>}
             <a class="inline-block mt-5 text-ridge-blue underline" href={`/contact?service=grant-writing&package=${offer.id}`}>Discuss this scope</a>
           </article>
         ))}

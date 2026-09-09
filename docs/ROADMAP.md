@@ -1,5 +1,11 @@
 # Roadmap
 
+## September 9, 2026 — Focused entry offer batch
+
+- Implemented for release: dedicated application-review and LOI-writing pages, buyer answers on the existing Pricing page, and links from the overview, guide and samples. Existing fees and scope caps are preserved. Root 22-page build and desktop/mobile CTA checks pass.
+- Completed: previously outstanding mobile and clipboard-feedback checks. Contact, service pages, pricing, and guide were checked at 390×844; the viewport was restored after testing.
+- Next: verify this release and selected-URL notifications. Then use real inquiries and later search evidence to prioritize further changes; keep qualification, agreed work, payments and client materials in private systems. New content is not yet confirmed indexed. Analytics stays deferred.
+
 ## September 9, 2026 — Current implementation priorities
 
 - Deployed and verified: consistent fixed grant offers, direct inquiry with email fallback, a buyer decision guide, a fictional LOI example, and privacy notice. Production-browser delivery reached the correct inbox. Operations retain separate quotes. Analytics remains deferred.
