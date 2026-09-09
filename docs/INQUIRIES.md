@@ -1,0 +1,17 @@
+# Inquiry handling and checks
+
+The static contact page sends JSON through FormSubmit to the public Wellridge mailbox. Do not reuse Elaren's route. Fields contain name, reply email, organization, service/package, optional public site/deadline, and a short message. Service/package query parameters are allowlisted and select existing options; arbitrary query values are not copied into the request. Source page is `/contact`, not an attribution claim about where a visitor first found Wellridge.
+
+Required fields use browser validation and a trimmed-value check. A honeypot is hidden and excluded from keyboard order. In-flight and accepted submissions disable the form; success requires the documented provider acknowledgement. An HTTP 200 activation response is not success. The request times out after 20 seconds with no automatic retry. An uncertain failure retains entered details, enables manual retry, and opens the copy/email alternative; a delayed request can still arrive. Only the explicit new-inquiry action resets the form. JavaScript-free visitors use the email link; native form submission uses POST so details do not become query parameters.
+
+Form details are neither put into browser storage nor analytics. The form's fieldset starts disabled and is enabled only after handlers are installed, preventing data entry/native submission if JavaScript is unavailable; the email link remains usable. The provider processes and emails submitted fields. Do not accept attachments, health records, confidential grant material, procurement-sensitive information, or passwords through initial intake. Agree separately on document handoff for an accepted engagement. The public notice is `/privacy`.
+
+## Verification
+
+1. `npm run build`; `node --test scripts/inquiry.test.ts` on a Node runtime with TypeScript stripping.
+2. Browser: grant/package links, operations selection, invalid input, email preparation/copy, and explicit reset. Check desktop and mobile when available.
+3. Exercise an unavailable provider only in an isolated local test, then restore the real endpoint and rebuild. Confirm retained text, retry availability, and fallback. Do not send a local test to the real provider unintentionally.
+4. After deployment, send one clearly labeled synthetic inquiry with public business/test information only. Verify its exact marker, package, recipient and delivered-to address in the owner's inbox. Provider acknowledgement alone does not prove inbox delivery.
+5. Exclude all test messages and duplicates from business metrics. Record real inquiries, qualification, agreed scope, and collected cash in the private ledger, outside this public repository. A qualified inquiry requires an actual need within scope and a plausible buying timeframe.
+
+The route was activated September 9 using the domain-matched verification message. The labeled setup marker produced two inbox messages (the activation-triggering test and the subsequent activated-route test); both are synthetic and excluded. Production-browser and release receipts belong in ACTIVE_CONTEXT and WORKLOG.

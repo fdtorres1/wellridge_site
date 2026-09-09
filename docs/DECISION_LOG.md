@@ -109,3 +109,12 @@ This is the canonical status register. Strategy documents provide rationale and 
 - Use the existing `hello@wellridgegroup.com` recipient in a client-side inquiry composer with a reviewable text preview, copy fallback, and separate email-draft action. The page does not send or accept uploads.
 - Label Northside Arts Workshop as fictional; describe proposed targets and uncommitted support accurately, without client outcomes or endorsements.
 - User authorized pushing the implementation and documentation to `origin/feature/grant-offers-2026-09-07`, then recording verified first-push details in a second documentation commit and push. Prior dirty research/strategy work is excluded from staging. Main, production deployment, outbound messages, and payments remain outside this source push.
+
+## September 9, 2026 — Consistent grant offers and direct inquiries
+
+**Status: owner-authorized implementation and release; provider receipts recorded separately.**
+
+- Preserve $295/$350/$750 prices and existing grant caps. Centralize grant data; publish it on Pricing and grant-writing, with package-specific contact links. Operations remain custom quoted. Regional relevance belongs on the existing service page, without duplicate city pages or invented local offices.
+- Replace the email-only intake boundary with direct FormSubmit delivery to the verified Wellridge mailbox, retaining email/copy fallback and entered details on unconfirmed failure. Require contact identity and organization; accept public instructions/deadlines only, no uploads. Keep entry disabled until script handlers load. No automatic retries; manual retries after uncertainty can duplicate delivery and must be deduplicated privately.
+- Publish a buyer decision guide and clearly fictional LOI sample using consistent Northside demonstration facts. New funder/signatory names are explicitly invented outside the letter; targets and unsecured support are not represented as results or commitments.
+- Add Bing verification and one public IndexNow key, submitting only selected canonical URLs after public checks. Google/Bing receipt, canonical adoption, indexing, and client acquisition are separate observations. Preserve all Google scopes. Analytics is deferred.

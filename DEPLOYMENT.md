@@ -2,6 +2,12 @@
 
 This guide covers deploying the Wellridge Group website to Vercel and other platforms. It documents technical capability; repository changes do not by themselves authorize a deployment.
 
+## Current production workflow — September 9, 2026
+
+The existing GitHub repository is `fdtorres1/wellridge_site`; main deploys to the existing Vercel production site at `https://www.wellridgegroup.com`. Apex redirects to www. The owner authorized the current conversion/content release and its documentation follow-up. Verify authenticated identity, repository, branch, build, live pages, and provider receipts for each release. Instructions below about initially connecting a project are historical setup options, not a direction to create another project.
+
+The direct inquiry route uses FormSubmit and the verified Wellridge mailbox. Read `docs/INQUIRIES.md` for failure/success checks and labeled inbox verification; `docs/INDEXNOW.md` covers selected canonical URL notifications. Keep Bing ownership markup after verification. Submit the updated sitemap through the verified Google/Bing property and record receipt separately from indexing. No new analytics, calendar, newsletter, or social account is part of this batch.
+
 ## 🚀 Vercel Deployment (Recommended)
 
 ### Automatic Deployment
@@ -57,7 +63,7 @@ If a Vercel project is later connected and Git deployment settings are enabled, 
    - Click "Deploy site"
    - Netlify will build and deploy
 
-**Note:** If Netlify Forms is selected later, implement and review a form in `src/pages/contact.astro`; no form currently exists.
+**Note:** The current form uses FormSubmit. Switching to Netlify Forms would require a separately reviewed integration change in `src/pages/contact.astro`.
 
 ### Cloudflare Pages
 
@@ -160,7 +166,7 @@ Consider adding:
 
 ### Contact Intake Not Working
 
-The current site intentionally has no active form or mailbox. If intake is later implemented:
+The contact page submits through FormSubmit, with a locally prepared email alternative. If delivery is uncertain:
 
 1. Verify the handler or mailbox is owned and configured.
 2. Confirm privacy, consent, retention, spam, and sensitive-data controls.

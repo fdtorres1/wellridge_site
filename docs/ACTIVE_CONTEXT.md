@@ -1,5 +1,14 @@
 # Active context
 
+## September 9, 2026 — Grant conversion and buyer content
+
+- Current batch: align homepage, Pricing, Services and grant-writing around the existing $295 review / $350 LOI / $750 short foundation application. `src/lib/grants.ts` centralizes offer data; operations remain separately quoted. Stale unfinished-intake and no-public-rate-card wording is removed.
+- Added the grant review/LOI/application buyer guide, fictional Northside Arts Workshop LOI sample, package-specific contact links, and inquiry privacy page. The sample is not a real client/funder, award, or measured result. Arlington/DFW/Texas relevance remains on the single grant service page, with nationwide remote availability.
+- Direct FormSubmit inquiry is implemented with required reply fields, service/package selection, failure retention, duplicate prevention, timeout and email/copy fallback. The Wellridge-specific route is activated; both labeled setup messages were verified in the intended inbox. Production-browser delivery remains a release check. Analytics is deferred.
+- Current Google URL Inspection supersedes the older state below: homepage and `/grant-writing` are Submitted and indexed with matching user/Google canonicals on `www.wellridgegroup.com`. Last crawls are September 8 at 17:03:10 and 17:05:04 UTC respectively; this does not establish indexing of the new content. The routine access-token refresh preserved all 20 scopes exactly.
+- IndexNow source and public key are ready; Bing property verification, sitemap submissions and IndexNow notifications remain external release checks. Browser interactions have been intermittent; no browser outcome is claimed from timeout messages.
+- Final 20-page build and three inquiry/six IndexNow tests pass. Desktop Chrome checks cover grant/operations preselection, required-field validation, retained-input failure with retry/email fallback, buyer-guide rendering, and the fictional LOI layout; reviewed pages have no console errors or desktop horizontal overflow. The guide comparison table has a scroll container and resource body width is bounded. A fresh mobile viewport check was not completed. Bing's Wellridge-specific verification dialog supplied the ownership tag now in the shared layout; live verification and release receipts follow.
+
 ## Production release verified September 7, 2026
 
 The user authorized merging the grant-offers branch into `main`, including its previously committed Wellridge Group identity and site-strategy base. GitHub merge commit `30f5eb92eae467b939d439a65d8eacc7617db902` triggered Vercel Production deployment `6312071418`, which succeeded at 15:49:19 UTC. The new `/grant-writing`, `/work-examples/grant-review`, and `/resources/grant-application-checklist` routes returned HTTP 200 with expected content from Vercel. The apex domain currently redirects to `https://www.wellridgegroup.com`.
@@ -37,6 +46,10 @@ Follow-up implementation keeps email preparation explicit: the contact page hono
 Final editorial pass adds prominent Resources index cards for the checklist and fictional sample, removes the resource-index “coming soon” state, and narrows the sample revision to a 203-word grant narrative using only the implementation-brief facts. Byline/date and unresolved-input separation are visible. Build and root desktop/mobile browser QA passed, including navigation, inquiry preparation, and copy feedback. Production deployment is now verified above; actual inquiry email delivery was not tested in this release.
 
 First push verified September 7, 2026 at 15:18 UTC: commit `c7d17219cbd0acc2755a448989bfc70ef27e3e7f` is on `origin/feature/grant-offers-2026-09-07` in `fdtorres1/wellridge_site`. `git ls-remote` returned the same full SHA as local HEAD after the successful push. This documentation follow-up records that evidence, as requested. Prior dirty research and strategy documents remain outside these commits. No main merge or production deployment is implied; read the remote branch for the latest documentation commit.
+
+## Historical July 12 planning snapshot
+
+The sections below preserve the original planning state. Their local-only deployment and inactive-intake descriptions are superseded by the dated September release records above; they are not current launch blockers.
 
 Last updated: July 12, 2026
 

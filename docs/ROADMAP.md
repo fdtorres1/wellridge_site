@@ -1,5 +1,12 @@
 # Roadmap
 
+## September 9, 2026 — Current implementation priorities
+
+- Implemented for release: consistent fixed grant offers, direct inquiry with email fallback, a buyer decision guide, a fictional LOI example, and privacy notice. Operations retain separate quotes. Analytics remains deferred.
+- Google homepage and grant page now show Submitted and indexed with the correct matching canonical. This supersedes the September 8 historical canonical issue below for these two URLs. New content indexing remains unverified.
+- Complete browser QA, verified release, Bing ownership/sitemap setup, Google sitemap submission and selected-URL IndexNow receipt. Distinguish accepted submissions from indexing or revenue.
+- After release, use real inquiries and later relevant search evidence to choose the next refinement. Keep private qualification/payment records out of this repository.
+
 ## September 8, 2026 technical foundation status
 
 - Completed: additive Google OAuth upgrade retained all 19 original scopes and added `https://www.googleapis.com/auth/webmasters` (20 total, zero removals); refresh and identity were verified.
