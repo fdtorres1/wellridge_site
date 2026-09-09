@@ -35,6 +35,7 @@ export const grantOffers: GrantOffer[] = [
   },
   {
     id: 'application',
+    servicePath: '/foundation-grant-writing',
     name: 'Short foundation application',
     shortName: 'Foundation application',
     price: '$750',

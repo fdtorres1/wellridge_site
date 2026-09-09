@@ -10,21 +10,22 @@ const offerSchema = {
   name: 'Bounded grant-writing support',
   provider: { '@type': 'Organization', name: 'Wellridge Group', url: siteURL },
   serviceType: 'Grant application review, letters of inquiry, and short foundation applications',
+  areaServed: { '@type': 'Country', name: 'United States' },
   offers: grantOffers.map((offer) => ({ '@type': 'Offer', name: offer.name, price: offer.price.replace('$', ''), priceCurrency: 'USD', url: `${siteURL}${offer.servicePath ?? '/grant-writing'}` })),
 };
 ---
 
 <BaseLayout
-  title="Grant Writing Services in Texas & DFW"
-  description="Grant review from $295, letters of inquiry for $350, and short foundation applications for $750. Serving Arlington, DFW, Texas, and remote clients nationwide."
+  title="Grant Writing Services for Small Nonprofits Nationwide"
+  description="One-time nonprofit grant support across the United States: $295 proposal review, $350 LOI writing, or a $750 short foundation application. No retainer required."
   structuredData={offerSchema}
 >
   <section class="py-20 bg-gradient-to-b from-white to-fog">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
       <p class="text-sm font-semibold uppercase tracking-wide text-ridge-blue">A defined starting point</p>
-      <h1 class="text-5xl font-serif font-bold text-slate-deep mt-3 mb-6">Grant writing with a clear handoff</h1>
-      <p class="text-xl text-gray-600">Short, reviewable scopes for an identified funder or application. We inspect the instructions first, align the narrative to the approved program and budget, and leave the organization with a submission-ready package it can approve and submit.</p>
-      <p class="mt-4 text-gray-600">Grant review and writing for nonprofits in Arlington, Dallas–Fort Worth, and across Texas, with remote service nationwide.</p>
+      <h1 class="text-4xl sm:text-5xl font-serif font-bold text-slate-deep mt-3 mb-6">Grant writing services for small nonprofits nationwide</h1>
+      <p class="text-xl text-gray-600">Get help with the grant task in front of you: reviewing an existing proposal, writing a letter of inquiry, or preparing one short foundation application. Work remotely with Wellridge from anywhere in the United States, with a fixed fee and no retainer required.</p>
+      <p class="mt-4 text-gray-600">Start with one identified funder and your approved program and budget. We check the instructions and agree on scope before payment. Your organization approves the facts and submits the final materials.</p>
       <a href="/contact?service=grant-writing" class="inline-block mt-8 px-8 py-3 bg-ridge-blue text-white rounded-md text-lg font-medium">Discuss your grant</a>
     </div>
   </section>
@@ -68,10 +69,14 @@ const offerSchema = {
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
       <h2 class="text-3xl font-serif font-bold text-slate-deep mb-8">Questions organizations usually ask</h2>
       <div class="space-y-6">
+        <div><h3 class="text-xl font-serif font-bold">Can we hire you for just one grant?</h3><p class="text-gray-700 mt-2">Yes. Each offer covers one defined assignment without a monthly retainer. If you already have a draft, choose <a href="/grant-application-review" class="text-ridge-blue underline">proposal review and editing</a>. If you need a narrative written from approved materials, compare <a href="/letter-of-inquiry-writing" class="text-ridge-blue underline">LOI writing</a> and <a href="/foundation-grant-writing" class="text-ridge-blue underline">one-time foundation application writing</a>.</p></div>
+        <div><h3 class="text-xl font-serif font-bold">Do you work with nonprofits outside Texas?</h3><p class="text-gray-700 mt-2">Yes. These grant services are available remotely throughout the United States, including Arlington, Dallas–Fort Worth, and the rest of Texas. We agree on the materials handoff, deadline and time zone, and one person at your organization who can consolidate feedback and approve facts.</p></div>
+        <div><h3 class="text-xl font-serif font-bold">What if we have not found a grant yet?</h3><p class="text-gray-700 mt-2">These fixed-fee packages start with an identified opportunity. Funder prospect research is a different assignment. See the <a href="/services" class="text-ridge-blue underline">funding pipeline research scope</a> before paying for writing.</p></div>
         <div><h3 class="text-xl font-serif font-bold">Can you write to any funder?</h3><p class="text-gray-700 mt-2">The offer begins with one identified opportunity and its controlling instructions. Fit and access are checked before acceptance.</p></div>
         <div><h3 class="text-xl font-serif font-bold">Do you submit on our behalf?</h3><p class="text-gray-700 mt-2">No. The client owns final factual approval and submission authority.</p></div>
         <div><h3 class="text-xl font-serif font-bold">What if the scope grows?</h3><p class="text-gray-700 mt-2">Expansion, additional funders, new program design, or complex budget work receives a separate quote.</p></div>
       </div>
+      <p class="mt-8 text-gray-700">Felix Torres leads Wellridge's opportunity judgment, narrative architecture, and final quality control. Read <a href="/about" class="text-ridge-blue underline">about Felix and the Wellridge approach</a>, then use the <a href="/resources/grant-application-checklist" class="text-ridge-blue underline">materials checklist</a> to prepare for a scope discussion.</p>
     </div>
   </section>
 </BaseLayout>

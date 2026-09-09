@@ -45,6 +45,8 @@ The short foundation application is the right fit when the organization has one 
 
 This package is not a fit for a federal application, a complex or multi-period budget, a new program that needs design work, multiple funders, or a submission requiring extensive portal administration. Those needs require a separate scope decision.
 
+See the [one-time foundation grant writing service](/foundation-grant-writing) for the application inputs, payment milestones, and a fictional response excerpt. All three services are available remotely to nonprofits throughout the United States; no monthly retainer is required.
+
 ## Inputs that make a package ready to start
 
 For any option, gather the controlling instructions, deadline and time zone, submission method, approved organization description, program facts, current budget, request amount, relevant attachments, and the name of the final approver. Label committed, planned, and unsecured support separately. Confirm who will submit.

@@ -1,5 +1,13 @@
 # Active context
 
+## September 9, 2026 — National grant service focus
+
+- Current approved batch changes `/grant-writing` from a Texas/DFW-led overview to a national service hub for small nonprofits. Regional references remain supporting context. Review and LOI pages now lead with specific nonprofit buyer tasks, nationwide remote availability, and annotated fictional excerpts.
+- Added `/foundation-grant-writing` for the existing $750 one-time short application, using shared offer data and the unchanged $375/$375 payment terms. All three service offers have explicit service paths, U.S. Service markup, and package-selected inquiry links; the sitemap now contains 23 pages. Home, Services, Pricing (through shared data), and the buyer guide connect the national services.
+- Keyword clusters are candidates, not volume-validated targets or verified rankings. `docs/NATIONAL_GRANT_SEO.md` records page ownership, next evidence checks, and no-claim limits. No new credential, private case study, client outcome, or grant award claim was added. Analytics remains deferred.
+- Production build, three existing inquiry tests, and static checks for all 23 routes passed. Personal Chrome verified the national hub at 1680×947 and all three service-page heroes at 390×844; each service CTA selected its correct package on the inquiry form. Snapshots showed meaningful content without a framework overlay; inspected console logs were clear. Temporary viewport restored; no inquiry sent. Source changes are not yet a live release at this entry's creation; deployment receipts follow separately.
+
+
 ## September 9, 2026 — Focused grant service pages
 
 - Implemented `/grant-application-review` and `/letter-of-inquiry-writing` using shared $295/$350 offer data, own Service/Offer markup, required inputs, process, limits, fictional examples, and package-selected inquiry links. `/grant-writing` remains the Texas/DFW overview; no duplicate city pages were added.

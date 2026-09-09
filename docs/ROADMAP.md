@@ -1,5 +1,12 @@
 # Roadmap
 
+## September 9, 2026 — National acquisition priority
+
+- Implemented for release: national nonprofit grant-writing hub, stronger review and LOI pages with annotated fictional excerpts, and one-time short foundation application page. Keep one page per buyer task and reuse existing pricing, checklist, guide, and sample resources.
+- Next evidence work: validate national keyword demand and search intent; inspect new-page discovery after recrawls; compare query clusters, qualified inquiries, and collected payments. See `NATIONAL_GRANT_SEO.md`. No #1 ranking, volume, lead, or revenue claim is established by this implementation.
+- Future content should address a demonstrated buyer question or improve an existing page. Relevant directory research and contribution drafts are potential next steps; external submissions/outreach remain separate actions. Analytics stays deferred.
+
+
 ## September 9, 2026 — Focused entry offer batch
 
 - Deployed and verified: dedicated application-review and LOI-writing pages, buyer answers on the existing Pricing page, and links from the overview, guide and samples. Existing fees and scope caps are preserved. Root 22-page build and desktop/mobile CTA checks pass; Vercel Production and all live sitemap URLs were verified.

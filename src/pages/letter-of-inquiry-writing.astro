@@ -11,6 +11,7 @@ const serviceSchema = {
   '@type': 'Service',
   name: offer.name,
   serviceType: 'Letter of inquiry writing',
+  areaServed: { '@type': 'Country', name: 'United States' },
   description: offer.description,
   provider: { '@type': 'Organization', name: 'Wellridge Group', url: siteURL },
   url: pageURL,
@@ -28,15 +29,16 @@ const offerSchema = {
 ---
 
 <BaseLayout
-  title="Letter of Inquiry Writing Services"
-  description={`${offer.price} for a grant letter of inquiry up to two pages, using your approved program and budget. One funder, one revision, and a clear handoff.`}
+  title="Grant Letter of Inquiry Writing Services for Nonprofits"
+  description={`${offer.price} grant LOI writing for nonprofits nationwide. One letter up to two pages, one identified funder, and one revision using your approved program and budget.`}
   structuredData={[serviceSchema, offerSchema]}
 >
   <section class="py-20 bg-gradient-to-b from-white to-fog">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
       <p class="text-sm font-semibold uppercase tracking-wide text-ridge-blue">Defined grant support</p>
-      <h1 class="text-4xl sm:text-5xl font-serif font-bold text-slate-deep mt-3 mb-6">Write a focused letter of inquiry for one funder</h1>
+      <h1 class="text-4xl sm:text-5xl font-serif font-bold text-slate-deep mt-3 mb-6">Grant letter of inquiry writing for nonprofits</h1>
       <p class="text-xl text-gray-600">Give a funder a concise introduction to your existing program, the amount you are requesting, and the next step. We turn your approved facts and budget into a letter that follows its instructions.</p>
+      <p class="mt-4 text-gray-600">Hire Wellridge for one foundation LOI, without a retainer. We work remotely with nonprofits throughout the United States.</p>
       <p class="mt-5 font-semibold text-ridge-blue">{offer.price} · {offer.payment} after scope agreement</p>
       <a href="/contact?service=grant-writing&package=loi" class="inline-block mt-8 px-8 py-3 bg-ridge-blue text-white rounded-md text-lg font-medium">Discuss an LOI</a>
     </div>
@@ -59,6 +61,16 @@ const offerSchema = {
           <p class="text-sm text-gray-600 mt-4">{offer.timing}</p>
         </aside>
       </div>
+    </div>
+  </section>
+
+  <section class="py-16 bg-white border-t border-gray-200">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-serif font-bold text-slate-deep mb-4">An LOI excerpt, with the reasoning behind it</h2>
+      <p class="text-gray-700 mb-6">Northside Arts Workshop is fictional. This writing demonstration is not a real client request, funder invitation, or award.</p>
+      <blockquote class="border-l-4 border-ridge-blue bg-fog p-6 text-lg text-gray-700">“Northside is seeking $3,600 toward a $4,800 project budget: teaching artist $1,800, materials $960, space $900, transportation assistance $600, and evaluation/administration $540. Planned other support is $1,200 and is not committed or secured.”</blockquote>
+      <p class="text-gray-700 mt-6">The request is separate from the total project cost, the line items reconcile, and planned support is not presented as money already secured. Your LOI should use the level of budget detail the funder requests.</p>
+      <p class="text-gray-700 mt-4">Read the <a href="/work-examples/letter-of-inquiry" class="text-ridge-blue underline">complete fictional letter of inquiry</a> to see the program introduction, planning targets, and request for a next step.</p>
     </div>
   </section>
 
@@ -85,6 +97,8 @@ const offerSchema = {
         <p class="text-gray-700">This offer does not include a new program design, complex budget creation, federal application, multiple funders, portal administration, or submission on the client's behalf. There is no award guarantee. Work beyond the included revision or outside the approved program and budget requires a separate scope.</p>
       </div>
       <div class="mt-8 text-gray-700">
+        <h2 class="text-2xl font-serif font-bold text-slate-deep mb-3">What happens if the funder invites an application?</h2>
+        <p class="mb-4">An invitation is a new scope decision. The LOI fee covers the letter and its included revision. If the next stage fits, our <a href="/foundation-grant-writing" class="text-ridge-blue underline">short foundation application service</a> can prepare one application from approved materials under a separate agreement.</p>
         <p>Read the <a class="text-ridge-blue underline" href="/work-examples/letter-of-inquiry">fictional LOI sample</a>. Compare this scope with <a class="text-ridge-blue underline" href="/grant-application-review">application review</a>, all <a class="text-ridge-blue underline" href="/grant-writing">grant-writing services</a>, <a class="text-ridge-blue underline" href="/pricing#grant-pricing-questions">payment and scope answers</a>, or the <a class="text-ridge-blue underline" href="/resources/grant-review-loi-or-application">grant buyer guide</a>.</p>
       </div>
     </div>

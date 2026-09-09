@@ -11,6 +11,7 @@ const serviceSchema = {
   '@type': 'Service',
   name: offer.name,
   serviceType: 'Grant application review',
+  areaServed: { '@type': 'Country', name: 'United States' },
   description: offer.description,
   provider: { '@type': 'Organization', name: 'Wellridge Group', url: siteURL },
   url: pageURL,
@@ -28,15 +29,16 @@ const offerSchema = {
 ---
 
 <BaseLayout
-  title="Grant Application Review Services"
-  description={`${offer.price} for an existing grant narrative review up to 2,000 words. Get tracked edits and a missing-items checklist against one funder's instructions.`}
+  title="Nonprofit Grant Proposal Review & Editing Services"
+  description={`${offer.price} nonprofit grant proposal review and editing, available nationwide. Up to 2,000 narrative words, tracked edits, and a missing-items checklist.`}
   structuredData={[serviceSchema, offerSchema]}
 >
   <section class="py-20 bg-gradient-to-b from-white to-fog">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
       <p class="text-sm font-semibold uppercase tracking-wide text-ridge-blue">Defined grant support</p>
-      <h1 class="text-4xl sm:text-5xl font-serif font-bold text-slate-deep mt-3 mb-6">Review an existing grant application before you submit</h1>
+      <h1 class="text-4xl sm:text-5xl font-serif font-bold text-slate-deep mt-3 mb-6">Nonprofit grant proposal review and editing</h1>
       <p class="text-xl text-gray-600">When the words already exist, a focused review can show where the draft answers the funder, where facts or attachments are missing, and where the narrative and budget need to agree.</p>
+      <p class="mt-4 text-gray-600">Available remotely to nonprofits throughout the United States. One existing foundation grant narrative, one review, and no recurring commitment.</p>
       <p class="mt-5 font-semibold text-ridge-blue">{offer.price} · {offer.payment} after scope agreement</p>
       <a href="/contact?service=grant-writing&package=review" class="inline-block mt-8 px-8 py-3 bg-ridge-blue text-white rounded-md text-lg font-medium">Discuss an application review</a>
     </div>
@@ -59,6 +61,18 @@ const offerSchema = {
           <p class="text-sm text-gray-600 mt-4">{offer.timing}</p>
         </aside>
       </div>
+    </div>
+  </section>
+
+  <section class="py-16 bg-white border-t border-gray-200">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-serif font-bold text-slate-deep mb-4">What a grant narrative review looks like</h2>
+      <p class="text-gray-700 mb-6">This excerpt uses the fictional Northside Arts Workshop demonstration. The organization, numbers, and proposed activities are invented; this is not client work or an awarded grant.</p>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="p-6 rounded-lg border border-gray-200"><h3 class="text-xl font-serif font-bold mb-3">Before: a claim without a measure</h3><blockquote class="text-gray-700">“We expect the program to be successful and will evaluate it through attendance and feedback.”</blockquote></div>
+        <div class="p-6 rounded-lg border border-well-green bg-green-50"><h3 class="text-xl font-serif font-bold mb-3">After: a specific planning target</h3><blockquote class="text-gray-700">“The planning target is for at least 18 of 24 enrolled students to attend five of six sessions.”</blockquote><p class="text-gray-700 mt-4">The revision names the target, denominator, and attendance threshold. A real review needs your approved targets; an editor cannot invent them.</p></div>
+      </div>
+      <p class="text-gray-700 mt-6">The accompanying checklist would flag the attendance-record owner, missing follow-up, and approval of the target. See the <a href="/work-examples/grant-review" class="text-ridge-blue underline">full annotated review and hypothetical budget</a>.</p>
     </div>
   </section>
 
@@ -85,6 +99,8 @@ const offerSchema = {
         <p class="text-gray-700">This scope fits an identified opportunity with a draft in hand. It includes one review; additional review rounds require a separate agreement. New program design, federal applications, complex budget creation, additional funders, portal administration, and submission are outside the package. The funder makes the award decision; Wellridge does not guarantee funding.</p>
       </div>
       <div class="mt-8 text-gray-700">
+        <h2 class="text-2xl font-serif font-bold text-slate-deep mb-3">Do you need editing or writing from scratch?</h2>
+        <p class="mb-4">Choose this review when a complete narrative already exists and needs clearer answers, an instruction check, and identified gaps. If you have approved source materials but no draft, the <a href="/foundation-grant-writing" class="text-ridge-blue underline">one-time foundation application writing service</a> covers a different task. This package is nonprofit narrative support; it does not include scientific peer review or federal application review.</p>
         <p>See the <a class="text-ridge-blue underline" href="/work-examples/grant-review">fictional grant review example</a> for a demonstration of the format. Compare this scope with <a class="text-ridge-blue underline" href="/letter-of-inquiry-writing">letter-of-inquiry writing</a>, all <a class="text-ridge-blue underline" href="/grant-writing">grant-writing services</a>, <a class="text-ridge-blue underline" href="/pricing#grant-pricing-questions">payment and scope answers</a>, or the <a class="text-ridge-blue underline" href="/resources/grant-review-loi-or-application">grant buyer guide</a>.</p>
       </div>
     </div>

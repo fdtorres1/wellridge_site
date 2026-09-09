@@ -1,0 +1,112 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { grantOfferById } from '../lib/grants';
+
+const offer = grantOfferById.application;
+const siteOrigin = Astro.site ?? new URL('https://www.wellridgegroup.com');
+const siteURL = siteOrigin.toString().replace(/\/$/, '');
+const pageURL = `${siteURL}/foundation-grant-writing`;
+const serviceSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  name: offer.name,
+  serviceType: 'Short foundation grant application writing',
+  description: offer.description,
+  provider: { '@type': 'Organization', name: 'Wellridge Group', url: siteURL },
+  areaServed: { '@type': 'Country', name: 'United States' },
+  url: pageURL,
+};
+const offerSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Offer',
+  name: offer.name,
+  description: offer.description,
+  price: offer.price.replace('$', ''),
+  priceCurrency: 'USD',
+  url: pageURL,
+  areaServed: { '@type': 'Country', name: 'United States' },
+  itemOffered: { '@type': 'Service', name: offer.name, url: pageURL },
+};
+---
+
+<BaseLayout
+  title="One-Time Foundation Grant Writing for Nonprofits"
+  description={`${offer.price} one-time foundation grant writing for nonprofits nationwide. Up to 2,000 narrative words, an attachment checklist, and one consolidated revision.`}
+  structuredData={[serviceSchema, offerSchema]}
+>
+  <section class="py-20 bg-gradient-to-b from-white to-fog">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <p class="text-sm font-semibold uppercase tracking-wide text-ridge-blue">One application · no retainer</p>
+      <h1 class="text-4xl sm:text-5xl font-serif font-bold text-slate-deep mt-3 mb-6">One-time foundation grant writing for nonprofits</h1>
+      <p class="text-xl text-gray-600">For a nonprofit with an identified foundation opportunity, this one-time writing scope turns your approved program facts and budget into a clear application package the organization can review, approve, and submit.</p>
+      <p class="mt-4 text-gray-600">Available remotely throughout the United States. We confirm instructions, materials, scope, and timing before payment.</p>
+      <p class="mt-5 font-semibold text-ridge-blue">{offer.price} · {offer.payment}</p>
+      <a href="/contact?service=grant-writing&package=application" class="inline-block mt-8 px-8 py-3 bg-ridge-blue text-white rounded-md text-lg font-medium">Discuss a foundation application</a>
+    </div>
+  </section>
+
+  <section class="py-16 bg-white">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+        <div class="lg:col-span-2">
+          <h2 class="text-3xl font-serif font-bold text-slate-deep mb-4">A bounded application package</h2>
+          <p class="text-gray-700">The {offer.price} scope covers one identified foundation opportunity and up to 2,000 narrative words. It includes an attachment checklist and one consolidated revision using the organization’s approved program and budget.</p>
+          <p class="text-gray-700 mt-4">Payment is {offer.payment}. There is no retainer or automatic recurring commitment.</p>
+        </div>
+        <aside class="border border-gray-200 rounded-lg p-6 bg-fog">
+          <p class="text-sm font-semibold text-ridge-blue">At a glance</p>
+          <p class="text-2xl font-serif font-bold text-slate-deep mt-2">{offer.price}</p>
+          <ul class="list-disc pl-5 mt-4 text-sm text-gray-700 space-y-1">
+            {offer.deliverables.map((deliverable) => <li>{deliverable}</li>)}
+          </ul>
+          <p class="text-sm text-gray-600 mt-4">{offer.timing}</p>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 bg-fog">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="bg-white rounded-lg p-6">
+          <h2 class="text-2xl font-serif font-bold text-slate-deep mb-3">Start with public fit information</h2>
+          <p class="text-gray-700">For the initial inquiry, send the foundation and program name, public instructions or URL, stated deadline and time zone, a short description of the approved program, and a high-level request and budget. Identify the person who approves organizational facts.</p>
+          <p class="text-gray-700 mt-4">Keep confidential client information, protected records, passwords, and sensitive attachments out of that first message. After fit, scope, payment, and access are agreed, we arrange a separate handoff for the draft and approved materials.</p>
+        </div>
+        <div class="bg-white rounded-lg p-6">
+          <h2 class="text-2xl font-serif font-bold text-slate-deep mb-3">Process and timing</h2>
+          <ol class="list-decimal pl-5 space-y-2 text-gray-700">
+            <li>Inspect the identified foundation’s instructions, fit, deadline, and required attachments.</li>
+            <li>Confirm scope, payment, the secure materials handoff, and the accountable fact approver.</li>
+            <li>Draft the narrative and attachment checklist. {offer.timing}</li>
+            <li>Incorporate one consolidated revision and deliver the agreed submission-ready package.</li>
+          </ol>
+          <p class="text-gray-700 mt-4">Allow additional time after the first draft for your factual review, the included revision, approvals, and submission. The client confirms facts, approves the final materials, chooses the submission channel, and submits. Late or incomplete inputs move the working deadline.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 bg-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-serif font-bold text-slate-deep mb-4">What a focused answer can look like</h2>
+      <p class="text-gray-700">Suppose a foundation asks: “Describe the proposed project, who it serves, and how you will measure participation.” This fictional Northside Arts Workshop response names the activity and participants, then gives a measurable target and a way to record attendance. All names and figures are invented for this demonstration.</p>
+      <div class="mt-6 border border-gray-200 rounded-lg p-6 bg-fog">
+        <p class="text-sm font-semibold uppercase tracking-wide text-ridge-blue">Fictional excerpt · not proof of client work or an award</p>
+        <blockquote class="mt-4 text-gray-700">Northside Arts Workshop proposes a free six-week visual-arts workshop in Arlington, Texas, for 24 students ages 10–14. The planning target is for at least 18 enrolled students to attend five of six Saturday sessions. Sign-ins will be reviewed after the workshop, with missing attendance records identified explicitly.</blockquote>
+      </div>
+      <p class="mt-6 text-gray-700">The answer stays within the question. The request amount and budget belong in the funder's budget questions; the $3,600 hypothetical request and $4,800 total project budget are shown in the linked examples. Actual applications need approved organizational facts and the funder's current word limits. These participation figures are targets, not achieved results.</p>
+      <p class="mt-6 text-gray-700">Read the <a class="text-ridge-blue underline" href="/work-examples/grant-review">fictional grant review example</a> for the source facts and unresolved inputs, or see the <a class="text-ridge-blue underline" href="/work-examples/letter-of-inquiry">fictional LOI sample</a> for a different foundation-facing format.</p>
+    </div>
+  </section>
+
+  <section class="py-16 bg-fog">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="border border-gray-200 rounded-lg p-6 bg-white">
+        <h2 class="text-2xl font-serif font-bold text-slate-deep mb-3">Fit and boundaries</h2>
+        <p class="text-gray-700">This offer is for one identified foundation opportunity and an existing approved program and budget. It excludes federal applications, new program design, complex budget creation, researching multiple funders, portal administration, and submission on the client’s behalf. Work beyond one consolidated revision requires a separate agreement. The foundation makes the award decision; Wellridge does not guarantee funding.</p>
+      </div>
+      <p class="mt-8 text-gray-700">Compare this scope with <a class="text-ridge-blue underline" href="/grant-application-review">application review</a>, <a class="text-ridge-blue underline" href="/letter-of-inquiry-writing">letter-of-inquiry writing</a>, all <a class="text-ridge-blue underline" href="/grant-writing">grant-writing services</a>, <a class="text-ridge-blue underline" href="/pricing#grant-pricing-questions">payment and scope answers</a>, or the <a class="text-ridge-blue underline" href="/resources/grant-review-loi-or-application">grant buyer guide</a>.</p>
+    </div>
+  </section>
+</BaseLayout>

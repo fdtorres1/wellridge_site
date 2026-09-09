@@ -1,5 +1,13 @@
 # Decision log
 
+## September 9, 2026 — National grant service positioning
+
+- Owner correction and approval: national buyer-task queries lead grant-service acquisition; North Texas is supporting geography, not the market boundary. Keep `/grant-writing` and its existing canonical URL as the national hub.
+- Use one service page each for review/editing, LOI writing, and one-time short foundation application writing. Preserve $295/$350/$750 fees, scope caps, input-dependent timing, and client approval/submission. National availability does not expand packages into federal applications, scientific review, funder research, or complex budget/program design.
+- Use clearly fictional, annotated work excerpts as method demonstrations. Existing public About copy supports the link to Felix's delivery role; no private source or unverified credential/result becomes public proof.
+- The keyword map is a working hypothesis. Revisit priorities using demand, actual query/page visibility, qualified inquiries, and collected payments; no ranking guarantee or automatic city/topic expansion.
+
+
 Last updated: July 12, 2026
 
 This is the canonical status register. Strategy documents provide rationale and operating detail; this file records what is decided, modeled, unresolved, or rejected.
