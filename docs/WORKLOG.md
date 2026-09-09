@@ -436,3 +436,4 @@ Append-only record of material repository work. Decisions belong in `DECISION_LO
 ## 2026-09-09 — About inquiry invitation
 
 - Owner requested correction of the stale About-page contact-status wording. Replaced the closing heading with “Tell Us What You Need,” added a direct invitation to share the opportunity, deadline and work, and changed the existing `/contact` button to “Send an inquiry.” Existing layout and contact destination are preserved. Build and production readback are release checks.
+- Build and built-page assertions passed. First push `fd91690bd1b23e192152f55b5ed8a43623ce7ed5` matched the remote branch; main merge `86e8b1234376a852f76599d0e05aa30b5d717d8c` deployed through Vercel Production `6355398790`, successful at 17:18:32 UTC. Live `/about` returned 200 with the new invitation and without the stale status/availability wording. This follow-up records the completed push and deployment.
