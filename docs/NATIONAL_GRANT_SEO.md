@@ -1,15 +1,15 @@
 # National grant search plan
 
-September 9, 2026. Owner-approved page architecture; keyword phrases remain research candidates. This is a working plan, not measured demand or a #1 ranking forecast.
+September 9, 2026. Owner-approved page architecture, updated after [30-query volume validation and six U.S. SERP samples](NATIONAL_KEYWORD_VALIDATION.md). Nine phrases returned numerical estimates; 21 were unreported. This is a prioritization plan, not a #1 ranking forecast.
 
 | Page | Buyer task and candidate query cluster | Conversion |
 |---|---|---|
-| `/grant-writing` | grant writing services for small nonprofits; grant writing help without a retainer | Choose review, LOI, or one application |
-| `/grant-application-review` | nonprofit grant proposal review; grant application review service; nonprofit grant editing services | $295 existing narrative review |
+| `/grant-writing` | nonprofit grant writing services; grant writing services for nonprofits; secondary grant writer for nonprofits | Choose review, LOI, or one application |
+| `/grant-application-review` | nonprofit grant proposal review; grant application review service; nonprofit grant editing services — useful conversion language, volume unreported | $295 existing narrative review |
 | `/letter-of-inquiry-writing` | grant letter of inquiry writing service; hire a grant LOI writer; nonprofit LOI writing services | $350 LOI |
-| `/foundation-grant-writing` | one-time grant writing services; foundation grant application writing service; hire a grant writer for one application | $750 short application, $375 to begin |
-| `/pricing` | grant proposal review cost; nonprofit grant writing fees | Compare current fixed fees and limits |
-| `/work-examples/letter-of-inquiry` | nonprofit grant letter of inquiry example | Read fictional sample, then consider the LOI service |
+| `/foundation-grant-writing` | grant proposal writing services; one-time foundation application modifiers remain unvalidated | $750 short application, $375 to begin |
+| `/pricing` | grant writing cost | Compare current fixed fees and limits |
+| `/work-examples/letter-of-inquiry` | grant letter of inquiry example | Read fictional sample, then consider the LOI service |
 
 ## Implementation choices
 
@@ -19,13 +19,13 @@ The existing buyer guide already compares review, LOI, and application work; the
 
 ## Evidence and limits
 
-The preceding research reviewed national search candidates and primary competitor pages on September 9. Broad editing intent includes scientific services such as [AJE](https://www.aje.com/services/grants); [NPO Grant Consulting](https://npogrants.com/grant-writing-only) explicitly markets standalone writing. These observations support a nonprofit foundation-service focus, but do not establish search volume, keyword difficulty, a localized Google position, or that Wellridge can outrank either provider.
+The September 9 validation supersedes the initial qualitative research: measured commercial demand favors the national hub, while review/editing results have substantial funder-side and scientific intent mismatch. Broad editing results include [AJE](https://www.aje.com/services/grants). An earlier NPO Grant Consulting search result suggested standalone writing, but its referenced page returned 404 in the follow-up; it is not a currently verified live offer. The [validation report](NATIONAL_KEYWORD_VALIDATION.md) records actual estimates and observed result positions, without inferring organic difficulty or that Wellridge can outrank competitors. LOI service phrases remain unreported; the example query has measurable supporting demand.
 
 This implementation did not refresh Search Console performance or verify ranking changes. Previous submission receipts and page inspection snapshots must retain their observation dates. Search Console query rows can be suppressed; missing rows do not prove no demand. IndexNow acceptance establishes receipt only. The published sitemap remains registered with the existing Google and Bing properties.
 
 ## Next measurement pass
 
-1. Validate 15–20 phrases across the clusters with an available keyword-data source and U.S. search-result inspection. Record source/date, geography, demand estimate or unavailable state, intent, and actual competing page types. Do not substitute advertising competition for organic difficulty.
+1. Completed September 9: validate 30 phrases through DataForSEO Google Ads and inspect six U.S. desktop result pages, total $0.102. Use the revised page priorities above. Do not substitute advertising competition for organic difficulty or unreported volume for zero demand.
 2. Confirm discovery and canonical adoption for the three service pages after crawls. An unknown or pending URL shortly after publication is not by itself a technical failure.
 3. Compare Search Console page/query clusters over consistent 28-day windows, distinguishing branded from nonbranded visibility where returned data permits. Record impressions, clicks, CTR, and average position with denominators; small samples cannot establish a trend. Segment the U.S. where useful and retain suppression limits.
 4. Keep qualified inquiries, agreed scopes, deposits, total collected payments, and labor in private operating records. Exclude synthetic inquiries. The current form stores `/contact` as source, so it does not independently prove organic acquisition; record client-reported discovery privately. Analytics is deferred.

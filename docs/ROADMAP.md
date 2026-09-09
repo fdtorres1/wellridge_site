@@ -1,5 +1,12 @@
 # Roadmap
 
+## September 9, 2026 — Demand-validated next priorities
+
+- Completed: 30 national query estimates, six U.S. SERP samples, revised page ownership, directory candidates and two unsent information requests. See `NATIONAL_KEYWORD_VALIDATION.md` and `NATIONAL_LINK_OPPORTUNITIES.md`.
+- Prioritize the existing national hub for nonprofit grant-writing service intent; pricing and the LOI example are supporting targets. Review/editing and one-off modifiers remain useful scope language, not proven easy traffic. Do not multiply pages around unreported phrases.
+- Next content candidate: add a copyable blank LOI structure beside the existing annotated fictional example. Inspect discovery after recrawls and later consistent 28-day performance windows before further expansion. No monitor was scheduled.
+- Outside discovery: clarify Nonprofit Learning Lab and TNPA costs/eligibility using prepared drafts only after authorization to contact. No purchased placement is recommended now. Analytics remains deferred.
+
 ## September 9, 2026 — National acquisition priority
 
 - Deployed and verified: national nonprofit grant-writing hub, stronger review and LOI pages with annotated fictional excerpts, and one-time short foundation application page. All 23 live pages matched the tested build; Vercel success and live application inquiry selection verified. Keep one page per buyer task and reuse existing pricing, checklist, guide, and sample resources.

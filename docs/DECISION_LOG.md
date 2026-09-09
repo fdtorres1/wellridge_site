@@ -1,5 +1,11 @@
 # Decision log
 
+## September 9, 2026 — National keyword evidence correction
+
+- Use historical U.S. demand estimates and actual result intent together. Twenty-one of 30 candidate phrases returned no estimate; this neither proves zero demand nor supports calling them easy national ranking opportunities.
+- Concentrate search acquisition on the existing nonprofit service hub and supporting pricing/LOI example. Keep focused review, LOI and application pages for clear service selection; no duplicate synonym pages or price cuts follow from this research.
+- DataForSEO cost was $0.102 from existing balance. No Google Ads account configuration, top-up, analytics change, or external outreach was needed. Directory candidates remain unsubmitted; fees and membership eligibility require separate resolution.
+
 ## September 9, 2026 — National grant service positioning
 
 - Owner correction and approval: national buyer-task queries lead grant-service acquisition; North Texas is supporting geography, not the market boundary. Keep `/grant-writing` and its existing canonical URL as the national hub.
