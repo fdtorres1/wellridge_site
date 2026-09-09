@@ -35,3 +35,12 @@ the script does not claim either outcome.
 The protocol details and response meanings are documented by
 [IndexNow](https://www.indexnow.org/documentation). This repository does not
 add an automation, GitHub Action, dependency, or secret for submissions.
+
+## September 9 release receipt
+
+After production key and URL readback, one live request returned HTTP 202 for
+`/`, `/grant-writing`, `/pricing`, `/services`, `/contact`, `/resources`,
+`/resources/grant-review-loi-or-application`, `/work-examples/letter-of-inquiry`,
+`/work-examples/grant-review`, and `/privacy`. Key validation and indexing are
+not established by this receipt. Bing ownership verification and its separate
+sitemap submission completed; sitemap processing remains pending.
