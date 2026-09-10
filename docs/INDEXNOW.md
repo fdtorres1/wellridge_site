@@ -56,3 +56,9 @@ The national-service release notified eight changed URLs: `/`, `/services`,
 `/resources/grant-review-loi-or-application`. After Vercel production and exact
 live HTML verification, the request returned HTTP 200 on September 9.
 This is receipt only; no new Google or Bing indexing/ranking result was measured.
+
+The LOI-template release notified `/work-examples/letter-of-inquiry`,
+`/letter-of-inquiry-writing`, and `/resources` after exact live/build readback.
+IndexNow returned HTTP 200 on September 9 local time (September 10 UTC).
+The text download was verified live but not separately submitted. This confirms
+receipt only, not crawling, indexing, ranking or inquiries.
