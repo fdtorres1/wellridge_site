@@ -6,6 +6,7 @@
 - Existing Google sitemap resubmitted successfully (204). Follow-up at 04:11:46 UTC confirmed pending false, all 23 submitted URLs processed, zero errors/warnings, and a new download at 04:04:47 UTC. Sitemap processing is not page indexing. All 20 OAuth scopes preserved.
 - August 10–September 6 final Web data returned one impression and one click, both in the U.S.; U.S. page/query breakdowns returned no rows. Too little evidence for keyword/ranking or acquisition conclusions.
 - [Eight resource candidates and unsent notes](LOI_RESOURCE_SHARING_2026-09-10.md) are prepared. York, Philadelphia, Williamsburg and Seattle have the clearest fit; Tulsa and MAGIC require routing/acceptance confirmation. No outside messages, purchases, listings or memberships. Analytics remains deferred. Documentation release receipts follow separately.
+- Published: first push `74e2b109fea8e5e07425aa23bf28280cb3826f23` matched the remote branch; main merge `8ba4cf8db0074e71718d776ef8a3d2ae58b0b11e` matched remote main. Vercel Production deployment `6364419116` reported success. This separate documentation follow-up records the push/merge/provider receipt; no public site code changed.
 
 ## September 9, 2026 — Reusable LOI template
 

@@ -495,3 +495,8 @@ Append-only record of material repository work. Decisions belong in `DECISION_LO
 - Final Web performance for August 10–September 6 (Pacific dates) returned one impression/click, both U.S.; no U.S. page/query rows. Daily totals reconcile. Recorded the tiny denominator and missing-breakdown limits; no ranking, organic acquisition or lead claim.
 - Native research worker requested as `gpt-5.6-luna` medium completed a bounded read-only candidate inventory. Root verified sources, replaced inaccessible/weak entries, corrected department contacts and flagged reference-service restrictions. Final packet contains eight candidates and eight unsent drafts; first four have the clearest fit. No outside contact, purchase, listing or membership occurred.
 - Added baseline and sharing documents; updated README, ACTIVE_CONTEXT, ROADMAP and national measurement plan. Report totals, seven inspections, eight drafts, scope count, local Markdown links and `git diff --check` passed. Documentation only; no application test rerun justified. Raw authenticated evidence remains outside Git. Publication receipts follow separately; analytics remains deferred.
+
+## 2026-09-10 UTC — Discovery documentation publication receipt
+
+- First push `74e2b109fea8e5e07425aa23bf28280cb3826f23` matched the remote branch. GitHub main merge `8ba4cf8db0074e71718d776ef8a3d2ae58b0b11e` matched remote main; Vercel Production deployment `6364419116` reported success.
+- This separate follow-up records the first push, merge and provider completion before a second documentation push/merge. No public code changed, no outreach occurred, and Google page indexing remains at the dated inspection snapshot rather than a claimed new result.
