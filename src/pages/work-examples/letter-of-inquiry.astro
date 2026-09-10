@@ -1,33 +1,67 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import { grantOfferById } from '../../lib/grants';
+import templateText from '../../../public/downloads/grant-letter-of-inquiry-template.txt?raw';
+
+const pageTitle = 'Grant Letter of Inquiry Example & Free Template';
+const pageDescription = 'Read a fictional nonprofit grant letter of inquiry example, then copy or download a free LOI template with prompts for your request, program and budget.';
 
 const siteOrigin = Astro.site ?? new URL('https://www.wellridgegroup.com');
 const siteURL = siteOrigin.toString().replace(/\/$/, '');
 const sampleSchema = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  headline: 'Fictional letter of inquiry sample: Northside Arts Workshop',
-  description: 'A fictional, bounded letter of inquiry sample using the Northside Arts Workshop demonstration facts.',
+  headline: pageTitle,
+  description: pageDescription,
   author: { '@type': 'Organization', name: 'Wellridge Group' },
   publisher: { '@type': 'Organization', name: 'Wellridge Group', url: siteURL },
   mainEntityOfPage: `${siteURL}/work-examples/letter-of-inquiry`,
 };
 ---
 
-<BaseLayout title="Letter of Inquiry Sample" description="A fictional letter of inquiry sample for a bounded foundation request." structuredData={sampleSchema}>
+<BaseLayout title={pageTitle} description={pageDescription} structuredData={sampleSchema}>
   <article class="py-20 bg-gradient-to-b from-white to-fog">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
       <p class="text-sm font-semibold uppercase tracking-wide text-ridge-blue">Work example · fictional demonstration</p>
-      <h1 class="text-5xl font-serif font-bold text-slate-deep mt-3 mb-6">A concise letter of inquiry with a clear next step</h1>
+      <h1 class="text-4xl sm:text-5xl font-serif font-bold text-slate-deep mt-3 mb-6">Grant letter of inquiry example and free template</h1>
       <p class="text-sm text-gray-600 mb-6">Wellridge Group · September 9, 2026</p>
+      <p class="text-xl text-gray-700 mb-6">A grant letter of inquiry introduces your organization, proposed work and funding request so a foundation can consider fit and the next step. Use the blank structure below, then see how a fictional nonprofit presents its program, budget and planning targets.</p>
+      <nav aria-label="On this page" class="flex flex-wrap gap-4 mb-8"><a href="#loi-template" class="text-ridge-blue underline font-medium">Copy the free template</a><a href="#fictional-example" class="text-ridge-blue underline font-medium">Read the fictional example</a></nav>
       <div class="bg-slate-deep text-white rounded-lg p-6 text-lg"><strong>Important:</strong> Northside Arts Workshop and the Evergreen Community Arts Fund are fictional. This page is a writing demonstration, not a real client, funder, request, award, endorsement, or achieved result.</div>
       <p class="mt-6 text-gray-700">Sample premise: imagine Northside Arts Workshop is asking a local arts funder whether it would invite a short application for one existing, approved workshop plan. The facts below carry forward the fictional grant-review example; the funder name, contact details, inquiry framing, and signatory name and role are invented for this sample.</p>
     </div>
   </article>
 
-  <section class="py-16 bg-white">
+  <section id="loi-template" class="py-16 bg-white scroll-mt-24" aria-labelledby="template-heading">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 id="template-heading" class="text-3xl font-serif font-bold text-slate-deep mb-6">A grant LOI template you can adapt</h2>
+      <ol class="list-decimal pl-6 space-y-3 text-gray-700 mb-6">
+        <li>Check whether the foundation accepts inquiries from your organization. Its questions, length limit and submission process take priority over this template.</li>
+        <li>Copy or download the template and edit it in your own document. Replace each bracketed prompt with approved facts; remove instructions before submitting.</li>
+        <li>Check that the request, total project budget and other support reconcile. Keep planned outcomes separate from achieved results, and pending funding separate from secured support.</li>
+      </ol>
+      <p id="template-help" class="text-gray-700 mb-4">Free to copy and adapt. No email required. The box below is a read-only template; write your organization's draft in your own document.</p>
+      <label for="loi-template-text" class="block font-semibold text-slate-deep mb-2">Blank letter of inquiry template</label>
+      <textarea id="loi-template-text" readonly rows="18" spellcheck="false" aria-describedby="template-help" class="block w-full min-w-0 rounded-lg border border-gray-300 bg-fog p-4 text-base leading-relaxed text-slate-deep focus:outline-none focus:ring-2 focus:ring-ridge-blue">{templateText}</textarea>
+      <div class="flex flex-wrap items-center gap-4 mt-5">
+        <button id="copy-loi-template" type="button" hidden class="rounded-md bg-ridge-blue px-5 py-3 text-white font-medium focus:outline-none focus:ring-2 focus:ring-ridge-blue focus:ring-offset-2">Copy template</button>
+        <a href="/downloads/grant-letter-of-inquiry-template.txt" download="wellridge-grant-loi-template.txt" class="rounded-md border border-ridge-blue px-5 py-3 text-ridge-blue font-medium">Download template (.txt)</a>
+      </div>
+      <p id="template-copy-status" role="status" aria-live="polite" aria-atomic="true" class="mt-3 min-h-6 text-sm text-gray-700"></p>
+      <p class="text-sm text-gray-600">You can also select the text and copy it manually. The download opens in a text editor and can be pasted into Word or Google Docs.</p>
+      <div class="mt-8 rounded-lg border border-gray-200 p-6">
+        <h3 class="text-xl font-serif font-bold text-slate-deep">Want help turning your approved plan into an LOI?</h3>
+        <p class="mt-3 text-gray-700">Our {grantOfferById.loi.price} service covers one letter up to two pages for one identified funder, using your approved program and budget, with one revision.</p>
+        <a href="/letter-of-inquiry-writing" class="inline-block mt-4 text-ridge-blue underline font-medium">See the {grantOfferById.loi.price} LOI writing service</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="fictional-example" class="py-16 bg-fog scroll-mt-24" aria-labelledby="example-heading">
     <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="border border-gray-200 rounded-lg p-8 shadow-sm">
+      <h2 id="example-heading" class="text-3xl font-serif font-bold text-slate-deep mb-6">Fictional example: Northside Arts Workshop</h2>
+      <p class="text-gray-700 mb-6">The letter below demonstrates structure and clear distinctions between requested money, planned support and future targets. The organizations, people and scenario are invented; this is not a submission-ready letter.</p>
+      <div class="border border-gray-200 bg-white rounded-lg p-6 sm:p-8 shadow-sm">
         <p class="text-sm text-gray-600 mb-8">September 9, 2026</p>
         <p class="text-gray-700">Evergreen Community Arts Fund<br />Attn: Grants Team<br />Arlington, Texas</p>
         <p class="mt-8 text-gray-700">Dear Evergreen Community Arts Fund Grants Team:</p>
@@ -38,7 +72,7 @@ const sampleSchema = {
         <p class="mt-5 text-gray-700">Thank you for considering this inquiry. We would welcome the fund’s direction on fit and next steps.</p>
         <p class="mt-8 text-gray-700">Sincerely,<br />Jordan Lee<br />Program Director<br />Northside Arts Workshop</p>
       </div>
-      <a class="inline-block mt-8 px-5 py-3 bg-ridge-blue text-white rounded-md font-medium" href="/contact?service=grant-writing&package=loi">Prepare a $350 LOI inquiry</a>
+      <a class="inline-block mt-8 px-5 py-3 bg-ridge-blue text-white rounded-md font-medium" href="/contact?service=grant-writing&package=loi">Discuss a {grantOfferById.loi.price} LOI</a>
     </div>
   </section>
 
@@ -47,6 +81,31 @@ const sampleSchema = {
       <h2 class="text-3xl font-serif font-bold text-slate-deep mb-6">What remains unresolved before a real submission</h2>
       <ul class="list-disc pl-6 space-y-3 text-gray-700"><li>Confirm the real funder’s eligibility, priorities, instructions, deadline, and required contact or portal.</li><li>Confirm Northside’s approved program, venue, accessibility, safeguarding, transportation, and budget authority.</li><li>Confirm whether the $1,200 other support is committed, planned, or removed from the request story.</li><li>Assign the accountable reviewer and final submitter; confirm required attachments and current versions.</li></ul>
       <p class="mt-8 text-gray-700">This sample pairs with the <a class="text-ridge-blue underline" href="/resources/grant-review-loi-or-application">grant review, LOI, or application guide</a>, the <a class="text-ridge-blue underline" href="/work-examples/grant-review">fictional grant review example</a>, and <a class="text-ridge-blue underline" href="/letter-of-inquiry-writing">letter-of-inquiry writing service</a>.</p>
+      <p class="mt-6 text-sm text-gray-600">For another perspective on structure and funder fit, see <a href="https://www.mtu.edu/foundations/grant-writing-guide/letter-of-inquiry/" class="text-ridge-blue underline">Michigan Tech's letter-of-inquiry guide</a>. Your actual funder's current instructions govern your submission.</p>
     </div>
   </section>
 </BaseLayout>
+
+<script>
+  const template = document.querySelector<HTMLTextAreaElement>('#loi-template-text');
+  const copyButton = document.querySelector<HTMLButtonElement>('#copy-loi-template');
+  const status = document.querySelector<HTMLParagraphElement>('#template-copy-status');
+
+  if (template && copyButton && status) {
+    copyButton.hidden = false;
+    copyButton.addEventListener('click', async () => {
+      copyButton.disabled = true;
+      status.textContent = '';
+      try {
+        await navigator.clipboard.writeText(template.value);
+        status.textContent = 'Template copied. Paste it into your document and replace the bracketed prompts.';
+      } catch {
+        template.focus();
+        template.select();
+        status.textContent = 'Automatic copy is unavailable. The template is selected; use your copy command or download the text file.';
+      } finally {
+        copyButton.disabled = false;
+      }
+    });
+  }
+</script>

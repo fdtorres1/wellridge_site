@@ -1,5 +1,11 @@
 # Active context
 
+## September 9, 2026 — Reusable LOI template
+
+- Added a free blank template to `/work-examples/letter-of-inquiry`, with copy feedback, manual-copy fallback, and `.txt` download from one source file. The existing fictional sample remains explicit; instructions distinguish approved facts, planned targets and unconfirmed funding. No email gate or new data collection.
+- Updated the example's title, description, H1 and Article description to reflect the actual example/template content. Resources and the LOI service link to the improved page; existing URL and 23-page sitemap are preserved. Current $350 scope is drawn from shared offer data.
+- Build and all 23 H1/canonical/structured-data/internal-link checks passed. The displayed template exactly matches its downloadable source and built file. Browser QA and release receipts follow below; indexing/ranking changes remain unverified. Analytics remains deferred and directory inquiries remain unsent.
+
 ## September 9, 2026 — National demand validation and directory drafts
 
 - Completed 30-query U.S./English DataForSEO Google Ads lookup and six U.S. desktop organic result samples for $0.102 total. Nine estimates were numerical; 21 unreported, not proven zero. National nonprofit service queries have the clearest commercial fit; broad review/editing phrases attract funder-side or scientific intent. See `NATIONAL_KEYWORD_VALIDATION.md` and the two sanitized CSVs under `docs/research/`.
