@@ -1,5 +1,11 @@
 # Roadmap
 
+## September 10, 2026 UTC — Discovery and distribution evidence
+
+- Completed: [seven-URL inspection and initial 28-day baseline](SEARCH_DISCOVERY_BASELINE_2026-09-10.md), five live page checks, and existing Google sitemap resubmission. Google processed all 23 sitemap URLs with zero errors/warnings. Inspection snapshot: two indexed URLs, three unknown and two discovered/not indexed; no source correction justified. Recheck after crawl opportunity; no monitor scheduled.
+- Prepared: [eight nonprofit resource candidates and unsent notes](LOI_RESOURCE_SHARING_2026-09-10.md). First potential batch: York, Philadelphia, Williamsburg and Seattle, after exact route verification and authorization to send. No paid placement or directory purchase.
+- Next useful milestone is a relevant resource inclusion or qualified inquiry, alongside Google processing/crawling the published pages. One historical impression/click is not a trend. Keep national page ownership stable while collecting evidence; analytics remains deferred.
+
 ## September 9, 2026 — Demand-validated next priorities
 
 - Completed: 30 national query estimates, six U.S. SERP samples, revised page ownership, directory candidates and two unsent information requests. See `NATIONAL_KEYWORD_VALIDATION.md` and `NATIONAL_LINK_OPPORTUNITIES.md`.

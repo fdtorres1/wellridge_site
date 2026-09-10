@@ -14,6 +14,8 @@ Grant services use `src/lib/grants.ts` for shared offers. `/grant-writing` is th
 
 National acquisition research: [`docs/NATIONAL_KEYWORD_VALIDATION.md`](docs/NATIONAL_KEYWORD_VALIDATION.md) records U.S. volume estimates and observed search intent; [`docs/NATIONAL_LINK_OPPORTUNITIES.md`](docs/NATIONAL_LINK_OPPORTUNITIES.md) contains directory candidates and unsent drafts. Research and publication do not establish rankings or client acquisition.
 
+Current discovery evidence: [`docs/SEARCH_DISCOVERY_BASELINE_2026-09-10.md`](docs/SEARCH_DISCOVERY_BASELINE_2026-09-10.md) records Google inspections, the processed 23-URL sitemap and the initial search baseline. [`docs/LOI_RESOURCE_SHARING_2026-09-10.md`](docs/LOI_RESOURCE_SHARING_2026-09-10.md) contains eight nonprofit resource-page candidates and unsent sharing notes.
+
 The existing LOI example includes a free copyable template and plain-text download. `public/downloads/grant-letter-of-inquiry-template.txt` is the single source for both; the page imports it at build time. Manual selection and the download work without JavaScript. The template links to the existing $350 service and requires the applicant to follow the actual funder's instructions.
 
 ### Prerequisites

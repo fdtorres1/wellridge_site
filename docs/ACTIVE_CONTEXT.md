@@ -1,5 +1,12 @@
 # Active context
 
+## September 9 locally / September 10 UTC, 2026 — Discovery and resource distribution
+
+- [Search baseline](SEARCH_DISCOVERY_BASELINE_2026-09-10.md): homepage and grant-writing hub indexed with matching canonicals; three service pages unknown; LOI example and pricing discovered but not indexed. Indexed-page crawls predate the latest revisions. Live five-page checks and the 23-URL sitemap found no blocking directives or canonical mismatch.
+- Existing Google sitemap resubmitted successfully (204). Follow-up at 04:11:46 UTC confirmed pending false, all 23 submitted URLs processed, zero errors/warnings, and a new download at 04:04:47 UTC. Sitemap processing is not page indexing. All 20 OAuth scopes preserved.
+- August 10–September 6 final Web data returned one impression and one click, both in the U.S.; U.S. page/query breakdowns returned no rows. Too little evidence for keyword/ranking or acquisition conclusions.
+- [Eight resource candidates and unsent notes](LOI_RESOURCE_SHARING_2026-09-10.md) are prepared. York, Philadelphia, Williamsburg and Seattle have the clearest fit; Tulsa and MAGIC require routing/acceptance confirmation. No outside messages, purchases, listings or memberships. Analytics remains deferred. Documentation release receipts follow separately.
+
 ## September 9, 2026 — Reusable LOI template
 
 - Added a free blank template to `/work-examples/letter-of-inquiry`, with copy feedback, manual-copy fallback, and `.txt` download from one source file. The existing fictional sample remains explicit; instructions distinguish approved facts, planned targets and unconfirmed funding. No email gate or new data collection.
