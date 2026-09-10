@@ -25,6 +25,8 @@ This implementation did not refresh Search Console performance or verify ranking
 
 ## Next measurement pass
 
+September 10 UTC update: [seven URL inspections and the first 28-day baseline](SEARCH_DISCOVERY_BASELINE_2026-09-10.md) are complete. Two pages indexed, three unknown, two discovered/not indexed. Existing sitemap resubmitted and all 23 URLs processed with zero errors/warnings; that is not page-indexing confirmation. The baseline has one impression/click and no returned U.S. page/query breakdown, so it cannot establish keyword performance. [Eight resource candidates with unsent notes](LOI_RESOURCE_SHARING_2026-09-10.md) provide the next distribution work; external contact remains a separate action.
+
 1. Completed September 9: validate 30 phrases through DataForSEO Google Ads and inspect six U.S. desktop result pages, total $0.102. Use the revised page priorities above. Do not substitute advertising competition for organic difficulty or unreported volume for zero demand.
 2. Confirm discovery and canonical adoption for the three service pages after crawls. An unknown or pending URL shortly after publication is not by itself a technical failure.
 3. Compare Search Console page/query clusters over consistent 28-day windows, distinguishing branded from nonbranded visibility where returned data permits. Record impressions, clicks, CTR, and average position with denominators; small samples cannot establish a trend. Segment the U.S. where useful and retain suppression limits.
