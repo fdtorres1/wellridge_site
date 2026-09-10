@@ -14,6 +14,8 @@ Grant services use `src/lib/grants.ts` for shared offers. `/grant-writing` is th
 
 National acquisition research: [`docs/NATIONAL_KEYWORD_VALIDATION.md`](docs/NATIONAL_KEYWORD_VALIDATION.md) records U.S. volume estimates and observed search intent; [`docs/NATIONAL_LINK_OPPORTUNITIES.md`](docs/NATIONAL_LINK_OPPORTUNITIES.md) contains directory candidates and unsent drafts. Research and publication do not establish rankings or client acquisition.
 
+The existing LOI example includes a free copyable template and plain-text download. `public/downloads/grant-letter-of-inquiry-template.txt` is the single source for both; the page imports it at build time. Manual selection and the download work without JavaScript. The template links to the existing $350 service and requires the applicant to follow the actual funder's instructions.
+
 ### Prerequisites
 
 - Node.js 18+ and npm

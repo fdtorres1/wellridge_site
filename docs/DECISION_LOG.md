@@ -1,5 +1,10 @@
 # Decision log
 
+## September 9, 2026 — Free LOI template
+
+- Improve the existing example URL rather than creating a competing template page. Provide ungated copy and plain-text download, retaining the clearly fictional complete sample and current paid service scope.
+- Use one text file for the download and rendered template to prevent content drift. Progressive enhancement adds clipboard feedback; manual copy and a standard download link remain available without JavaScript. No additional dependency, form, analytics or external registration is needed.
+
 ## September 9, 2026 — National keyword evidence correction
 
 - Use historical U.S. demand estimates and actual result intent together. Twenty-one of 30 candidate phrases returned no estimate; this neither proves zero demand nor supports calling them easy national ranking opportunities.
